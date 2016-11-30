@@ -1,0 +1,402 @@
+<!-- Header -->
+{% set vars = {
+  'title': 'fast-feedback',
+  'parent_page': 'seven-principles',
+  'og_title': 'Design Better - Fast Feedback',
+  'og_url': 'http://designbetter.wpengine.com/principles-of-product-design/fast-feedback/',
+  'og_description': 'When we don’t have a live product and we need to get feedback, we send a prototype to researchers to have it tested. It allows us to get feedback not just from drivers in San Francisco but from all around the world.',
+  'og_image': '/img/og/hero-fast.png'
+  }
+%}
+{% include 'source/htdocs/_includes/header.html' with vars %}
+
+<!-- Navigation -->
+{% set vars = {
+  'title': 'Design Better • Principles of Product Design • Fast Feedback',
+  'background_color': 'purple'
+  }
+%}
+{% include 'source/htdocs/_includes/navigation.html' with vars %}
+
+<div id="top-scroll">
+
+<!-- Hero Image -->
+{% set vars = {
+  'image_source': '/img/heros/hero-fast.svg',
+  'image_source_small': '/img/heros/hero-fast-small.svg',
+  'image_alt': 'Fast Feedback'
+  }
+%}
+{% include 'source/htdocs/_includes/page-hero.html' with vars %}
+
+<!-- Intro w/ Paragraphs -->
+<section class="page-content relative page-content__article">
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h2 class="text-center wow fadeInUp padding-top-xlarge margin-bottom-xxlarge">Fast Feedback</h2>
+    </div>
+  </div>
+
+  <!-- Audio Sidebar -->
+  {% set vars = {
+    'color' : 'purple',
+    'audio_source': '/audio/fast-audio.mp3',
+    'subscribe_itunes': 'https://geo.itunes.apple.com/us/album/this-american-life-stories/id335933324?mt=1&app=music',
+    'subscribe_google': 'https://www.thisamericanlife.org/blog/2010/10/this-american-life-android-app',
+    'subscribe_spotify': 'https://open.spotify.com/user/una_s/playlist/2p89CV9wAwBYUowlXEGOgi',
+    'subscribe_soundcloud': 'https://soundcloud.com/this-american-life'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio-sidebar.html' with vars %}
+
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Have you ever <a href="https://www.youtube.com/watch?v=tqGZKiOLsU8" target="_blank">watched a great chef at work</a>—the kind of chef worthy of a coveted <a href="https://en.wikipedia.org/wiki/Michelin_Guide" target="_blank">Michelin Star</a>? Whether she’s in the kitchen, in the field, or at the market, she’s always tasting the food. Her palette guides her to the right flavors, aromas, and textures that can be combined to create an unforgettable meal. The alchemy of great cooking can only happen when the chef gets feedback at each step of her process.</p>
+      <p class="wow fadeInUp">Similarly, <a href="http://ctt.ec/800Cs" target="_blank" class="tweet">design teams that produce great products have something in common—they habitually test their designs.<i class="fa fa-twitter" aria-hidden="true"></i></a> Before a single line of code is written, they build high-fidelity prototypes and put them in the hands of colleagues and customers, collecting fast feedback and correcting course before development.</p>
+      <p class="wow fadeInUp">These product design teams have a huge competitive advantage over those that get feedback only after their product ships: they learn faster. They spot problems quickly and fix them. They talk to customers early and align the product to their needs.</p>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': '<a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Learning faster means <strong>shipping more polished products</strong> that attract customers faster.<i class="fa fa-twitter" aria-hidden="true"></i></a>'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">The software industry isn’t the first to grasp this principle. The animation industry was transformed by an underdog studio in Los Angeles that found a way to learn faster than the big New York studios by getting fast feedback.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Learn Fast, Leap Forward</h2>
+      <p class="wow fadeInUp">In the early 20th century, the boundaries of animation had been drawn and the industry was happily operating within them. The medium was crude—settings were flat, characters lacked personality, and the content was often limited to slapstick gags.</p>
+      <p class="wow fadeInUp">Then Walt Disney Studios changed everything.</p>
+      <p class="wow fadeInUp">Disney’s faith in the medium as an artform pushed the studio to experiment with new ideas that lead to astounding technical achievements. In 1928 they introduced sound with the release of <a href="https://www.youtube.com/watch?v=7NQyzcDnMdE" target="_blank">Steamboat Willie</a>, and in 1932 they introduced full color with <a href="https://www.youtube.com/watch?v=VTuIb7BIFqk" target="_blank">Flowers and Trees</a>. Each is an impressive achievement, but it was the studio’s contributions to process that enabled animation to evolve into the rich medium we know today.</p>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : 'https://www.youtube.com/embed/7OhpDAc9krU?autoplay=true',
+    'image_source' : '/img/placeholders/video-snowhite.jpg',
+	'caption': 'This pencil test animation helped Disney animators explore the movements of Snow White before going into production.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">In 1931, seeking faster feedback on their drawings, Disney animators began making what they called "pencil tests:" rough drawings on inexpensive negative film that they fed into the <a href="https://en.wikipedia.org/wiki/Moviola" target="_blank">Moviola</a>, a device with a small screen for viewing footage.</p>
+      <p class="wow fadeInUp">This process let Disney animators meticulously refine their drawings immediately, not weeks or months later, and enabled them to learn the art of the medium faster than any other studio. Soon the animators began stringing together pencil tests to review entire scenes, the interaction of characters, and the delivery of the story.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote - Custom Spacing -->
+  <div class="row align-center margin-vertical-xxlarge">
+    <div class="medium-10 columns wow fadeInUp">
+      <blockquote>
+        In our little studios on Hyperion Street, every foot of rough animation was projected on the screen for analysis, and every foot was drawn and redrawn until we could say, ‘This is the best we can do. ’”
+        <footer>
+          <img src="/img/avatars/disney.jpg" alt="/img/avatars/disney.jpg" class="avatar" />
+          <cite class="margin-left-medium">Walt Disney</cite>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+
+  <!-- Centered Image -->
+  <div class="row align-center margin-vertical-large">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/fast-feedback/moviola.png',
+        'caption': '<a href="https://en.wikipedia.org/wiki/Les_Clark" target="_blank" class="text-gray">Les Clark</a>, one of Walt Disney Studios’ first animators, viewing a quick pencil test through a Moviola.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">Walt Disney Studios invented a prototyping method that pushed the medium into new territory. While other studios produced silly gag films to make people laugh, Disney created art with emotionally complex characters that made audiences <em>cry</em>.</p>
+      <p class="wow fadeInUp">By building fast feedback into their creative process, Walt Disney Studios was able to make a huge leap. What worked for Disney can work for your design team too. Don’t worry, you won’t need to <a href="http://www.ebay.com/sch/i.html?_from=R40&_trksid=p2050601.m570.l1311.R1.TR11.TRC2.A0.H0.Xnelson+cl.TRS0&_nkw=Moviola&_sacat=0" target="_blank" class="text-gray">track down a Moviola on eBay</a>. All you need is a high-fidelity prototype.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Prototyping and Tools</h2>
+      <p class="wow fadeInUp">Prototypes let us present product concepts to colleagues and customers without diving into the production process. <a href="http://ctt.ec/800Cs" target="_blank" class="tweet">A good prototype is a balancing act; it feels like a real product, but doesn’t require a lot of time to build.<i class="fa fa-twitter" aria-hidden="true"></i></a></p>
+      <p class="wow fadeInUp">I used to create prototypes using HTML, CSS, and JavaScript. It was a painful, time-consuming process that affected my judgement when testing. I’d spend a week or more producing a prototype that was vaguely realistic enough to show customers. When feedback called for big changes, I found myself reluctant to act, as the work seemed daunting.</p>
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">That process seems ridiculous today, as we’re in a golden age of product design tools. We can now create prototypes that are much higher fidelity in less time without writing a single line of code. With less time invested, tweaks to a prototype come easy.</p>
+      <p class="wow fadeInUp">There are a number of prototyping tools on the market—more than we can cover here. Do some research to find the right fit for your needs. As you consider various prototyping tools, ask yourself these questions:</p>
+      <ul class="wow fadeInUp">
+        <li>Is it easy to focus on product design problems, or will I be fiddling with the tool or code?</li>
+        <li>Can I deploy my prototype to various devices to create a realistic testing experience?</li>
+        <li>If you’re working remotely, is it easy to share the prototype and conduct remote testing?</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source': '//fast.wistia.net/embed/iframe/jxmk4wo3vr?autoPlay=true?videoFoam=true&playerColor=1621A0',
+    'image_source' : '/img/headshots/headshot_law.jpg',
+    'caption': '“Typically, we will go to a higher fidelity earlier on in the process, so we can take it to different groups, and don’t have to filter it through the lens of them not understanding how it would look towards the end of the project.” - <a href="https://twitter.com/andytlaw" target="_blank" class="text-gray">Andy Law</a>, Mobile Product Design Manager, Netflix"'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp margin-top-xxlarge">
+      <h3 class="margin-bottom-none">InVision and Sketch</h3>
+      <p class="margin-none wow fadeInUp">As you might’ve guessed, we’re particularly partial to prototyping with InVision. Before joining <a href="http://invisionapp.com" target="_blank">InVision</a>, my product design team at MailChimp used InVision to prototype new apps and explore feature concepts. It helped us move fast and get the feedback we needed. We shared InVision prototypes with the engineering team early to get feedback and keep everyone in sync.</p>
+      <p class="wow fadeInUp">Many product designers have transitioned from Photoshop to <a href="https://www.sketchapp.com/" target="_blank">Sketch</a>, which lets you work on multiple screens in a single file. You can save common UI elements like buttons and forms as shared symbols to build a screen quickly. There are <a href="https://www.sketchapp.com/learn/" target="_blank">a number of great learning resources to guide you</a> if you’ve yet to make the leap to Sketch. </p>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': '<a href="https://www.invisionapp.com/craft" target="_blank">Craft creates a tight integration between Sketch and InVision</a>, shortening the <strong>prototype design process</strong>. It lets you pull <strong>real data</strong> from an API, fetch content from a site, or <strong>grab elegant photos</strong> and drop them into your Sketch file to make your UI more realistic. Craft even lets you build a prototype <strong>directly in Sketch</strong>.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp"><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Design tools today are doing for product design what Disney’s pencil tests and the Moviola did for animation<i class="fa fa-twitter" aria-hidden="true"></i></a>—they’re shortening the learning process so the craft can evolve faster. </p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h3 class="margin-bottom-none">Keynote</h3>
+      <p class="margin-none wow fadeInUp">Keynote, Apple’s popular presentation software, has become a go-to prototyping tool for many designers. It’s simple enough that almost anyone can prototype with it, and sophisticated enough to do elegant animations that make a series of images feel like a real app.</p>
+      <p class="wow fadeInUp"><a href="http://www.apple.com/ios/keynote/" target="_blank">Install Keynote on your iPhone or iPad</a> to run prototypes on the target device, making the testing experience more realistic. Design prototypes in Keynote faster with <a href="http://keynotopia.com/" target="_blank">Keynotopia’s</a> UI templates for both <a href="http://keynotopia.com/iphone-Prototyping/" target="_blank">iOS</a> and <a href="http://keynotopia.com/android-prototyping-templates/" target="_blank">Android</a>. If you end up doing a lot of prototyping, you’ll probably want to take some time to create your own UI template library so you don’t have to continuously apply your brand’s colors and style to stock elements.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h3 class="margin-bottom-none">Faster Prototyping With a Pattern Library</h3>
+      <p class="margin-top-none"><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Your prototyping process can be accelerated exponentially when you work with a pattern library<i class="fa fa-twitter" aria-hidden="true"></i></a>—a collection of standard elements that can be combined like LEGO blocks to create a new UI. Creating a pattern library is time consuming work, but it pays off with the design of each new product or feature. </p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center">
+    <div class="medium-10 text-center columns wow fadeInUp margin-vertical-xlarge">
+
+      <!-- Image, Small Caption  -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/fast-feedback/invision-design-system.png',
+        'caption': 'The InVision design team has built a pattern library that speeds up design and maintains consistency though the team is located around the world.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">Facing UI fragmentation across many products and platforms, the design team at <a href="http://www.nasdaq.com/" target="_blank">NASDAQ</a> revised their schedule to spend time creating a pattern library. The process was intense, but helped them unify the user experience across all of their products. There was an additional benefit they hadn’t initially anticipated—<em>prototyping with a pattern library helped them move very quickly.</em></p>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': 'Spending <strong>less time noodling</strong> on UI treatments means designers can focus more on <strong>aligning the product to customers’ needs</strong>. Companies like <a href="https://developer.salesforce.com/lightning/design-system" target="_blank">Salesforce</a>, <a href="http://www.ibm.com/design/thinking/" target="_blank">IBM</a>, <a href="https://design.atlassian.com/" target="_blank">Atlassian</a>, <a href="http://ux.mailchimp.com/patterns" target="_blank">MailChimp</a>, <a href="https://medium.com/@hellostanley/design-doesnt-scale-4d81e12cbc3e#.m5whsgjvp" target="_blank">Spotify</a>, and <a href="https://gel.westpacgroup.com.au/" target="_blank">Westpac</a> have all developed detailed design systems that help them <strong>design new products quickly</strong>.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe/8ocheidbyp?autoPlay=true?videoFoam=true&playerColor=1621A0',
+    'image_source': '/img/headshots/headshot_burka.jpg',
+    'caption':'Daniel Burka, Design Partner at Google Ventures, discusses how focusing on learning objectives will help you determine the right level of fidelity.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Getting Feedback</h2>
+      <h3 class="margin-bottom-none">Testing Internally</h3>
+      <p class="margin-none wow fadeInUp">With your prototype built, you can start collecting feedback. Before you put your prototype in front of customers, spend time talking with your design and engineering colleagues. They’ll help you look at the UI with fresh eyes, and reconnect with the key objectives of the project. <a href="/principles-of-product-design/show-tell">Now’s a great time to conduct a design review.</a></p>
+      <p class="wow fadeInUp"><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Deploy your prototype to the devices you’ll be targeting so everyone can get a feel for the real experience.<i class="fa fa-twitter" aria-hidden="true"></i></a> It’s not uncommon for designers to walk around the building to grab a few colleagues for an impromptu test of a prototype. Great feedback can come from unexpected places, so look beyond the design and engineering teams.</p>
+      <p class="wow fadeInUp">With feedback in hand, revise your prototype accordingly and get ready to test with real customers.</p>
+      <h3 class="margin-bottom-none"><a href="/design-thinking/test" class="text-black">Testing</a> With Customers</h3>
+      <p class="margin-none wow fadeInUp">You’re going to learn a lot as you show your prototype to your customers. Your ideas and assumptions will be put to the test, which may at times make you uncomfortable. It can be frustrating to watch users struggle with your design.</p>
+      <p class="wow fadeInUp">Your instincts might lead you to help customers figure out how to use your app, but you’ll taint the feedback if you do. Instead, stick to your testing script or work with a moderator who can conduct the tests impartially.</p>
+      <p class="wow fadeInUp"><a href="https://twitter.com/mmargolis" target="_blank">Michael Margolis</a>, UX Research Partner at <a href="http://gv.com/" target="_blank">GV</a>, follows <a href="https://library.gv.com/how-to-test-prototypes-with-customers-the-five-act-interview-80305d98c407#.nxw4ffv0j" target="_blank">a very simple process as he conducts tests with customers</a>: a welcome, an ice breaking period, the introduction of the prototype, the test, and a debrief. Michael’s script is wonderfully simple and easy to remember. Dive into his process in more detail in the book Sprint from GV.</p>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : 'https://www.youtube.com/embed/U9ZG19XTbd4?autoplay=true',
+    'image_source': '/img/seven-principles/fast-feedback/video-sprint.png',
+    'caption':'Michael Margolis of GV <a href="https://www.youtube.com/watch?v=U9ZG19XTbd4" target="_blank" class="text-gray">interviewing a customer before she tests a prototype</a>.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/nielson.jpg',
+    'quote': 'Elaborate usability tests are a waste of resources. The best results come from testing no more than 5 users and running as many small tests as you can afford. ”',
+    'source_name' : '<a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/" target="_blank">Jakob Nielsen</a>',
+    'source_title' : 'Nielsen Norman Group'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">According to <a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/" target="_blank">research conducted by the Nielsen Norman Group</a>, the majority of problems with your prototype will be identified after testing with just 5 customers Instead of testing more customers, Jakob Nielsen recommends another small batch of tests after refinements have been made.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h3 class="margin-bottom-none">Recruiting Customers </h3>
+      <p class="wow fadeInUp">If you’re testing a prototype for a brand new product, you’ll need to be more creative in how you recruit. Once again, <a href="https://library.gv.com/how-to-find-great-participants-for-your-user-study-da20f98dad9e#.25tf6kb7v" target="_blank">the GV team has a clever solution</a>. They create <a href="https://www.dropbox.com/s/fhr71njlj7yv7r1/recruiting-screener.png" target="_blank">a form to screen customers</a> that asks a few carefully considered questions. A <a href="https://www.dropbox.com/s/5kmofdms00sbh84/Google-Ventures-Research-Sprint-Screener-Worksheet.pdf?dl=0" target="_blank">worksheet guides them to create a screener</a> that will target the right kinds of people. They post a link to their screener form on Craigslist, Twitter, Facebook, and send to an existing mailing list if available. Since you’ll only need about 5 test subjects, you don’t need a high response rate to the screener. </p>
+      <p class="wow fadeInUp">Be prepared to compensate your customers for their time—remember, they’re doing you a big favor by testing your prototype.</p>
+      <p class="wow fadeInUp">Alternatively, you could hire a professional recruiter to find customers for you. The downside is it can be very expensive, and it won’t be a hands off process. You’ll still need to give them enough information to target the right customers.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h3 class="margin-bottom-none">Testing Remotely</h3>
+      <p class="margin-top-none">Running the test is actually the easy part of the feedback process. Finding test subjects is the hard part. If you have an existing customer base, query your database to find power users. Devout customers are often excited to see new design concepts, and will likely give more informed feedback. This is their chance to influence the design process!</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/nix.jpg',
+    'quote': 'When we don’t have a live product built and we need to get feedback, we can send a prototype to researchers to have it tested. It allows us to get feedback not just from drivers in San Francisco but from all around the world. ”',
+    'source_name' : '<a href="http://mollynix.com/" target="_blank">Molly Nix</a>',
+    'source_title' : 'Senior Product Designer at Uber'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">Not all the customers you recruit will live nearby. You’ll need to make plans to conduct tests remotely too. <a href="https://twitter.com/greggcorp" target="_blank">Gregg Bernstein</a>, Senior User Researcher for <a href="http://voxmedia.com" target="_blank">Vox Media</a>, has developed <a href="http://product.voxmedia.com/2016/5/26/11787530/remote-user-testing-at-vox" target="_blank">an elegant system to conduct tests with users remotely</a> using inexpensive, freely available software—a rig that runs just $99, a small price to pay for fast feedback!</p>
+      <p class="wow fadeInUp">Here’s how he does it:</p>
+      <ul class="wow fadeInUp">
+        <li>Gregg shares a <a href="https://calendly.com/" target="_blank">Calendly</a> link with a potential test participant, letting her select a convenient test time. Calendly also lets Gregg ask for permission to record the session, and lets him send details on what the test participant can expect.</li>
+        <li>The Vox design team posts a prototype to <a href="http://invisionapp.com" target="_blank">InVision.</a></li>
+        <li>Gregg invites the participant to an <a href="http://blog.invisionapp.com/introducing-invision-liveshare-real-time-design-meetings-in-your-browser/" target="_blank">InVision LiveShare</a>—a shared screen with voice chat where the customer can use the prototype while Gregg asks questions, observes, and takes notes.</li>
+        <li>The session is recorded using <a href="https://www.telestream.net/screenflow/" target="_blank">ScreenFlow</a>.</li>
+        <li>After the test session is complete, Gregg re-watches the video to fill in gaps in his notes. He then shares those notes and his insights with his Product team via Slack.</li>
+      </ul>
+      <p class="wow fadeInUp">This process is simple and fast, yet effective. It lets Vox’s remote product team get feedback from users anywhere without hopping on a plane.</p>
+      <p class="wow fadeInUp">A service like <a href="http://lookback.io" target="_blank">Lookback.io</a> can also help you get fast feedback from both colleagues and customers remotely. <a href="https://support.invisionapp.com/hc/en-us/articles/205503919-User-Testing-and-the-InVision-Viewer-app" target="_blank">InVision and Lookback integrate to let you test a mobile app prototype</a> with customers. It records the customer’s screen, their interactions with your prototype, and even overlays a video of their face as they use your app, helping you read their emotional state.</p>
+      <p class="wow fadeInUp">When your app is built, <a href="https://lookback.io/support/how-do-i-install-lookback-into-my-app" target="_blank">your developers can integrate Lookback into your app</a> so test sessions can be triggered any time. Users can shake their phone to reveal a secret button that triggers Lookback’s recording feature. All sessions are stored in a central dashboard for designers and developers to review and make revisions.</p>
+      <p class="wow fadeInUp"><a href="https://twitter.com/_lindseytron" target="_blank">Lindsey Campbell</a>, UX researcher at InVision, has a unique approach to getting customer feedback remotely. She’s set up a Slack channel to share prototypes with devout customers to get early feedback and bring customers into the design process. The design team monitors the feedback and tweaks the product as needed.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Better, Faster</h2>
+      <p class="wow fadeInUp">Like a chef sampling her ingredients, designers need to get a taste of the user’s experience while designing, not just after the product ships. When you shorten the feedback loop, you can learn faster how to make a product that will appeal to your audience. Here’s some guidance to get you started:</p>
+      <ul class="wow fadeInUp">
+        <li><strong>When should I build a prototype? </strong>After you’ve done <a href="/principles-of-product-design/guess-less">initial research</a> and <a href="/principles-of-product-design/pencils-before-pixels">worked through many ideas on paper</a>.</li>
+        <li><strong>How much of the app should I build in my prototype?  </strong>Don’t waste time prototyping the entire app. Focus instead on the parts about which you have the most questions.</li>
+        <li><strong>How real should my prototype be?  </strong>It should be real enough that customers won’t realize it’s just a prototype.</li>
+        <li><strong>When should I show others my prototype? </strong>Early and often. Don’t let yourself get too far down a single path before you start getting feedback from colleagues. Show your prototype to customers after you and your colleagues have ironed out the kinks.</li>
+        <li><strong>Who should I show it to? </strong>Start with the people in your design or product team. Be sure to get an engineer’s perspective to ensure the design you're proposing is technically feasible.</li>
+        <li><strong>How should I present my prototype? </strong>It’s always best to show the prototype on the target device if possible. <a href="/seven-principles/show-tell"></a>Frame the problem you’re trying to solve before you ask for feedback from others</a>.</li>
+      </ul>
+      <p class="fadeInUp wow">We’re fortunate to know the importance of testing, and to have access to tools that make capturing feedback cheap and easy. Whether remote or in person, your team can build fast feedback into your process so you can build better products faster.</p>
+    </div>
+  </div>
+
+  <!-- Read On -->
+  <div class="background-gray-light padding-vertical-xxlarge margin-top-xxlarge section-read-on chapter">
+    <div class="row align-center">
+      <div class="medium-10 columns">
+        <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Read On</h2>
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/" target="_blank">Why You Only Need to Test With 5 Users</a></li>
+          <li><a href="http://blog.invisionapp.com/6-ways-to-save-time-in-rapid-prototyping/" target="_blank">6 Ways to Save Time in Rapid Prototyping</a></li>
+          <li><a href="https://www.smashingmagazine.com/2015/08/animating-in-keynote/" target="_blank">How To Prototype UI Animations In Keynote</a></li>
+          <li><a href="https://medium.com/uber-design/designing-a-partner-centric-experience-d9900e6511dc#.dsncot7g7" target="_blank">An inside look at the process of redesigning the Uber Partner app from the ground up</a></li>
+          <li><a href="https://library.gv.com/how-to-test-prototypes-with-customers-the-five-act-interview-80305d98c407#.nxw4ffv0j" target="_blank">How to Test Prototypes with Customers</a></li>
+          <li><a href="http://alistapart.com/article/from-pages-to-patterns-an-exercise-for-everyone" target="_blank">From Pages to Patterns</a></li>
+        </ul>
+      </div>
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/150112174X/" target="_blank">Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days</a></li>
+          <li><a href="http://blog.invisionapp.com/get-higher-fidelity-prototypes-with-less-work-using-overlays/" target="_blank">Get Higher Fidelity Prototypes With Less Work Using Overlays</a></li>
+          <li><a href="http://silkpixels.com/prototyping/" target="_blank">Prototyping iOS Apps with Keynote</a></li>
+          <li><a href="http://product.voxmedia.com/2016/5/26/11787530/remote-user-testing-at-vox" target="_blank">Remote User Testing at Vox</a></li>
+          <li><a href="http://adaptivepath.org/ideas/sketchboards-discover-better-faster-ux-solutions/" target="_blank">Recruiting Test Participants for Usability Studies</a></li>
+          <li><a href="http://alistapart.com/blog/post/getting-started-with-pattern-libraries" target="_blank">Getting Started With Pattern Libraries</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- end #top-scroll -->
+
+<section id="footer-scroll-nav" class="relative">
+  {% include 'source/htdocs/_includes/_product-principles.html' %}
+  {% set vars =
+    {
+      'background_color':'white'
+    }
+  %}
+  {% include 'source/htdocs/_includes/footer-html.html' with vars %}
+</section>
+
+<!-- Footer -->
+{% include 'source/htdocs/_includes/footer.html' %}

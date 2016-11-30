@@ -1,0 +1,32 @@
+.page {
+  section.page-content,
+  section.section-principles {
+    padding-top: 0;
+    padding-bottom: 250px;
+    @include breakpoint (medium down) {
+      padding: 0 15px;
+    }
+  }
+  section.page-content__article {
+    padding-bottom: 0;
+    margin-top: -75px;
+    @include breakpoint (small down) {
+      margin-top: 0px;
+    }
+  }
+}
+
+.case-study,
+.about {
+  @include breakpoint (medium down) {
+    padding: 0 15px;
+  }
+}
+
+#page-why-we-need-design-thinking {
+  .spacer {
+    height: 48px;
+  }
+}
+
+

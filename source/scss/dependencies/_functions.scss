@@ -1,0 +1,46 @@
+//  Functions
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//  1. Colors
+//
+
+//  1. Colors
+// ---------
+
+// Background color
+//
+// Outputs:
+// .background-black {
+// background-color: #000000; }
+//
+// Based on $colors varible defined in variables
+
+@each $colorname, $color in $colors {
+  .background-#{$colorname} {
+    background-color: $color;
+  }
+}
+
+
+// Text color
+//
+// Outputs:
+//
+// .text-black {
+// color: #000000; }
+//
+// Based on $colors varible defined in variables
+
+@each $colorname, $color in $colors {
+  .text-#{$colorname} {
+    color: $color;
+  }
+}
+
+@each $colorname, $color in $colors {
+  .outline-#{$colorname} {
+    border-color: $color;
+  }
+}

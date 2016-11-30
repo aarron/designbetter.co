@@ -1,0 +1,299 @@
+<!-- Header -->
+{% set vars = {
+  'title': 'break-the-black-box',
+  'parent_page': 'seven-principles',
+  'og_title': 'Design Better - Break the Black Box',
+  'og_url': 'http://designbetter.wpengine.com/principles-of-product-design/break-the-black-box/',
+  'og_description': 'Your legs are your most effective design tool. Get out and connect with people.',
+  'og_image': '/img/og/hero-break.png'
+  }
+%}
+{% include 'source/htdocs/_includes/header.html' with vars %}
+
+<!-- Navigation -->
+{% set vars = {
+  'title': 'Design Better • Principles of Product Design • Break the Black Box',
+  'background_color': 'purple'
+  }
+%}
+{% include 'source/htdocs/_includes/navigation.html' with vars %}
+
+<div id="top-scroll">
+
+<!-- Hero Image -->
+{% set vars = {
+  'image_source': '/img/heros/hero-break.svg',
+  'image_source_small': '/img/heros/hero-break-small.svg',
+  'image_alt': 'Break the Black Box'
+  }
+%}
+{% include 'source/htdocs/_includes/page-hero.html' with vars %}
+
+<!-- Intro w/ Paragraphs -->
+<section class="page-content page-content__article relative">
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp padding-top-xlarge margin-bottom-xxlarge">Break the Black Box</h2>
+    </div>
+  </div>
+
+  <!-- Audio Sidebar -->
+  {% set vars = {
+    'color' : 'purple',
+    'audio_source': '/audio/break-audio.mp3',
+    'subscribe_itunes': 'https://geo.itunes.apple.com/us/album/this-american-life-stories/id335933324?mt=1&app=music',
+    'subscribe_google': 'https://www.thisamericanlife.org/blog/2010/10/this-american-life-android-app',
+    'subscribe_spotify': 'https://open.spotify.com/user/una_s/playlist/2p89CV9wAwBYUowlXEGOgi',
+    'subscribe_soundcloud': 'https://soundcloud.com/this-american-life'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio-sidebar.html' with vars %}
+
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Tom felt lost. After four years of tremendous growth, his company was no longer the scrappy startup he&rsquo;d originally joined. In those early years, Tom simply rolled his chair over to a colleague&rsquo;s desk when he needed feedback on a design. The work was collaborative, feedback was immediate, his work was known and respected. It was fun! He was able to put on his headphones and devote all of his attention to design. </p>
+      <p class="wow fadeInUp">Then things changed.</p>
+      <p class="wow fadeInUp">The product and company grew&mdash;fast. He built out his team, and so did his colleagues. The company moved to a bigger office to accommodate all the new people, and before he know it a physical and mental distance developed between his design team and the rest of the company. The designs his team produced weren&rsquo;t always on people&rsquo;s radar, and subsequently stakeholders no longer understood the value of the team&rsquo;s work. </p>
+    </div>
+  </div>
+
+  {% include 'source/htdocs/_includes/ellipses.html' %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Sound familiar? This scenario is common in most growing companies. Design&mdash;once transparent, and integrated into the product process&mdash;becomes a black box, isolated from engineers and stakeholders, and in the precarious position of being misunderstood or ignored. </p>
+      <p class="wow fadeInUp"><strong class="text-purple"><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">When design isn&rsquo;t visible, it&rsquo;s no longer powerful.<i class="fa fa-twitter" aria-hidden="true"></i></a></strong></p>
+      <p class="wow fadeInUp"><a href="http://blog.invisionapp.com/inside-design-pocket/" target="_blank">At a small company</a>, it&rsquo;s easy to grasp the state of a project by asking a colleague for a peek at their designs. In large companies, spontaneous design conversations rarely happen; design is separated from executives and developers. Designs often remain guarded until a grand reveal brings stakeholders together. By that point, it&rsquo;s too late for honest feedback&mdash;the stakes and repercussions are that much higher because so much energy and emotion have already been invested in what&rsquo;s likely an off-the-mark design</p>
+      <p class="wow fadeInUp">This is a dangerous place for design&mdash;it sets the stage for spiked projects and designers searching for more fulfilling work. And of course, designers aren&rsquo;t the only ones who suffer. Companies that don&rsquo;t ship their best work run the risk of unrealized potential and less satisfied employees.</p>
+      <p class="wow fadeInUp">But it doesn&rsquo;t have to be this way.</p>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe/t20aie2q19?autoPlay=true?videoFoam=true&playerColor=1621A0',
+    'image_source': '/img/headshots/headshot_au.jpg',
+    'caption':'"There is this larger question around company culture...what are the values that the company embodies." - <a href="https://twitter.com/ireneau" target="_blank" class="text-gray">Irene Au</a>, Design Partner, Khosla Ventures'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Connecting Design in a Large Organization</h2>
+      <p class="wow fadeInUp">As a company grows, everyone has to work harder—and smarter—at communicating. Designers who succeed in large organizations create social capital by developing a rapport with colleagues across the organization.</p>
+      <p class="wow fadeInUp">You’ll have to get in the habit of stepping away from your computer to create the social capital  you need. Grab lunch with a developer who may build out your next design. No need for an agenda—just get to know each other. Spend time with researchers who have their finger on the pulse of your customers, sales people who hear frequent requests, product managers who understand schedules and scope, and customer service agents who know where users struggle the most. All have valuable context to offer you. Each one influences the success of your work.</p>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': '<a href="http://ctt.ec/800Cs" target="_blank" class="tweet">“Your legs are your <strong>most</strong> effective design tool. Get out and <strong>connect</strong> with people.”<i class="fa fa-twitter" aria-hidden="true"></i></a> - <a href="https://twitter.com/mopland" target="_blank">Mark Opland</a>, Xero'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">And don&rsquo;t just network laterally&mdash;spend time with different stakeholders and executives to understand their roles and expectations. Ask questions about the broader strategy of the company. You&rsquo;ll need to understand the big picture to design products that fit into the company vision.</p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center">
+    <div class="medium-10 columns wow fadeInUp margin-vertical-xxlarge">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/break-black-box/bbc.jpg',
+        'caption': '<a href="http://blog.invisionapp.com/inside-design-bbc/" target="_blank" class="text-gray">Designers at the BBC</a> stay connected with other teams by scheduling informal time with colleagues.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">As you become connected to colleagues on other teams, not only will your designs be more informed, you&rsquo;ll create inroads into your work, putting design on everyone&rsquo;s radar.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/page.png',
+    'quote': 'We see our greatest successes when we involve the right people along the way. ”',
+    'source_name' : 'Ryan Page',
+    'source_title' : 'Director of Digital Design, Capital One'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- h2 -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Making Inroads</h2>
+    </div>
+  </div>
+
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe/k54cnq6iwz?autoPlay=true?videoFoam=true&playerColor=1621A0',
+    'image_source': '/img/headshots/headshot_maeda.jpg',
+    'caption': 'John Maeda discusses how to explain design in the language of business.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">It&rsquo;s important to bring stakeholders into the design process early and often to get feedback and fresh perspectives. Sharing your work digitally makes it easy to gather feedback from specific people, but there&rsquo;s value in setting the stage for unsolicited feedback, too. Surprising things happen when you print screens and post them in a space where passersby can catch a glimpse. Leave Post-it notes and pens nearby and see what happens&mdash;I&rsquo;ve gotten incredible feedback from unexpected sources with this approach.</p>
+      <p class="wow fadeInUp">Unlike digital, print is persistent and casual. It invites spontaneous participation even when you&rsquo;re not around, which is perhaps its greatest strength. </p>
+      <p class="wow fadeInUp"><strong class="text-purple"><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">When design is accessible to all, the process feels inclusive.<i class="fa fa-twitter" aria-hidden="true"></i></a></strong></p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/martini.jpg',
+    'quote': 'I often invited influential people in the company to my team’s design reviews so our work remained visible. My team was a little nervous about showing their early work to company leaders, but I knew it was important to do. ”',
+    'source_name' : '<a href="https://twitter.com/martinibot" target="_blank">Laura Martini</a>',
+    'source_title' : 'Product Designer at <a href="http://Medisas.com" target="_blank">Medisas</a>'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '283067057'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Design is often protected&mdash;intentionally or not&mdash;from those who are perceived to be outside the process. That&rsquo;s a shame, as often there are experts that are excluded simply because they don&rsquo;t move in the same social circles at work. Take note of who leaves useful feedback so you can include them when you share your next digital prototype.</p>
+      <p class="wow fadeInUp">Regularly scheduled design reviews can be a great way to not only keep your design team synced, but to forge connections with other teams. At the health tech company <a href="http://counsyl.com" target="_blank">Counsyl</a>, <a href="https://twitter.com/martinibot " target="_blank">Laura Martini</a> made a habit of inviting engineers and execs to design reviews to get new perspective for her team but also to put design on people&rsquo;s minds.</p>
+      <p class="wow fadeInUp">Todd Dominey, Director of Design at <a href="http://mailchimp.com" target="_blank">MailChimp</a>, has found that sharing digital prototypes is important to create inroads to his team’s work, but face-to-face design reviews goes further still to help the company see the big picture.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+  'image_source' : '/img/avatars/dominey.jpg',
+  'quote': 'Digital tools and devices are helpful, but nothing beats personal interaction. Schedule as much time as possible (without it becoming disruptive) for people to share work and be exposed to what’s happening outside their immediate purview. ”<cite class="number"><a href="#citation">1</a></cite>',
+  'source_name' : '<a href="https://twitter.com/tdominey" target="_blank">Todd Dominey</a>',
+  'source_title' : 'Director of Design at <a href="http://mailchimp.com" target="_blank">MailChimp</a>'
+  }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Video Block -->
+  {% set vars = {
+  'video_source' : '//fast.wistia.net/embed/iframe/ah91wmihea?autoPlay=true?videoFoam=true&playerColor=1621A0',
+  'image_source': '/img/headshots/headshot_law.jpg',
+  'caption':'"We have these huge foamcore boards [where we post projects]...We might have someone on a recruiting team or talent team come up and stick a post-it on the board….it’s great because it gives you different perspectives." <a href="https://twitter.com/andytlaw" target="_blank" class="text-gray">Andy Law</a>, Mobile Product Design Manager, Netflix '
+  }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Making a Change</h3>
+      <p class="wow fadeInUp margin-none">Design teams aren’t the only ones who struggle as a company scales. All teams do. The flat structure and fuzzy roles that once made communication easy in a startup must give way in an enterprise to a well defined org chart and domain experts for the train to stay on the tracks.</p>
+      <p class="wow fadeInUp"><em>Things have to change, and so do we.</em></p>
+      <p class="wow fadeInUp">You’ll need to be more than a pixel pusher. You’ll have to learn to communicate. <a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Spend less time at your desk and more time talking to colleagues. You’ll need strong relationships to do high impact design work.<i class="fa fa-twitter" aria-hidden="true"></i></a></p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/zhuo.jpg',
+    'quote': 'The graph of impact tends to correlate with how many people you need to work effectively with. Once I realized this, I started to see my interactions with other people differently. It was no longer about winning battles and proving that I was right, but about developing stronger collaborative relationships. ”<cite class="number"><a href="#citation">2</a></cite>',
+    'source_name' : '<a href="https://twitter.com/joulee" target="_blank">Julie Zhou</a>',
+    'source_title' : 'Product Design VP at Facebook'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp margin-none">The black box that alienates and disempowers design will sneak up on you. Don’t wait for it to take hold of your company. Build inroads into your work now if you want to elevate design and build better products. Here’s your to-do list:</p>
+      <ul class="wow fadeInUp">
+        <li><strong>Share early and often.</strong> Set Design Review days on your team’s calendar and invite anyone to participate</li>
+        <li><strong>Network and build social capital.</strong> <a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Your org chart is not a list of names; it’s a group of potential allies. Get to know them.<i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><strong>Be open and accessible.</strong> Post your work in a public space. Present your work at company coffee hours. Talk about your work and answer questions in a company Slack channel.</li>
+        <li><strong>Solicit feedback every step of the way.</strong> This isn’t design by committee, but good ideas—and constructive criticism—can come from anywhere.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+  'video_source' : '//fast.wistia.net/embed/iframe/hum9cfx9mn?autoPlay=true?videoFoam=true&playerColor=1621A0',
+  'image_source': '/img/headshots/headshot_law.jpg',
+  'caption':'"Andy Law, Mobile Product Design Manager at Netflix, talks about the challenges of staying connected to colleagues in other locations.'
+  }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- Citations -->
+  <div class="row align-center margin-vertical-xlarge" id="citation">
+    <div class="medium-8 large-7 columns border-top">
+      <small class="text-black margin-top-large">
+        1. <a class="text-black" href="https://medium.com/@tdominey/seeing-the-elephant-57d4c91c2733#.tgpjweg0v" target="_blank">Seeing the Elephant</a>, Todd Dominey, Director of Design at MailChimp<br>
+        2. <a class="text-black" href="https://medium.com/the-year-of-the-looking-glass/8-unintuitive-lessons-on-being-a-designer-ca7e97a572ee#.id3suduen" target="_blank"> Unintuitive Lessons on Being a Designer</a>, Julie Zhou, Product Design VP at Facebook<br>
+      </small>
+    </div>
+  </div>
+
+  <!-- Read On -->
+  <div class="background-gray-light padding-vertical-xxlarge margin-top-xxlarge section-read-on chapter">
+    <div class="row align-center">
+      <div class="medium-10 columns">
+        <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Read On</h2>
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="http://99u.com/articles/52189/how-to-be-a-designer-at-a-large-company-3m" target="_blank">The Subtle Art of Being a Designer at a Massive Company</a></li>
+          <li><a href="https://medium.com/@tdominey/seeing-the-elephant-57d4c91c2733#.tgpjweg0v" target="_blank">Seeing the Elephant</a></li>
+        </ul>
+      </div>
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://medium.com/the-year-of-the-looking-glass/8-unintuitive-lessons-on-being-a-designer-ca7e97a572ee#.id3suduen" target="_blank">Unintuitive Lessons of Being a Designer</a></li>
+          <li><a href="https://medium.com/@johnv/welcome-to-the-executive-team-its-messy-here-85571a6a04b9#.f0vtm1fjx" target="_blank">Welcome to the Executive Team, It’s Messy Here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- end #top-scroll -->
+
+<section id="footer-scroll-nav" class="relative">
+  {% include 'source/htdocs/_includes/_product-principles.html' %}
+  {% set vars =
+    {
+      'background_color':'white'
+    }
+  %}
+  {% include 'source/htdocs/_includes/footer-html.html' with vars %}
+</section>
+
+<!-- Footer -->
+{% include 'source/htdocs/_includes/footer.html' %}

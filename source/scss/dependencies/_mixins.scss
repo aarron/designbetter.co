@@ -1,0 +1,98 @@
+//  Mixins
+//  ---------------------------
+//
+//  Table of Contents:
+//
+//   1. Media queries
+//   2. Font size
+//   3. Forms
+//   4. Style
+
+// 1. Media queries
+// ---------
+// We're using Foundation Sites breakpoints,
+// which beakdown as follows:
+//
+// xSmall: 0 - 360px
+// Small: 361px - 639px
+// Medium:  640px - 1023px
+// Large: 1024px - 1439px
+// xLarge: 1440px - 1799px
+// xxLarge: 1800px >
+
+// 2. Font size
+// ---------
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 1) + px;
+  font-size: rem-calc($sizeValue);
+}
+
+// 3. Forms
+// ---------
+
+ /* Usage: @include placeholder() {} */
+
+@mixin placeholder() {
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+// 4. Style
+// ---------
+
+ /* Usage: @include border-radius(5px) */
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;
+}
+
+ /* Usage: @include opacity(0.8) */
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+ /* Usage: @include center-block */
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+ /* Usage: @include text-truncate  */
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+ /* Usage: @include aspect-ratio(16, 9)  */
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

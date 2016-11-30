@@ -1,0 +1,121 @@
+//  Global base
+//  ---------------------------
+
+body {
+  @include font-body-regular();
+  @include font-size-small();
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  background-color: $color-white;
+  padding-top: 80px;
+  opacity: 0;
+  transition: opacity 0.2s cubic-bezier(.17,.67,.32,1);
+
+  &.loaded {
+    opacity: 1;
+    transition: opacity 0.8s cubic-bezier(.17,.67,.32,1);
+  }
+
+  @include breakpoint(small down) {
+    padding-top: 0;
+  }
+}
+
+section {
+  &.page-content {
+    padding-top: $base-spacing*2;
+  }
+}
+
+
+.callout {
+  border: none;
+}
+
+.row {
+  max-width: 95%;
+}
+
+@include breakpoint(medium up) {
+  .row {
+    max-width: 76.5rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+#footer-scroll-nav {
+  padding-top: 0px;
+}
+
+#footer-scroll-nav .section-principles {
+  background: #fff;
+  padding-bottom: 120px;
+  // margin-bottom: 140px;
+  border-top: 10px solid $color-purple;
+}
+
+#footer-scroll-nav .design-thinking-section {
+  background: #fff;
+  padding-bottom: 120px;
+  padding-top: 100px;
+  border-top: 10px solid $color-red;
+
+  button {
+    background-color: $color-white !important;
+  }
+}
+
+#top-scroll.no-scroll {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.tweet,
+p a.tweet {
+  background-color: #A6EBFF !important;
+}
+a {
+  .fa {
+    font-size: 12px;
+    position: relative;
+    top: -6px;
+    padding: 0 3px;
+    @include breakpoint (small down) {
+      font-size: 9px;
+    }
+  }
+}
+blockquote {
+  a {
+    .fa {
+      font-size: 18px;
+      position: relative;
+      top: -10px;
+      @include breakpoint (small down) {
+        top: -6px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+.background-purple,
+.background-red {
+  .tweet,
+  p a.tweet {
+    background-color: transparent !important;
+  }
+  i {
+    margin-left: 10px;
+    position: relative;
+    top: -10px;
+    @include font-size-xsmall();
+    @include breakpoint (small down) {
+      font-size: 10px;
+      top: -8px;
+    }
+  }
+}

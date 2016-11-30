@@ -1,0 +1,121 @@
+//  Froms
+//  ---------------------------
+
+input, textarea {
+  @include font-body-regular();
+  @include font-size-small();
+  border: 1px solid #111;
+  padding: 8px;
+  margin: 0 1em 0 0;
+  vertical-align: middle;
+  outline: none;
+  &:hover,
+  &:focus {
+    border-color: #00a9c5;
+  }
+}
+
+input[type=text] {}
+
+textarea {}
+
+input[type=radio] {}
+
+input[type=checkbox] {}
+
+form {
+  .group {
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: $base-spacing;
+  }
+  label {
+    color: $color-gray;
+    @include font-size-xxsmall;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    font-size: 24px;
+  }
+  input,
+  textarea {
+    @include font-header-regular();
+    background-color: $color-schieferw;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0;
+    width: 100%;
+    resize: none;
+
+    @include placeholder() {
+      transition: color 0.2s;
+      color: rgba($color-gray, 0);
+    }
+
+    &.error {
+      border-bottom: 2px solid $color-red;
+    }
+  }
+  input {
+    margin: 0;
+    line-height: 24px;
+    background-image:
+        linear-gradient(right, rgba($color-schieferw,1) 0%, rgba($color-schieferw,1) 50%, rgba($color-schieferw,0) 50.5%,rgba($color-schieferw,0) 100%),
+        linear-gradient(bottom, rgba($color-black, 0.7) 0%, rgba($color-black,0) 5.5%, rgba($color-black,0) 100%);
+    background-size: 10px 39px;
+
+    &:focus {
+      background-image: none;
+    }
+
+    &:focus ~ label,
+    &:valid ~ label,
+    &.valid ~ label {
+      top: -10px;
+      font-size: 13px;
+    }
+    &:focus ~ label {
+      color: $color-blue;
+    }
+    &.error:focus ~ label,
+    &.error ~ label {
+      color: $color-red;
+      top: -10px;
+      font-size: 13px;
+    }
+  }
+
+  input:focus,
+  textarea:focus {
+    border-bottom: 2px solid $color-blue;
+
+    &.error {
+      border-bottom-color: $color-red;
+    }
+  }
+
+  button {
+    @include font-header-regular();
+    margin-top: 35px;
+    font-size: 24px;
+    background-color: $color-schieferw;
+    border: 2px solid $color-black;
+    padding: 15px 20px 10px 20px;
+    transition: .2s;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-black;
+    }
+  }
+}
+button:focus {
+  outline: none;
+}

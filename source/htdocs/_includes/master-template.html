@@ -1,0 +1,165 @@
+<!-- Intro w/ Paragraphs -->
+<section class="page-content page-content__article relative">
+  <div class="row align-center chapter">
+    <div class="medium-7 columns">
+      <h2 class="text-center wow fadeInUp margin-bottom-xxlarge">Break the Black Box</h2>
+        <p class="wow fadeInUp">Tom felt lost. After four years of tremendous growth, his company was no longer the scrappy startup he&rsquo;d originally joined. In those early years, Tom simply rolled his chair over to a colleague&rsquo;s desk when he needed feedback on a design. The work was collaborative, feedback was immediate, his work was known and respected. It was fun! He was able to put on his headphones and devote all of his attention to design. </p>
+        <p class="wow fadeInUp">Then things changed.</p>
+        <p class="wow fadeInUp">The product and company grew&mdash;fast. He built out his team, and so did his colleagues. The company moved to a bigger office to accommodate all the new people, and before he know it a physical and mental distance developed between his design team and the rest of the company. The designs his team produced weren&rsquo;t always on people&rsquo;s radar, and subsequently stakeholders no longer understood the value of the team&rsquo;s work. </p>
+    </div>
+  </div>
+</section>
+
+<!-- Full Width Image -->
+<div class="row align-center margin-vertical-xxlarge">
+  <div class="medium-10 columns">
+
+    <!-- Image, Small Caption -->
+    {% set vars = {
+      'image_source' : '/img/seven-principles/story-first/disney-storyboard.jpg',
+      'caption': 'Walt Disney and staff animators discuss storyboard sketches as they plan a film.'
+      }
+    %}
+    {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+  </div>
+</div>
+
+<!-- Centered Image -->
+<div class="row align-center margin-vertical-xxlarge">
+  <div class="medium-7 columns">
+
+    <!-- Image, Small Caption -->
+    {% set vars = {
+      'image_source' : '/img/seven-principles/story-first/disney-storyboard.jpg',
+      'caption': 'Walt Disney and staff animators discuss storyboard sketches as they plan a film.'
+      }
+    %}
+    {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+  </div>
+</div>
+
+<!-- Paragraph -->
+<div class="row align-center">
+  <div class="medium-7 columns">
+    <p class="wow fadeInUp">However, storyboards have found their way into the product design process over the past few years. According to <a href="https://twitter.com/nathanblec">Nate Blecharczyk</a>,co-founder and CTO at Airbnb, the act of creating a storyboard was a “galvanizing event for the company.” Brian Chesky, CEO of Airbnb, was inspired by how Disney Studios made a huge leap from short animations to their first full-length film, <em>Snow White and the Seven Dwarves</em>, using storyboarding to shape the narrative.</p>
+    <p class="wow fadeInUp">Airbnb’s quick initial success portended a large opportunity for growth, but Chesky struggled to see where they might best invest the company’s resources. Taking a cue from Disney, he worked with the design team to produce a storyboard showing the story of their two types of customers: guests and a hosts.</p>
+  </div>
+</div>
+
+<!-- h2 + p -->
+<div class="row align-center chapter">
+  <div class="medium-7 columns">
+    <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Product Story Offshoots</h2>
+    <p class="wow fadeInUp">
+      Stories are always better with well developed characters. User Personas and Job Stories can help you transform findings about customers into clear portraits of the people you’re designing for and their behavioral motivations.
+    </p>
+  </div>
+</div>
+
+<!-- h3  + p -->
+<div class="row align-center">
+  <div class="medium-7 columns">
+    <h3 class="wow fadeInUp margin-bottom-none">Surveys</h3>
+    <p class="wow fadeInUp margin-none">Surveys are a handy way to learn about your customers, and can be conducted ad hoc or even automated. There are a host of different surveys you could run, but use them sparingly, as too many will alienate customers.</p>
+    <p class="wow fadeInUp">There is an art to creating effective surveys, and the <a href="https://library.gv.com/improve-your-startup-s-surveys-and-get-even-better-data-7b0272f74c23#.uxkcogqna" target="_blank">Google Ventures team has a wonderful guide</a> that will help you avoid rookie mistakes as you begin this practice.</p>
+  </div>
+</div>
+
+<!-- Block Quote -->
+{% set vars = {
+  'image_source' : '/img/avatars/nielson.jpg',
+  'quote': '“Elaborate usability tests are a waste of resources. The best results come from testing no more than 5 users and running as many small tests as you can afford.”',
+  'source_name' : '<a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/" target="_blank">Jakob Nielsen</a>',
+  'source_title' : 'Nielsen Norman Group'
+  }
+%}
+{% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+<!-- Audio Block -->
+{% set vars = {
+  'audio_source': '284165501'
+  }
+%}
+{% include 'source/htdocs/_includes/audio.html' with vars %}
+
+<!-- Case Study Bar -->
+<div class="row align-center chapter">
+  <div class="medium-7 columns wow fadeInUp">
+    <a class="bar-callout-link text-white js-modal-open" data-modal-target="case-study__wallet" href="">
+      <div class="bar-callout margin-vertical-xlarge background-red">
+        <h3 class="margin-vertical-large padding-horizontal-large">The Ideal Wallet: Design</h3>
+        <svg class="open-arrow" width="30px" height="29px" viewBox="0 0 30 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Open" transform="translate(1.000000, 1.000000)" stroke="#FFFFFF">
+              <g id="Page-1">
+                <path d="M26.7678,0.5 L1.7678,25.5" id="Stroke-1" stroke-width="3"></path>
+                <polyline id="Stroke-3" stroke-width="3" points="0.7678 0.5 26.7678 0.5 26.7678 26.5"></polyline>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- Case Study Intro -->
+<div class="row">
+  <div class="medium-6 medium-offset-2 columns">
+    <h3 class="header-citation margin-left-xlarge"><strong>Case Study: </strong>IDEO and Bank of America's Keep the Change Program</h3>
+  </div>
+</div>
+
+<!-- Lead -->
+{% set vars = {
+  'background_color' : 'purple',
+  'text_color': 'white',
+  'text': '<strong>Pro tip!</strong> Use a tool like <a href="https://zapier.com/" target="_blank">Zapier</a> to forward all <strong>survey responses</strong> into a shared Google Sheet, or even an <strong>Evernote account</strong> where your team can search through <strong>all</strong> responses.'
+  }
+%}
+{% include 'source/htdocs/_includes/lead.html' with vars %}
+
+<!-- Citations -->
+<div class="row align-center margin-vertical-xlarge">
+  <div class="medium-7 columns border-top">
+    <small class="text-black margin-top-large">
+    1. <a class="text-black" href="http://leanin.org/education/harnessing-the-power-of-stories/" target="_blank">http://leanin.org<span class="hide-tablet">/education/harnessing-the-power-of-stories/</span></a><br>
+    2. <a class="text-black" href="https://medium.com/design-story/story-map-3cc64033128e#.7s63x7pj2" target="_blank">https://medium.com<span class="hide-tablet">/design-story/story-map-3cc64033128e#.7s63x7pj2</span></a><br>
+    3. <a class="text-black" href="https://en.wikipedia.org/wiki/Storyboard" target="_blank">https://en.wikipedia.org<span class="hide-tablet">/wiki/Storyboard</span></a><br>
+    4. <a class="text-black" href="http://www.fastcompany.com/3002813/how-snow-white-helped-airbnbs-mobile-mission" target="_blank">http://www.fastcompany.com<span class="hide-tablet">/3002813/how-snow-white-helped-airbnbs-mobile-mission</span></a><br>
+    5. <a class="text-black" href="https://jtbd.info/5-tips-for-writing-a-job-story-7c9092911fc9#.kx78xial5" target="_blank">https://jtbd.info<span class="hide-tablet">/5-tips-for-writing-a-job-story-7c9092911fc9#.kx78xial5</span></a><br>
+    </small>
+  </div>
+</div>
+
+<!-- Read On -->
+<div class="background-gray-light padding-vertical-xxlarge margin-top-xxlarge section-read-on chapter">
+  <div class="row align-center">
+    <div class="medium-10 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Read On</h2>
+    </div>
+  </div>
+  <div class="row align-center">
+    <div class="medium-4 small-12 columns">
+      <ul class="wow fadeInUp list-no-style">
+        <li><a href="http://www.uxbooth.com/articles/complete-beginners-guide-to-design-research/">The Complete Beginner’s Guide to Design Research</a></li>
+        <li><a href="https://medium.com/research-things/minimum-viable-ethnography-a047e9358df0#.etuxx8htj">Minimum Viable Ethnography</a></li>
+        <li><a href="https://library.gv.com/micro-surveys-a-faster-way-to-learn-about-your-users-9a5ad64e1af2#.figgwr2wo">Micro-surveys: a faster way to learn about your users</a></li>
+        <li><a href="https://library.gv.com/what-fuels-great-design-and-why-most-startups-don-t-do-it-a8dd2c4f5cb4#.7z2m33tvc">What fuels great design (and why most startups don’t do it)</a></li>
+        <li><a href="http://us5.campaign-archive1.com/?awesome=no&u=7e093c5cf4&id=126cf8a9ac">Survey Says…</a></li>
+        <li><a href="https://medium.com/the-job-to-be-done">Jobs To Be Done</a></li>
+      </ul>
+    </div>
+    <div class="medium-4 small-12 columns">
+      <ul class="wow fadeInUp list-no-style">
+        <li><a href="https://abookapart.com/products/just-enough-research">Just Enough Research</a></li>
+        <li><a href="https://library.gv.com/improve-your-startup-s-surveys-and-get-even-better-data-7b0272f74c23#.uxkcogqna">Improve Your Startup’s Surveys and Get Even Better Data</a></li>
+        <li><a href="http://alistapart.com/article/usable-yet-useless-why-every-business-needs-product-discovery">Usable yet Useless: Why Every Business Needs Product Discovery</a></li>
+        <li><a href="https://24ways.org/2013/data-driven-design-with-an-annual-survey/">Data-Driven Design Powered By An Annual Survey</a></li>
+        <li><a href="http://us5.campaign-archive1.com/?awesome=no&u=7e093c5cf4&id=b837b7819f">Prepping Open Response Survey Data for Analysis</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

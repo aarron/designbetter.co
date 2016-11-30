@@ -1,0 +1,357 @@
+<!-- Header -->
+{% set vars = {
+  'title': 'prototype',
+  'parent_page': 'design-thinking',
+  'og_title': 'Design Better - Prototype',
+  'og_url': 'http://designbetter.wpengine.com/principles-of-product-design/prototype/',
+  'og_description': 'Before you actually build a prototype, understand what you’re trying to learn from it.',
+  'og_image': '/img/og/hero-prototype.png'
+  }
+%}
+{% include 'source/htdocs/_includes/header.html' with vars %}
+
+<!-- Navigation -->
+{% set vars = {
+  'title': 'Design Better • Design Thinking • Prototype',
+  'background_color': 'red'
+  }
+%}
+{% include 'source/htdocs/_includes/navigation.html' with vars %}
+
+<div id="top-scroll">
+
+<!-- Hero Image -->
+{% set vars = {
+  'image_source': '/img/heros/hero-prototype.svg',
+  'image_source_small': '/img/heros/hero-prototype-small.svg',
+  'image_alt': 'Prototype'
+  }
+%}
+{% include 'source/htdocs/_includes/page-hero.html' with vars %}
+
+<!-- Intro w/ Paragraphs -->
+<section class="page-content page-content__article relative">
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp padding-top-xlarge margin-bottom-xxlarge">Prototype</h2>
+    </div>
+  </div>
+
+  <!-- Audio Sidebar -->
+  {% set vars = {
+    'color' : 'red',
+    'audio_source': '/audio/prototype-audio.mp3',
+    'subscribe_itunes': 'https://geo.itunes.apple.com/us/album/this-american-life-stories/id335933324?mt=1&app=music',
+    'subscribe_google': 'https://www.thisamericanlife.org/blog/2010/10/this-american-life-android-app',
+    'subscribe_spotify': 'https://open.spotify.com/user/una_s/playlist/2p89CV9wAwBYUowlXEGOgi',
+    'subscribe_soundcloud': 'https://soundcloud.com/this-american-life'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio-sidebar.html' with vars %}
+
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">One day in the early 1980’s, the computer scientist Danny Hillis was having lunch with the Nobel-prize winning physicist Richard Feynman.<cite class="number"><a href="#citation">1</a></cite> Hillis mentioned that he was going to create a startup, with the goal of building a parallel computer with a million processors. In typical Feynman fashion, the physicist responded that it was "positively the dopiest idea I ever heard." But he was intrigued, and by the end of lunch had agreed to spend the summer working at the company.</p>
+      <p class="wow fadeInUp">During the first few months on the job, Feynman worked on the router circuits; these would allow the processors to communicate, and were far more complex than the processors themselves. The routers—tasked with ferrying information from point to point—had to find a free path through a 20-dimensional traffic jam between the processors, or hold the message in a buffer until the path was clear. A critical question was whether the design had allowed for enough buffering to operate efficiently.</p>
+      <p class="wow fadeInUp">Feynman began studying the circuit diagrams, and was willing to listen to explanations of why things worked. But he far preferred to use pencil and paper to simulate the action of each circuit and figure out everything for himself. </p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/feynman.png',
+    'quote': 'You must not fool yourself and you are the easiest person to fool. ”',
+    'source_name' : '<a href="https://en.wikipedia.org/wiki/Richard_Feynman" target="_blank">Richard Feynman</a>',
+	'source_title' : 'Theoretical Physicist'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Feynman’s work on the routers helped the team discover the potential of the computer, which they had dubbed the Connection Machine, for complex numerical computing and physical simulation. This was useful for modeling things like the behavior of fluids and the simulation of artificial life, programs which other computers of that era were not designed to perform efficiently.</p>
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">The team had initially assumed that their machine would not be capable of these types of number-crunching calculations, but Feynman argued that it was worth challenging this assumption.</p>
+      <p class="wow fadeInUp">To settle the argument, and find out how well these computations would work in practice, Feynman had to create a prototype program to run. He was only really familiar with the programming language Basic, so he made up his own version of Basic that would run on the parallel processors. He would write the program, and then simulate it by hand to estimate how fast the Connection Machine could run it.</p>
+      <p class="wow fadeInUp">Feynman treated these challenges like a game, starting with very basic questions like "What is the simplest example?" He would then continue to ask questions until he had boiled the problem down into something he thought he could solve, which he would attack with pencil on paper. </p>
+      <p class="wow fadeInUp">Feynman’s contributions eventually helped the company become a leader in parallel computing, generating tens of millions of dollars in revenue. </p>
+    </div>
+  </div>
+
+  <!-- Centered Image -->
+  <div class="row align-center margin-vertical-large">
+    <div class="medium-8 large-7 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/prototype/CM-1_r_700w.gif',
+        'caption': 'A production version of the <a href="http://www.tamikothiel.com/cm/" target="_blank" class="text-gray">CM-1 Connection Machine</a>'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">When Hillis reminisced about his work with Feynman, he realized that in almost everything they collaborated on, they were amateurs. From neural networks to parallel computing, they didn’t know what they were doing, but these things were so new that no one else did either. </p>
+      <p class="wow fadeInUp">By distilling complex problems down into simple ones, and using prototypes to answer critical questions, they were able to drive innovation that even they themselves didn’t know was possible.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Prototype Like a Physicist</h2>
+      <p class="wow fadeInUp">Although Richard Feynman was a physicist and not a product designer, he intuitively understood the power of prototyping. Prototyping helps us learn, solve disagreements, and test ideas quickly and cheaply. Feynman began the design process with <a href="/principles-of-product-design/pencils-before-pixels">sketches</a>, which helped him understand the problem and identify critical questions that the prototype needed to answer. </p>
+      <p class="wow fadeInUp">Building a prototype gave Feynman a chance to settle the argument he made for the capability of the Connection Machine to solve complex calculations. Without it, he and his colleagues might have sat in front of a chalkboard, endlessly throwing equations at each other and citing research papers.</p>
+      <p class="wow fadeInUp">Finally, instead of taking the time to teach himself a more complex language, he used familiar tools to quickly build a program which simulated the efficiency of the machine. If he had failed at this point, it only would have cost days or weeks instead of months. </p>
+      <p class="wow fadeInUp">Framed in this way, it is clear why design-driven companies prototype early and often, throughout the design process, to create better products. In the remainder of this article, we’ll look at a case study where Uber prototyped to help them build better products for multilingual use, and we’ll run through some techniques which can help you and your team instill a bias towards prototyping from the beginning of the product design process.</p>
+    </div>
+  </div>
+
+<!-- Case Study Bar -->
+<div class="row">
+  <div class="medium-6 medium-offset-2 columns">
+    <h3 class="header-citation margin-left-xlarge"><strong>Case Study: </strong>Uber international</h3>
+  </div>
+</div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/nix.jpg',
+    'quote': 'The reason that these prototypes are really useful is that when we don’t have a live product built but we need to get feedback, we can send them to researchers on the ground...it allows us to get feedback not just from drivers in San Francisco, but all around the world. ”',
+    'source_name' : '<a href="http://mollynix.com/" target="_blank">Molly Nix</a>',
+	'source_title' : 'Product Designer at Uber'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Uber, the increasingly ubiquitous ride-sharing service, boasts some impressive statistics. As of the writing of this article, over 1 million Uber drivers (or “driver partners,” as Uber prefers to call them) had given over 2 billion rides to over 8 million users. And no matter what major city you travel to internationally, you are likely to find an Uber driver: they have a presence in over 400 cities in 70 countries.</p>
+      <p class="wow fadeInUp">Designing Uber’s app to work seamlessly for the drivers and riders in this multitude of countries offers a unique set of challenges. There are differences in languages, of course, as well as with symbology and wireless access speeds. All of these variables had to be taken into account as Uber worked on a ground-up redesign of its driver app in 2015. <cite class="number"><a href="#citation">2</a></cite></p>
+      <p class="wow fadeInUp">The team began with lightweight prototypes of the app, using Sketch and InVision, in English. As they worked through these flows, they had to also take into account their global audience, so they would go back into the Sketch files and update the languages so that they could create, for example,  Hindi or Chinese versions of the InVision prototypes.</p>
+      <p class="wow fadeInUp">With these prototypes in hand, the team could <a href="/design-thinking/test">test</a> with users in each country, and begin to answer critical questions about where the app might either be confusing or fall short of an excellent user experience for the drivers. They began with the navigational structure: what were the important functions to drivers, and how should they organize the content of the app? When they moved to the evaluation phase, they asked whether terms like “Earnings” and “Ratings” would translate appropriately into the other languages.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/nix.jpg',
+    'quote': 'A good prototype is a prototype that helps facilitate answering the questions that you have. ”',
+    'source_name' : '<a href="http://mollynix.com/" target="_blank">Molly Nix</a>',
+	'source_title' : 'Product Designer at Uber'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Along the way, they made some interesting discoveries. For example, one of the icons for Earnings was a bar chart, which represented what the Earnings screen looked like when you tapped into it. However, when they tested the prototype in India, drivers thought the icon would take them to their network settings. High latency and slow speeds  kept the network at top of mind for Indian drivers, and the Earnings icon closely resembled a signal-strength icon you might see in the status bar of a smartphone. </p>
+      <p class="wow fadeInUp">This discovery allowed Uber designers to alter course and create an icon more representative of cash, which solved the problem before it had a chance to crop up in a live product. </p>
+    </div>
+  </div>
+
+  <!-- Centered Image -->
+  <div class="row align-center margin-vertical-large">
+    <div class="medium-8 large-7 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/prototype/uber_earnings.gif',
+        'caption': '<a href="https://medium.com/uber-design/designing-a-partner-centric-experience-d9900e6511dc#.3w4cbqrpp" target="_blank" class="text-gray">Via Molly Nix on Medium</a>'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Another discovery, also related to the low speed networks, was the scenario in which a driver was starting their shift and going online to begin accepting trips. At this point, the team had moved from <a href="#anchor">low-fidelity prototypes</a>, through higher-fidelity interactive and animated prototypes, to early functional builds. </p>
+      <p class="wow fadeInUp">In these initial builds, there was no feedback to the driver after tapping the button to go online—just a delay while the app called to the server to verify that the driver could accept trips in their current area.  To the driver, the app appeared frozen. </p>
+    </div>
+  </div>
+
+  <!-- Centered Image -->
+  <div class="row align-center margin-vertical-large">
+    <div class="medium-8 large-7 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/prototype/uber_go_online.gif',
+        'caption': '<a href="https://medium.com/uber-design/designing-a-partner-centric-experience-d9900e6511dc#.3w4cbqrpp" target="_blank" class="text-gray">Via Molly Nix on Medium</a>'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">In this case, adding an animated transition, which normally might be considered non-critical “polish” of the app, was critical to its function. The animation resolved this problem and improved the user experience for the drivers.  </p>
+      <p class="wow fadeInUp">One important thing that the Uber team did throughout the design process was to match the fidelity of their prototypes to the questions that they had to answer; early in the process, low-fidelity prototypes to get a better handle on how the product translated into other languages. As the product direction solidified, higher-resolution, functional prototypes to iron out some of the potential user experience roadblocks.</p>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  <a href="#anchor"></a>
+  {% set vars = {
+    'audio_source': '284353934'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Prototyping Earlier</h2>
+      <p class="wow fadeInUp">As a designer, you’ve almost certainly built prototypes of a product before releasing it, but you may be looking for ways to insert prototyping earlier in your process. When considering the fidelity of a prototype, it’s always important to consider the kinds of questions that you are trying to answer, and to be cautious about interpreting the results of testing very low-fidelity prototypes with users (see Daniel Burka’s sidebar about prototype fidelity).</p>
+      <p class="wow fadeInUp">That said, if you are working out the flow of a new feature, or trying to communicate ideas to team members, sketches and paper prototypes are completely valid ways of moving forward. Here we’ll outline a number of techniques and ideas for moving prototypes to the beginning of your design process. A number of these can also be found in the Stanford d.school <a href="http://dschool.stanford.edu/use-our-methods/the-bootcamp-bootleg/" target="_blank">Bootcamp Bootleg</a>.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">The Timeboxed Prototype</h3>
+      <p class="wow fadeInUp margin-none">Your goal: <em>Create a low resolution prototype of a feature that you’d like to test with with your team, before investing the time to build a higher-fidelity version to test with users.</em></p>
+      <p class="wow fadeInUp">Challenge yourself to work quickly; set aside an hour and create 2-3 variations of the prototype. Screens can be sketched by hand, captured on a smartphone, and brought into InVision to be made interactive. Alternately, you can use the <a href="https://www.smashingmagazine.com/2014/03/building-clickthrough-prototypes-to-support-participatory-design/#sketch-based-clickthrough-prototypes-with-pop" target="_blank">Prototype on Paper (POP) app</a>.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Prototype to Decide</h3>
+      <p class="wow fadeInUp margin-none">Your goal: <em>Settle an argument amongst your team about what direction to take a product or feature</em>.</p>
+      <p class="wow fadeInUp">Just like Richard Feynman and Danny Hillis, your team might have differing points of view around the direction a product may take. To make a decision, build prototypes of the competing solutions. </p>
+      <p class="wow fadeInUp">If your users are going to judge, try to get to a level of fidelity that will elicit a genuine observable reaction from them, but don’t spend any more time than necessary. Distill the problem down as much as possible, and isolate to the variable you are testing.</p>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284354728'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Wizard of Oz Prototyping</h3>
+      <p class="wow fadeInUp margin-none">Your goal: <em>Build a prototype faster by using humans on the back-end to save time and resources</em>.</p>
+      <p class="wow fadeInUp">The music-streaming service Pandora has an almost magical ability to create playlists of the songs you like, just by choosing a song or artist, and rating a track or two with a thumbs up or down. The company likes to give credit to its Music Genome Project, which attempts to categorize all music by its attributes (tempo, vocals, etc) and then sort them using a complex algorithm.</p>
+      <p class="wow fadeInUp">Early on, however, the company realized it needed a human touch to make the playlists resonate with human ears. Much like the Wizard of Oz, there is a human behind the curtain who is categorizing and describing each song as part of the “algorithm.” <cite class="number"><a href="#citation">3</a></cite></p>
+      <p class="wow fadeInUp">You can take advantage of this technique, too. If you’re building a chat-bot, for example, have a human on the other end supplying the replies until you better understand the needs of the user. Or if you are trying to build an on-demand service (let’s say Uber for dog walkers), you and your team walk the dogs yourselves before you build out the infrastructure to summon actual dog walkers on demand. Tools like <a href="https://ifttt.com/" target="_blank">IFTTT</a> and <a href="https://zapier.com/" target="_blank">Zapier</a> can be using for connecting the services needed to build prototypes like this—pushing a button can simply send a text right to your product team.</p>
+      <p class="wow fadeInUp">Wizard of Oz prototyping allows you to learn a lot about how your users communicate before the commitment of writing any back-end code.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Prototype to Teach</h2>
+      <p class="wow fadeInUp">In 1986, seven astronauts lost their lives when the space shuttle Challenger broke apart 73 seconds into its flight. In the aftermath of this tragedy, Richard Feynman participated in a Congressional hearing investigating the cause of the disaster.</p>
+      <p class="wow fadeInUp">In what has become a famous anecdote, he sat in front of the congressional panel and <a href="https://www.youtube.com/watch?v=6Rwcbsn19c0" target="_blank">demonstrated what happened to the shuttle’s o-rings</a> in the colder than normal launch day temperature. Using a cold glass of water, and dropping a clamped o-ring into the glass, he showed how the o-ring becomes brittle and inflexible when exposed to the cold.</p>
+      <p class="wow fadeInUp">Contrast this simple demonstration with the complex charts produced by engineers in an attempt to warn about the dangers of o-ring exposure to cold temperatures : <cite class="number"><a href="#citation">4</a></cite></p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center margin-vertical-xlarge">
+    <div class="medium-10 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/prototype/oring_damage.jpg',
+		'caption' : 'A complex graphic filled with <a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=00040Z" target="_blank" class="text-gray">chartjunk</a> stands in sharp contrast to Richard Feynman’s elegant demonstration of the Challenger shuttle’s o-ring failure.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Once again, Feynman’s ability to distill a problem down to its essence, and to create a prototype which tested his hypothesis, was critical in his ability to share this experiment; we prototype to learn, but we can also prototype to teach. </p>
+      <p class="wow fadeInUp">Challenge yourself to find new ways to insert prototyping into your design process—it might teach your team a fresh approach to a challenging idea. Sometimes the act of building is the best way to raise energy and surmount a problem—just be clear about the questions you are trying to answer, and the level of fidelity you need to do so.</p>
+      <p class="wow fadeInUp">For many hands-on designers, prototyping is where the fun begins. And even though it is the 4th phase of this design thinking framework, it can just as easily be a starting point (remember, the process is not always linear). Sometimes the key to good <a href="/design-thinking/empathize">Empathy</a> is sharing or co-creating a prototype with your users and getting feedback.  </p>
+      <p class="wow fadeInUp">In the next section, we’ll talk about how to use these prototypes to test your hypotheses, so you can channel your inner Feynman to overcome the problem at hand.</p>
+    </div>
+  </div>
+
+  <!-- Citations -->
+  <div class="row align-center margin-vertical-xlarge" id="citation">
+    <div class="medium-8 large-7 columns border-top">
+      <small class="text-black margin-top-large">
+      1. <a class="text-black" href=" http://longnow.org/essays/richard-feynman-and-connection-machine/" target="_blank"> http://longnow.org<span class="hide-tablet">/essays/richard-feynman-and-connection-machine/</span></a><br>
+      2. <a class="text-black" href=" https://medium.com/uber-design/designing-a-partner-centric-experience-d9900e6511dc#.3w4cbqrpp" target="_blank"> https://medium.com<span class="hide-tablet">/uber-design/designing-a-partner-centric-experience-d9900e6511dc#.3w4cbqrpp</span></a><br>
+      3. <a class="text-black" href="http://www.forbes.com/sites/amadoudiallo/2013/10/06/pandora-radios-dominance-built-on-big-data-edge/#576c4fc3b332" target="_blank">http://www.forbes.com<span class="hide-tablet">/sites/amadoudiallo</span></a><br>
+      4. <a class="text-black" href="https://www.edwardtufte.com/tufte/books_visex" target="_blank"><em>Visual Explanations</em> by Edward Tufte</a><br>
+      </small>
+    </div>
+  </div>
+
+  <!-- Read On -->
+  <div class="background-gray-light padding-vertical-xxlarge margin-top-xxlarge section-read-on chapter">
+    <div class="row align-center">
+      <div class="medium-10 columns">
+        <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Read On</h2>
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://dschool.stanford.edu/fellowships/2014/10/16/5-prototyping-lessons-from-a-bmx-backflip/" target="_blank">Prototyping Lessons from a BMX Backflip </a></li>
+          <li><a href="https://www.smashingmagazine.com/2014/10/the-skeptics-guide-to-low-fidelity-prototyping/" target="_blank">The Skeptic’s Guide To Low-Fidelity Prototyping</a></li>
+          <li><a href="http://one.npr.org/i/493923357:494083296" target="_blank">How I Built This (NPR): Instagram</a></li>
+        </ul>
+      </div>
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="http://leanproductplaybook.com/book/" target="_blank">The Lean Product Playbook </a></li>
+          <li><a href="http://blog.invisionapp.com/10-tips-on-prototyping-uis-with-sketch/" target="_blank">10 Tips on Prototyping UI's with Sketch</a></li>
+          <li><a href="http://sixrevisions.com/user-interface/design-mockup-fidelity/" target="_blank">A Guide to Prototype Fidelity</a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+</section>
+</div><!-- end #top-scroll -->
+
+<section id="footer-scroll-nav" class="relative">
+  {% include 'source/htdocs/_includes/_design-thinking.html' %}
+  {% set vars =
+    {
+      'background_color':'white'
+    }
+  %}
+  {% include 'source/htdocs/_includes/footer-html.html' with vars %}
+</section>
+
+<!-- Case Studies -->
+{% include 'source/htdocs/design-thinking/ideate/_brainstorm.html' %}
+<!-- End Case Studies -->
+
+<!-- Footer -->
+{% include 'source/htdocs/_includes/footer.html' %}
+

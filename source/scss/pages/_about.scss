@@ -1,0 +1,217 @@
+#page-about,
+.subscribe-form-section {
+  padding-top: 80px;
+  background-color: $color-schieferw;
+  @include font-header-regular();
+  @include breakpoint(small down) {
+    padding-top: 0;
+  }
+  .subscribe-btn {
+    color: $color-black;
+  }
+  .option:hover {
+    cursor: pointer;
+    .radio-label {
+      color: $color-blue;
+      .indicator {
+        border-color: $color-blue;
+      }
+    }
+  }
+  .radio-label {
+    font-size: 24px;
+    position: relative;
+    margin-left: 35px;
+    transition: .2s;
+    padding-bottom: 15px;
+    line-height: 1.2;
+    color: $color-black;
+    @include breakpoint(large up) {
+      line-height: 1.8;
+
+    }
+  }
+  .radio-label.checked {
+    .indicator {
+      border-color: $color-blue;
+      background: $color-blue;
+    }
+  }
+  input[type="radio"] {
+    float: left;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .indicator {
+    position: absolute;
+    top: 5px;
+    border-radius: 50%;
+    left: -35px;
+    width: 18px;
+    height: 18px;
+    @include breakpoint(large up) {
+      top: 7px;
+      width: 24px;
+      height: 24px;
+    }
+    background: $color-schieferw;
+    border: 2px solid $color-black;
+    transition: .2s;
+  }
+  .form-my-information {
+    .group {
+      position: relative;
+      padding-top: 10px;
+      margin-bottom: $base-spacing;
+    }
+    label {
+      color: $color-gray;
+      @include font-size-xxsmall;
+      position: absolute;
+      pointer-events:none;
+      left: 0;
+      top: 10px;
+      transition: 0.2s ease all;
+      -moz-transition:0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+      font-size: 24px;
+    }
+    input,
+    textarea {
+      @include font-header-regular();
+      background-color: $color-schieferw;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      font-size: 24px;
+      line-height: 24px;
+      padding: 0;
+      width: 100%;
+      resize: none;
+
+      @include placeholder() {
+        transition: color 0.2s;
+        color: rgba($color-gray, 0);
+      }
+
+      &.error {
+        border-bottom: 2px solid $color-red;
+      }
+    }
+    textarea {
+      line-height: 76px;
+      height: 228px;
+      border-bottom: none;
+      padding-top: 18px;
+      padding-bottom: 58px;
+      background-image: // http://stackoverflow.com/questions/22379502/css-gradient-to-produce-dotted-line
+          linear-gradient(right, rgba($color-schieferw,1) 0%, rgba($color-schieferw,1) 48%, rgba($color-schieferw,0) 52%,rgba($color-schieferw,0) 100%),
+          linear-gradient(bottom, rgba($color-black, 0.7) 0%, rgba($color-black,0) 3%, rgba($color-black,0) 100%);
+      background-size: 10px 76px;
+      background-attachment: local;
+
+      &:focus ~ label,
+      &:valid ~ label,
+      &.valid ~ label {
+        top: 22px;
+        font-size: 13px;
+      }
+
+      &:focus ~ label {
+        color: $color-blue;
+      }
+      &.error:focus ~ label,
+      &.error ~ label {
+        color: $color-red;
+        top: 22px;
+        font-size: 13px;
+      }
+    }
+
+    input {
+      margin: 0;
+      line-height: 24px;
+      background-image:
+          linear-gradient(right, rgba($color-schieferw,1) 0%, rgba($color-schieferw,1) 50%, rgba($color-schieferw,0) 50.5%,rgba($color-schieferw,0) 100%),
+          linear-gradient(bottom, rgba($color-black, 0.7) 0%, rgba($color-black,0) 5.5%, rgba($color-black,0) 100%);
+      background-size: 10px 39px;
+
+      &:focus {
+        background-image: none;
+      }
+
+      &:focus ~ label,
+      &:valid ~ label,
+      &.valid ~ label {
+        top: -10px;
+        font-size: 13px;
+      }
+      &:focus ~ label {
+        color: $color-blue;
+      }
+      &.error:focus ~ label,
+      &.error ~ label {
+        color: $color-red;
+        top: -10px;
+        font-size: 13px;
+      }
+    }
+
+    input:focus,
+    textarea:focus {
+      border-bottom: 2px solid $color-blue;
+
+      &.error {
+        border-bottom-color: $color-red;
+      }
+    }
+
+    button {
+      @include font-header-regular();
+      margin-top: 35px;
+      font-size: 24px;
+      background-color: $color-schieferw;
+      border: 2px solid $color-black;
+      padding: 15px 20px 10px 20px;
+      transition: .2s;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-black;
+      }
+    }
+  }
+
+  .textarea--hidden {
+    @include font-header-regular();
+    display: none;
+    padding: 0;
+    width: 100%;
+    height: 228px;
+    padding-top: 18px;
+    background-color: transparent;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: none;
+    font-size: 24px;
+    line-height: 76px;
+  }
+
+  .form-item__textarea {
+    margin-top: -32px;
+
+    label {
+      top: 48px;
+    }
+  }
+  span.error {
+    @include font-size-xsmall;
+    color: $color-red;
+  }
+}
+@-webkit-keyframes inputHighlighter {
+  from { background: $color-blue; }
+  to  { width:0; background:transparent; }
+}
+

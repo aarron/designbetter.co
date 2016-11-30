@@ -1,0 +1,469 @@
+<!-- Header -->
+{% set vars = {
+  'title': 'show-tell',
+  'parent_page': 'seven-principles',
+  'og_title': 'Design Better - Show and Tell',
+  'og_url': 'http://designbetter.wpengine.com/principles-of-product-design/show-tell/',
+  'og_description': 'Psychological safety, in an organizational sense, is the feeling that it’s ok to take risks and be vulnerable in front of each other.',
+  'og_image': '/img/og/hero-show.png'
+  }
+%}
+{% include 'source/htdocs/_includes/header.html' with vars %}
+
+<!-- Navigation -->
+{% set vars = {
+  'title': 'Design Better • Principles of Product Design • Show and Tell',
+  'background_color': 'purple'
+  }
+%}
+{% include 'source/htdocs/_includes/navigation.html' with vars %}
+
+<div id="top-scroll">
+
+<!-- Hero Image -->
+{% set vars = {
+  'image_source': '/img/heros/hero-show.svg',
+  'image_source_small': '/img/heros/hero-show-small.svg',
+  'image_alt': 'Show and Tell'
+  }
+%}
+{% include 'source/htdocs/_includes/page-hero.html' with vars %}
+
+<!-- Intro w/ Paragraphs -->
+<section class="page-content relative page-content__article">
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp padding-top-xlarge margin-bottom-xxlarge">Show and Tell</h2>
+    </div>
+  </div>
+
+
+  <!-- Audio Sidebar -->
+  {% set vars = {
+    'color' : 'purple',
+    'audio_source': '/audio/show-and-tell-audio.mp3',
+    'subscribe_itunes': 'https://geo.itunes.apple.com/us/album/this-american-life-stories/id335933324?mt=1&app=music',
+    'subscribe_google': 'https://www.thisamericanlife.org/blog/2010/10/this-american-life-android-app',
+    'subscribe_spotify': 'https://open.spotify.com/user/una_s/playlist/2p89CV9wAwBYUowlXEGOgi',
+    'subscribe_soundcloud': 'https://soundcloud.com/this-american-life'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio-sidebar.html' with vars %}
+
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp"><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Feedback is the lifeblood of a healthy design team—it informs the design process, leads to better products, and helps designers grow.<i class="fa fa-twitter" aria-hidden="true"></i></a> Despite its essential role in design, it’s too often absent in our work.</p>
+      <p class="wow fadeInUp">In most design programs, feedback is folded into virtually every aspect of learning. I was reminded of this fact a couple of years ago when I was invited to the <a href="http://dschool.stanford.edu/" target="_blank">Stanford d.school</a> to speak to <a href="https://twitter.com/enriqueallen" target="_blank">Enrique Allen’s</a> class about design.  Before meeting with students, Enrique provided a quick tour, pointing out works in progress. His colleague <a href="https://twitter.com/scottdoorley" target="_blank">Scott Doorley</a> joined us to explain the thinking behind each workspace in the school.</p>
+    </div>
+  </div>
+
+  <!-- Centered Image -->
+  <div class="row align-center margin-vertical-large">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/show-tell/d-school.jpg',
+        'caption': 'The Stanford d.school was very carefully designed to facilitate the chaos of creative thinking.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">In some ways the school was like many others I’d visited—the energy of overly caffeinated students laboring over projects was palpable. But there was something peculiar about it: every space was messy. Not unkempt, but messy with ideas in progress. There was a sense of urgency to the way work was posted on walls and scribbled upon. Work tables were strewn with exacto knives, rulers, tape and scraps of paper—instruments of creation. All the furniture—desks, couches, work tables, and whiteboards—was fitted with casters and either pushed into clusters for conversation or lined up against the walls to open up room to build. <a href="https://www.amazon.com/Make-Space-Stage-Creative-Collaboration/dp/1118143728/" target="_blank">The space was very carefully designed</a> to facilitate the chaos of creative thinking.</p>
+      <p class="wow fadeInUp">The energy was incredible, and I didn’t want to leave. The space had such strong affordances for experimentation and collaboration. It was an ecosystem of ideas, where projects sprouted and grew or died to make room for the next experiment. </p>
+      <p class="wow fadeInUp">The d.school’s design studio is so different from those in nearly every tech company, where the space is pristinely decorated and filled with desks for solitary work. The walls of most startups I’ve visited are reserved for clever posters or artsy murals, not the design concepts that will lead to the next product release. Those designs remain trapped in a legion of MacBooks, starved for critical discourse that could help them grow into something far greater.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/kelley.jpg',
+    'quote': 'Consciously or not, we feel and internalize what the space tells us about how to work. When you walk into most offices, the space tells you that it’s meant for a group of people to work alone. ”',
+    'source_name' : '<a href="https://en.wikipedia.org/wiki/David_M._Kelley" target="_blank">David Kelley</a>',
+    'source_title' : 'IDEO and Stanford d.school'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h3 class="wow fadeInUp margin-bottom-none">Healthy Feedback</h3>
+      <p class="margin-none">Something’s lost when we transition into the professional design world. Work no longer happens out in the open. Creative chaos is traded in for tidy presentations of fully formed ideas. Things stop being messy.</p>
+      <p>The d.school’s messy studio is an indicator of a healthy feedback process. Students are making things, showing what they’ve made, and getting feedback that helps them see their work differently. Then the process repeats, often quickly.</p>
+      <p><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Healthy design teams have feedback built into their processes, so ideas can evolve and designers can grow.<i class="fa fa-twitter" aria-hidden="true"></i></a> Work is shared with colleagues consistently and intentionally in design reviews, daily standups, and casual conversations. </p>
+    </div>
+  </div>
+
+  {% include 'source/htdocs/_includes/ellipses.html' %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p>Building feedback into our design practice helps in so many ways:</p>
+      <ul>
+        <li>It helps us avoid spending too much time on a design that may have significant flaws.</li>
+        <li>It gives us multiple perspectives on a single problem, helping the designer get closer to an effective solution faster.</li>
+        <li>Presenting work for feedback keeps the team synced on project progress, and holds everyone accountable to milestones and deadlines. </li>
+        <li>As designers get in the habit of presenting their work and giving feedback to others, they learn to think more clearly about their design decisions, and become comfortable articulating their ideas.</li>
+        <li>Regular feedback processes will give junior designers the opportunity to learn from senior designers, helping your entire team level up.</li>
+      </ul>
+      <p>There are many ways to create a culture of feedback in your team, but be patient—change won’t happen overnight.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Creating a Culture of Feedback</h2>
+      <p class="wow fadeInUp"><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Giving and receiving feedback is a skill that needs to be cultivated.<i class="fa fa-twitter" aria-hidden="true"></i></a> Dropping a few design reviews on the team calendar creates the opportunity for your team to exchange feedback, but it doesn’t ensure that anyone will actually know how to participate. </p>
+      <p class="wow fadeInUp">It can be a little scary to give feedback—we don’t want to create conflict by coming across as negative. And receiving feedback is even more intimidating. No one wants their work to be criticized! With practice, your team will learn that these fears are misplaced. Design feedback, when properly delivered, is constructive, supportive, and it helps designers grow.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/davidson.jpg',
+    'quote': 'Psychological safety, in an organizational sense, is the feeling that it’s ok to take risks and be vulnerable in front of each other. ”',
+    'source_name' : '<a href="http://www.mikeindustries.com/blog/archive/2016/05/three-years-in-san-francisco" target="_blank">Mike Davidson</a>',
+    'source_title' : 'former VP of Design at Twitter'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">The more they talk about design, your team will develop the language they need to deliver constructive feedback, and their perspectives on the qualities of good design will mature. You’ll hear fewer vague observations and more constructive feedback that can improve <strong>the design</strong>. For instance, rather than hearing, “I like the type you’ve chosen,” you’ll begin to notice statements like, “The type selection feels trendy, which contradicts the project’s goal of inspiring trust in the content.” The former isn’t helpful, while the latter is instructive.</p>
+      <p class="wow fadeInUp margin-bottom-xlarge">Tweaks in the language used in critiques can help ensure designers don’t take criticism too personally. Say “<strong>the design</strong> doesn’t meet the goals of the project,” not "<strong>you</strong> didn’t meet the goals of the project". Always talk about the work, not the person who made it.</p>
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/show-tell/buzz-feed.jpg',
+        'caption': 'Design reviews are a regular practice in the Buzzfeed design team.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+      <p class="wow fadeInUp margin-vertical-xlarge">Good feedback develops with rapport. For that reason, you may want to temper overly critical feedback early on so people feel safe presenting their work. Designers need to hear where they're headed in the wrong direction, but deliver the message with encouragement. Work your way into more direct criticism once rapport and trust are established. </p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h3 class="wow fadeInUp margin-bottom-none">Setting the Stage</h3>
+      <p class="margin-none"><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Design feedback can happen more naturally when you create the right environment.<i class="fa fa-twitter" aria-hidden="true"></i></a> Does your design practice make affordances for creative chaos like the Stanford d.school does, or is it built for solitary work?</p>
+      <p>By simply changing your space, you can set the stage for feedback and collaboration in your team. For distributed and remote teams, this is doubly important. Establishing dedicated times and places for sharing works in progress keeps everyone connected.</p>
+      <p><strong>In Person</strong></p>
+      <p><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">The walls of your design studio are a sacred space. This is where your team’s ideas can be shared, debated, retooled, and celebrated.<i class="fa fa-twitter" aria-hidden="true"></i></a> Make it clear to your team that the studio walls are not a gallery—this is work space!</p>
+      <p>If you don’t already have one, invest in a large format printer and get the whole team connected. Print design work daily and post to your studio walls for scheduled design reviews and casual conversations.</p>
+      <p>If your walls aren’t ideal for posting work, you can buy <a href="http://www.uline.com/Product/Detail/S-19382/Foam-Board/Foamboard-48-x-96-Black-White" target="_blank">8 foot by 4 foot sheets of foam core</a> and lean them against your walls. Get some <a href="https://www.amazon.com/dp/B00DKI9816/" target="_blank">nice washi tape</a> to post your designs in style (and easily peel off later). Leave markers and sticky notes nearby so your team and anyone in the company can easily jot down a bit of feedback and post it.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/eye.jpg',
+    'quote': 'Our work is plastered and posted all over the walls of the studio — not finished things, but notes, photos, and artifacts of what we’re working on. Over time, we see projects unfolding as they’re posted, and we can give each other feedback along the way. By sticking your work up on a wall, you invite an ongoing dialogue about making your project better. It makes your work tangible, shareable and visual, which gives it a much better chance of receiving feedback and critique. ”',
+    'source_name' : '<a href="https://medium.com/@george_aye/always-show-your-work-why-designers-write-on-the-walls-and-why-you-should-too-6725237b9765#.4ysk8o8ju" target="_blank">George Aye</a>',
+    'source_title' : 'Co-founder and Principal at Greater Good Studio'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p>The design team at <a href="http://www.greatergoodstudio.com/" target="_blank">Greater Good Studio</a> has gone so far as to create <a href="https://medium.com/greater-good-studio/always-show-your-work-why-designers-write-on-the-walls-and-why-you-should-too-6725237b9765#.rtt49k451" target="_blank">project bays, a modular space to post work for critical discussion</a>. Each new project they begin gets its own bay—a physical manifestation of their progress.</p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center">
+    <div class="medium-10 text-center columns wow fadeInUp">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/show-tell/greater-good.jpg',
+        'caption': 'At Greater Good Studio, every project gets a space for posting design concepts and conducting design reviews.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">The fidelity of the work you post can influence the feedback you get. Pixel perfect comps may lead others to believe the work is finished<i class="fa fa-twitter" aria-hidden="true"></i></a>, which will inhibit feedback. Work that’s a little lower fidelity or with notes scribbled on it will make it clear to all that you’re still working through ideas.</p>
+      <p><strong>Remote</strong></p>
+      <p>Remote teams can also set the stage for feedback using tools like <a href="https://slack.com/" target="_blank">Slack</a>, <a href="https://trello.com/" target="_blank">Trello</a>, <a href="http://google.com/hangouts" target="_blank">Google Hangouts</a>, and of course, <a href="http://invisionapp.com" target="_blank">InVision</a>. The entire design team at InVision is distributed and use their own product to conduct design reviews. <a href="https://invisionapp.wistia.com/medias/1l32uaywf2" target="_blank">LiveShare</a>, a design collaboration feature in InVision, let’s the team present their work and get real-time feedback. Early ideas are explored with <a href="https://invisionapp.wistia.com/medias/ywsy00uhef" target="_blank">Boards</a>, later becoming <a href="https://invisionapp.wistia.com/medias/rawbkwpnr2" target="_blank">Prototypes</a> that are again shared with the team for feedback.</p>
+      <p>With so many affordable tools at hand, remote teams can easily build feedback into their design process too.</p>
+      <p><strong>Bringing Everyone into the Process</strong></p>
+      <p>Once your space is set up and designs are being posted, pay attention to how people behave. In person, are more people stopping by, curious about your work? Are spontaneous conversations happening in front of design work? Do you see designers staring at the wall, head tilted, pondering what’s been posted? Online, are people commenting on work shared on Slack or InVision? Is your Trello board exploding with links to new ideas?</p>
+      <p>These are all positive signs that your culture is shifting for the better. You’re bringing everyone into the design process!</p>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe//ijenrbu1wz?autoPlay=true?videoFoam=true&playerColor=1621A0',
+    'image_source': '/img/headshots/headshot_brito.jpg',
+    'caption':'Diogenes Brito discusses how Slack uses various channels to discuss design work in process, and share work with stakeholders.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Formalizing the Feedback Process</h2>
+      <p class="wow fadeInUp">Designing out in the open is just the first step. Your team will also need to get feedback on their designs, sync with teammates to make sure progress is being made, and learn from mistakes so they can do better next time. This is a tall order, and calls for different types of feedback processes.</p>
+      <p class="wow fadeInUp">Let’s take a look at a few ways to get your team the right feedback at the right time.</p>
+      <h3 class="wow fadeInUp margin-bottom-none">Design Reviews</h3>
+      <p class="margin-none"><strong>When they should happen:</strong> Early, midway, and at the end of a project</p>
+      <p class="margin-none"><strong>Who should be there:</strong> The designer plus no more than 7 people</p>
+      <p class="margin-none"><strong>How it helps:</strong> Designers get the feedback they need to refine their work</p>
+      <p>Design reviews are critiques that let designers get detailed feedback that’s framed by the project goals. Design reviews can happen at a number of different points in a project. It’s often helpful to do one early on so the designer can get fresh perspectives before investing too much time in an idea that may be misguided. The midway point and towards the end of a project are also natural times to get additional inputs.</p>
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/show-tell/capone-design-review.jpg',
+        'caption': 'The Capital One design team conducting a design review.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+      <p>Never use a design review as a big project reveal. If you wait until you have everything polished, you’ll be too invested to accept the feedback you’re given.</p>
+      <p>Design reviews are a great opportunity to bring in experts from other teams. Colleagues from product management, engineering, customer support, legal, marketing, or even an executive may have a new perspective to help you see the problem differently. But try not to overload the guest list in these reviews—too many people and you’ll have a hard time guiding the conversation.</p>
+    </div>
+  </div>
+
+  {% include 'source/htdocs/_includes/ellipses.html' %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p>Design reviews are not a free-for-all. They should be run with these rules in mind:</p>
+      <p><strong>Use a Facilitator</strong></p>
+      <p>The designer is not the best person to facilitate a conversation about her work. She’ll have biases that could influence the feedback, and she needs to be free to listen to the conversation unencumbered. The facilitator will write down all of the feedback and share it with the design team after the review.</p>
+      <p>A facilitator will set the ground rules for the conversation:</p>
+      <ul>
+        <li>State the time limit for the design review.</li>
+        <li>Introduce the designer and remind everyone that feedback should not turn into committee design. "Susan is the designer of the work we’re reviewing today. We’ll be helping her get fresh perspective on her work, but let’s offer feedback—not design suggestions. She will use our feedback to inform her decisions."</li>
+        <li>Let people know how they should give feedback. "Feedback should be specific and candid. Let’s point out what’s working well and what needs refinement. Remember, we’re critiquing the work, not the designer."</li>
+      </ul>
+      <p>Don’t rush into the review. The facilitator should give everyone time to review the work and for their observations to take shape in silence before the conversation begins. </p>
+      <p><strong>Frame the Problem</strong></p>
+      <p>The facilitator should give the designer an opportunity to frame the problem at the beginning of the review, including any user and business goals. For example, "Users want to save money more effectively, and we want to keep customers engaged by teaching them to manage their money better." </p>
+      <p>Identify the constraints of the project: "Due to legal constraints, we have to disclose this information before the user can enroll in this new program." If reviewers aren’t aware of the constraints and goals of the project, their feedback is unlikely to be helpful. </p>
+      <p><strong>Say What You Need</strong></p>
+      <p>The designer should state what she needs from the design review: "I’m trying to determine if this photo upload workflow is intuitive." This will help keep the feedback focused, and prevent the group from wandering into unproductive conversations.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/berkun.jpg',
+    'quote': 'If there are 3 or 4 specific questions you want answered, define them. Without goals everyone will work from different assumptions, and it will be more of a brainstorm meeting than a critique. ”',
+    'source_name' : '<a href="https://twitter.com/berkun" target="_blank">Scott Berkun</a>',
+    'source_title' : 'author of <a href="https://www.amazon.com/Myths-Innovation-Scott-Berkun/dp/1449389627/" target="_blank">The Myths of Innovation</a>'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp"><strong>Don’t Pitch, Just Listen</strong></p>
+      <p>The designer should not pitch her idea or over-explain her designs. If she does, she robs everyone of the fresh eyes they bring to the design review. Once the designer has framed the problem and stated her needs, she should simply listen to the feedback.</p>
+      <h3 class="wow fadeInUp margin-bottom-none">Design Standups</h3>
+      <p class="margin-none"><strong>When they should happen:</strong> Daily, if possible</p>
+      <p class="margin-none"><strong>Who should be there:</strong> Everyone on the design team</p>
+      <p class="margin-none"><strong>How it helps:</strong> Your team gets the chance to sync up on projects</p>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284191950'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p>Design standups are short, daily check-ins that help your team stay abreast of the work that’s being done. As the name suggests, everyone remains standing in these meetings so no one can get comfortable enough to launch into a soliloquy. </p>
+      <p>In a standup, each team member answers three questions:</p>
+      <ol>
+        <li>What did you do yesterday?</li>
+        <li>What will you do today?</li>
+        <li>Are there any impediments in your way?</li>
+      </ol>
+      <p>While most teams choose to conduct standups in the morning, you may want to consider doing them after lunch—the morning is when our minds are clearest and ready to focus on creative work.</p>
+      <p>Don’t let standups turn into impromptu design critiques. If someone needs immediate design feedback, ask that they hold the request until after the meeting. A standup should be short and focused on project progress.</p>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe//yrvy1ej0yh?autoPlay=true?videoFoam=true&playerColor=1621A0',
+    'image_source': '/img/headshots/headshot_danzico_v3.jpg',
+    'caption':'Liz Danzico, Creative Director at NPR, talks about how standups keep people connected with design work.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h3 class="wow fadeInUp margin-bottom-none">Retrospectives</h3>
+      <p class="margin-none"><strong>When they should happen: </strong>After a project is launched or a sprint is completed</p>
+      <p class="margin-none"><strong>Who should be there: </strong>Everyone who worked on the project </p>
+      <p class="margin-none"><strong>How it helps: </strong>Your team will internalize lessons from each project</p>
+      <p>Every project is a learning opportunity, but if you don’t pause to take stock, valuable lessons will slip by. When you’ve launched a project or completed a sprint, it’s a great time to reflect on what went well, what was confusing, and what didn’t go so well. </p>
+      <p><a href="https://twitter.com/thinmatt"  target="_blank">Matt Spiel</a>, Director of Design at <a href="http://teamtreehouse.com" target="_blank">Treehouse</a>, conducts retrospective meetings regularly. He sends a pre-retrospective survey to the team before the meeting to capture each person’s perspective individually. This helps to eliminate the <a href="https://en.wikipedia.org/wiki/Bandwagon_effect" target="_blank">bandwagon effect</a>, which happens when the views of the group conform to those of a few vocal people.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/speil.png',
+    'quote': 'Retrospectives are a valuable tool to use because they help teams identify strengths and weaknesses. They help provide the designers at Treehouse an opportunity to give feedback on our processes in order to grow and improve. ”',
+    'source_name' : '<a href="https://twitter.com/thinmatt" target="_blank">Matt Spiel</a>',
+    'source_title' : 'Director of Design at <a href="http://teamtreehouse.com" target="_blank">Treehouse</a>'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p>Matt asks his team to rate their performance both as a group and as individuals on a scale from 1 to 5, where 5 is the highest. Ratings tend to cluster in a similar spot, but occasionally there are outliers. Team members who’ve given starkly different ratings are asked to share their views in the meeting to promote transparency and honesty.</p>
+      <p>Discussion in Treehouse’s retrospective meetings is centered around 3 questions common to most Agile retrospectives:</p>
+      <ol>
+        <li>What worked well for us?</li>
+        <li>What didn’t work well for us?</li>
+        <li>What can we do to improve our process?</li>
+      </ol>
+      <p>These questions are sometimes referred to as Start, Stop, Keep—what should we start doing, stop doing, and keep doing? </p>
+      <p>Honest conversation about each of these questions becomes easier with the cultivation of trust and plenty of practice running retrospective meetings.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h3 class="wow fadeInUp margin-bottom-none">Postmortems</h3>
+      <p class="margin-none"><strong>When they should happen: </strong> After a project has gone poorly</p>
+      <p class="margin-none"><strong>Who should be there: </strong>Everyone who worked on the project and an impartial facilitator </p>
+      <p class="margin-none"><strong>How it helps: </strong>Your team will learn from their mistakes and find a way forward</p>
+      <p>Not all projects go well. Some go horribly wrong, requiring all teams involved in the project to come together to consider and learn from the mistakes they made. </p>
+      <p>Though projects rarely go awry at <a href="https://www.etsy.com/" target="_blank">Etsy</a>, they’ve established a strong process to guide them through those that do. Their process follows many of the recommendations set forth in the Agile methodology.</p>
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <ul>
+        <li><strong>Before the Meeting:  </strong>Send an email asking the team to identify key points in the project timeline. This will be used to construct a master timeline of events, which will be discussed in the meeting. By focusing on events, you’ll avoid negative finger pointing,  which can derail the process.</li>
+        <li><strong>Moderator:  </strong>Choose a moderator. This person, who wasn’t on the project and can be impartial, should be guiding the conversation from the whiteboard, taking notes for all to see.</li>
+        <li><strong>Ground rules:  </strong>People recall events differently. The moderator can help the team agree upon what <em>actually</em> happened so lessons can be extracted. Establishing a timeline of events can help pinpoint where things went wrong.</li>
+        <li><strong>Lessons and Actions:  </strong>As key lessons are identified, they should be written on the whiteboard for all to see. The actions required to mitigate the problems stemming from the failed project also need to be identified, assigned an owner, and provided a clear deadline.</li>
+        <li><strong>After the meeting:  </strong>The lessons learned from the postmortem should be emailed to the entire team, along with the action items that are to be completed.</li>
+      </ul>
+      <p>Postmortems can seem rough, but they’re far superior to repeating the same mistakes. They’re a powerful opportunity for your team to learn and improve your processes.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Putting Show and Tell Into Action</h2>
+      <p>I’ve mentored a number of talented designers over the years seeking guidance on their career path. All tell me the same thing, "I just want to work somewhere where I can grow and learn." As they visit various companies, interviewing for their next design post, they can sense right away if the environment will give them the growth opportunity they crave. How? They recognize the signs of a company with a culture of feedback.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/senos.jpg',
+    'quote': '<a href="http://ctt.ec/800Cs" target="_blank" class="tweet">You know you have a healthy design culture when people are giving each other feedback.<i class="fa fa-twitter" aria-hidden="true"></i></a> ”',
+    'source_name' : '<a href="https://twitter.com/dustin" target="_blank">Dustin Senos</a>',
+    'source_title' : 'former Head of Design at <a href="http://medium.com" target="_blank">Medium</a>'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p>They see work on the walls. They see the messy signs of creative progress. Design critique is fluid and not limited to formal meetings. These are the signs of a healthy design team, fueled by feedback and always improving.</p>
+      <p>Building a culture of feedback takes time, but these simple steps will help you enact change:</p>
+      <ul>
+        <li><strong>Rethink your design studio: </strong>Create areas for work to be posted to foster spontaneous design discussion. It’s okay to be messy. Scribble on comps, add notes notes, post different versions of the same concept. </li>
+        <li><strong>Stay in sync: </strong>Schedule short, daily standup meetings for your team to sync up on projects. It may be best to schedule them at the end of the day, so you don’t block the mornings when minds are most creative and ready to design. </li>
+        <li><strong>Make time for feedback: </strong>Schedule design reviews for every project. They should be frequent enough for designers to get the feedback they need to avoid going too far down the wrong path. </li>
+        <li><strong>Learn and grow: </strong>Schedule retrospectives after every project to capture lessons learned. When things go wrong, a postmortem meeting will help you learn from your mistakes without pointing fingers. </li>
+      </ul>
+      <p><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Hiring, coaching, and retaining great designers is made much easier when design and feedback are out in the open.<i class="fa fa-twitter" aria-hidden="true"></i></a> Help your team show their work and tell you all about it. </p>
+    </div>
+  </div>
+
+  <!-- Read On -->
+  <div class="background-gray-light padding-vertical-xxlarge margin-top-xxlarge section-read-on chapter">
+    <div class="row align-center">
+      <div class="medium-10 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Read On</h2>
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://www.amazon.com/Make-Space-Stage-Creative-Collaboration/dp/1118143728/" target="_blank">Make Space: How to Set the Stage for Creative Collaboration</a></li>
+          <li><a href="http://scottberkun.com/essays/35-how-to-give-and-receive-criticism/" target="_blank">How to Give and Receive Criticism</a></li>
+          <li><a href="http://blog.invisionapp.com/how-to-run-design-reviews/" target="_blank">How to Run Design Reviews</a></li>
+          <li><a href="http://www.fastcodesign.com/3019674/9-rules-for-running-a-productive-design-critique" target="_blank">9 Rules of Running a Successful Design Critique</a></li>
+          <li><a href="https://medium.com/treehouse-engineering/using-retrospectives-to-improve-design-critiques-642c81122982#.opfk7snfo" target="_blank">Improving Design Critiques at Treehouse</a></li>
+          <li><a href="https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649" target="_blank">Agile Retrospectives: Making Good Teams Great</a></li>
+          <li><a href="https://medium.com/facebook-design/peek-inside-a-facebook-design-critique-c4833efda26e#.flt4rw4t0" target="_blank">A Peek Inside A Facebook Design Critique</a></li>
+        </ul>
+      </div>
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://medium.com/@george_aye/always-show-your-work-why-designers-write-on-the-walls-and-why-you-should-too-6725237b9765#.4ysk8o8ju" target="_blank">Always Show Your Work: Why Designers Write on Walls and So Should You</a></li>
+          <li><a href="https://library.gv.com/guide-to-design-critique-86ebf499bed5#.xphfzrdhg" target="_blank">Google Ventures Guide to Running a Design Critique</a></li>
+          <li><a href="http://scottberkun.com/essays/23-how-to-run-a-design-critique/" target="_blank">Scott Berkun on How to Run a Design Critique</a></li>
+          <li><a href="https://medium.com/treehouse-engineering/how-the-designers-at-treehouse-handle-critique-657a2cdaa0a7#.nys6f13m6" target="_blank">How the Designers at Treehouse handle Critique</a></li>
+          <li><a href="https://www.amazon.com/gp/product/149190240X/" target="_blank">Discussing Design: Improving Communication and Collaboration through Critique</a></li>
+          <li><a href="https://codeascraft.com/2012/05/22/blameless-postmortems/" target="_blank">Blameless Postmortems</a></li>
+          <li><a href="http://alistapart.com/article/design-criticism-creative-process" target="_blank">Design Criticism and the Creative Process</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- end #top-scroll -->
+
+<section id="footer-scroll-nav" class="relative">
+  {% include 'source/htdocs/_includes/_product-principles.html' %}
+  {% set vars =
+    {
+      'background_color':'white'
+    }
+  %}
+  {% include 'source/htdocs/_includes/footer-html.html' with vars %}
+</section>
+
+<!-- Footer -->
+{% include 'source/htdocs/_includes/footer.html' %}

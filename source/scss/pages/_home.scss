@@ -1,0 +1,96 @@
+#page-home {
+  p {
+    line-height: 1.3em;
+  }
+  .section-design-thinking {
+    margin-top: 400px;
+    @include breakpoint(small) {
+      margin-top: 40px;
+    }
+    img {
+      margin-top: 40px;
+    }
+    @include breakpoint(medium down) {
+      .margin-vertical-xxlarge {
+        margin-top: 45px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  #link-block__lateral-design {
+    @include breakpoint(small) {
+      margin-top: 100px;
+    }
+  }
+  section.section-principles {
+    padding: 0 5px 50px 5px;
+    @include breakpoint(large up) {
+      padding: 0 5px 250px 5px;
+    }
+  }
+}
+
+.design-thinking__anchor:before {
+  content:"";
+  display:block;
+}
+
+.design-thinking {
+  .link-block {
+    .box {
+      margin-top: 25px;
+    }
+    &:hover {
+      .box {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+[class*="outline-"] {
+  border-style: solid;
+  border-width: 4px;
+}
+
+.offset-top {
+  position: relative;
+  top: 0px;
+  @include breakpoint(medium up) {
+    top: 20px;
+  }
+  @include breakpoint(large up) {
+    top: 100px;
+  }
+  @include breakpoint(xlarge up) {
+    top: 250px;
+  }
+}
+
+.animation-container {
+  max-width: 85%;
+  width: 85%;
+  overflow-x: hidden;
+  margin: 0 auto;
+
+  @media screen and (min-width: 440px) {
+    max-width: 75%;
+    width: 75%;
+  }
+
+  @media screen and (min-width: 640px) {
+    max-width: 95%;
+    width: 95%;
+  }
+
+  @media screen and (min-width: 1024px) and (min-height: 802px) {
+    max-width: 85%;
+    width: 85%;
+  }
+
+  @media screen and (min-width: 1024px) and (max-height: 801px) {
+    max-width: 75%;
+    width: 75%;
+  }
+
+}

@@ -1,0 +1,655 @@
+//  Helper classes
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//  1. Padding
+//  2. Margin
+//  3. List
+//  4. Floats
+//  5. Text align
+//  6. Borders
+//  7. Utilities
+//  8. Aspect Ratios
+
+// All padding
+.padding-small {
+  padding: $base-spacing/4;
+}
+
+.padding-medium {
+  padding: $base-spacing/2;
+}
+
+.padding-large {
+  padding: $base-spacing;
+}
+
+.padding-xlarge {
+  padding: $base-spacing;
+  @include breakpoint (medium up) {
+    padding: $base-spacing*1.5;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    padding: $base-spacing*2;
+  }
+}
+
+.padding-xxlarge {
+  padding: $base-spacing*1.5;
+  @include breakpoint (medium up) {
+    padding: $base-spacing*2;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    padding: $base-spacing*4;
+  }
+}
+
+// Vertical padding (top and bottom)
+.padding-vertical-small {
+  padding-top: $base-spacing/4;
+  padding-bottom: $base-spacing/4;
+}
+
+.padding-vertical-medium {
+  padding-top: $base-spacing/2;
+  padding-bottom: $base-spacing/2;
+}
+
+.padding-vertical-large {
+  padding-top: $base-spacing;
+  padding-bottom: $base-spacing;
+}
+
+.padding-vertical-xlarge {
+  padding-top: $base-spacing;
+  padding-bottom: $base-spacing;
+  @include breakpoint (medium up) {
+    padding-top: $base-spacing*1.5;
+    padding-bottom: $base-spacing*1.5;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    padding-top: $base-spacing*2;
+    padding-bottom: $base-spacing*2;
+  }
+}
+
+.padding-vertical-xxlarge {
+  padding-top: $base-spacing*1.5;
+  padding-bottom: $base-spacing*1.5;
+  @include breakpoint (medium up) {
+    padding-top: $base-spacing*2;
+    padding-bottom: $base-spacing*2;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    padding-top: $base-spacing*4;
+    padding-bottom: $base-spacing*4;
+  }
+}
+
+// Horizontal padding (left and right)
+.padding-horizontal-small {
+  padding-left: $base-spacing/4;
+  padding-right: $base-spacing/4;
+}
+
+.padding-horizontal-medium {
+  padding-left: $base-spacing/2;
+  padding-right: $base-spacing/2;
+}
+
+.padding-horizontal-large {
+  padding-left: $base-spacing;
+  padding-right: $base-spacing;
+}
+
+.padding-horizontal-xlarge {
+  padding-left: $base-spacing*2;
+  padding-right: $base-spacing*2;
+}
+
+.padding-horizontal-xxlarge {
+  padding-left: $base-spacing*4;
+  padding-right: $base-spacing*4;
+}
+
+// Top padding
+.padding-top-small {
+  padding-top: $base-spacing/4;
+}
+
+.padding-top-medium {
+  padding-top: $base-spacing/2;
+}
+
+.padding-top-large {
+  padding-top: $base-spacing;
+}
+
+.padding-top-xlarge {
+  padding-top: $base-spacing;
+  @include breakpoint (medium up) {
+    padding-top: $base-spacing*1.5;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    padding-top: $base-spacing*2;
+  }
+}
+
+.padding-top-xxlarge {
+  padding-top: $base-spacing*1.5;
+  @include breakpoint (medium up) {
+    padding-top: $base-spacing*2;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    padding-top: $base-spacing*4;
+  }
+}
+
+// Right padding
+.padding-right-small {
+  padding-right: $base-spacing/4;
+}
+
+.padding-right-medium {
+  padding-right: $base-spacing/2;
+}
+
+.padding-right-large {
+  padding-right: $base-spacing;
+}
+
+.padding-right-xlarge {
+  padding-right: $base-spacing*2;
+}
+
+.padding-right-xxlarge {
+  padding-right: $base-spacing*4;
+}
+
+// Bottom padding
+.padding-bottom-small {
+  padding-bottom: $base-spacing/4;
+}
+
+.padding-bottom-medium {
+  padding-bottom: $base-spacing/2;
+}
+
+.padding-bottom-large {
+  padding-bottom: $base-spacing;
+}
+
+.padding-bottom-xlarge {
+  padding-bottom: $base-spacing;
+  @include breakpoint (medium up) {
+    padding-bottom: $base-spacing*1.5;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    padding-bottom: $base-spacing*2;
+  }
+}
+
+.padding-bottom-xxlarge {
+  padding-bottom: $base-spacing*1.5;
+  @include breakpoint (medium up) {
+    padding-bottom: $base-spacing*2;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    padding-bottom: $base-spacing*4;
+  }
+}
+
+// Left padding
+.padding-left-small {
+  padding-left: $base-spacing/4;
+}
+
+.padding-left-medium {
+  padding-left: $base-spacing/2;
+}
+
+.padding-left-large {
+  padding-left: $base-spacing;
+}
+
+.padding-left-xlarge {
+  padding-left: $base-spacing*2;
+}
+
+.padding-left-xxlarge {
+  padding-left: $base-spacing*4;
+}
+
+// No padding
+.padding-none {
+  padding: 0;
+}
+
+// 2. Margin
+// ---------
+
+// All margin
+.margin-small {
+  margin: $base-spacing/4;
+}
+
+.margin-medium {
+  margin: $base-spacing/2;
+}
+
+.margin-large {
+  margin: $base-spacing;
+}
+
+.margin-xlarge {
+  margin: $base-spacing;
+  @include breakpoint (medium up) {
+    margin: $base-spacing*1.5;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    margin: $base-spacing*2;
+  }
+}
+
+.margin-xxlarge {
+  margin: $base-spacing*1.5;
+  @include breakpoint (medium up) {
+    margin: $base-spacing*2;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    margin: $base-spacing*4;
+  }
+}
+
+// Vertical margin (top and bottom)
+.margin-vertical-small {
+  margin-top: $base-spacing/4;
+  margin-bottom: $base-spacing/4;
+}
+
+.margin-vertical-medium {
+  margin-top: $base-spacing/2;
+  margin-bottom: $base-spacing/2;
+}
+
+.margin-vertical-large {
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+}
+
+.margin-vertical-xlarge {
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+  @include breakpoint (medium up) {
+    margin-top: $base-spacing*1.5;
+    margin-bottom: $base-spacing*1.5;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    margin-top: $base-spacing*2;
+    margin-bottom: $base-spacing*2;
+  }
+}
+
+.margin-vertical-xxlarge {
+  margin-top: $base-spacing*1.5;
+  margin-bottom: $base-spacing*1.5;
+  @include breakpoint (medium up) {
+    margin-top: $base-spacing*2;
+    margin-bottom: $base-spacing*2;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    margin-top: $base-spacing*4;
+    margin-bottom: $base-spacing*4;
+  }
+}
+
+// Horizontal margin (left and right)
+.margin-horizontal-small {
+  margin-left: $base-spacing/4;
+  margin-right: $base-spacing/4;
+}
+
+.margin-horizontal-medium {
+  margin-left: $base-spacing/2;
+  margin-right: $base-spacing/2;
+}
+
+.margin-horizontal-large {
+  margin-left: $base-spacing;
+  margin-right: $base-spacing;
+}
+
+.margin-horizontal-xlarge {
+  margin-left: $base-spacing*2;
+  margin-right: $base-spacing*2;
+}
+
+.margin-horizontal-xxlarge {
+  margin-left: $base-spacing*4;
+  margin-right: $base-spacing*4;
+}
+
+// Top margin
+.margin-top-small {
+  margin-top: $base-spacing/4;
+}
+
+.margin-top-medium {
+  margin-top: $base-spacing/2;
+}
+
+.margin-top-large {
+  margin-top: $base-spacing;
+}
+
+.margin-top-xlarge {
+  margin-top: $base-spacing;
+  @include breakpoint (medium up) {
+    margin-top: $base-spacing*1.5;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    margin-top: $base-spacing*2;
+  }
+}
+
+.margin-top-xxlarge {
+  margin-top: $base-spacing*1.5;
+  @include breakpoint (medium up) {
+    margin-top: $base-spacing*2;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    margin-top: $base-spacing*4;
+  }
+}
+
+// Right margin
+.margin-right-small {
+  margin-right: $base-spacing/4;
+}
+
+.margin-right-medium {
+  margin-right: $base-spacing/2;
+}
+
+.margin-right-large {
+  margin-right: $base-spacing;
+}
+
+.margin-right-xlarge {
+  margin-right: $base-spacing*2;
+}
+
+.margin-right-xxlarge {
+  margin-right: $base-spacing*4;
+}
+
+// Bottom margin
+.margin-bottom-small {
+  margin-bottom: $base-spacing/4;
+}
+
+.margin-bottom-medium {
+  margin-bottom: $base-spacing/2;
+}
+
+.margin-bottom-large {
+  margin-bottom: $base-spacing;
+}
+
+.margin-bottom-xlarge {
+  margin-bottom: $base-spacing;
+  @include breakpoint (medium up) {
+    margin-bottom: $base-spacing*1.5;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    margin-bottom: $base-spacing*2;
+  }
+}
+
+.margin-bottom-xxlarge {
+  margin-bottom: $base-spacing*1.5;
+  @include breakpoint (medium up) {
+    margin-bottom: $base-spacing*2;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    margin-bottom: $base-spacing*4;
+  }
+}
+
+// Left margin
+.margin-left-small {
+  margin-left: $base-spacing/4;
+}
+
+.margin-left-medium {
+  margin-left: $base-spacing/2;
+}
+
+.margin-left-large {
+  margin-left: $base-spacing;
+}
+
+.margin-left-xlarge {
+  margin-left: $base-spacing*2;
+}
+
+.margin-left-xxlarge {
+  margin-left: $base-spacing*4;
+}
+
+// No margin
+.margin-none {
+  margin: 0;
+}
+
+.margin-bottom-none {
+  margin-bottom: 0;
+}
+
+.margin-top-none {
+  margin-top: 0;
+}
+
+.margin-left-none {
+  margin-left: 0;
+}
+
+.margin-right-none {
+  margin-right: 0;
+}
+
+.margin-vertical-none {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.margin-horizontal-none {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.no-padding-mobile {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.no-margin-mobile {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+//  3. List
+// ---------
+
+.list-inline {
+  li {
+    padding-left: 0;
+    display: inline-block;
+  }
+}
+
+.list-no-style {
+  list-style-type: none;
+}
+
+//  4. Floats
+// ---------
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+//  5. Text align
+// ---------
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+//  6. Borders
+// ---------
+
+.border {
+  border: 1px solid $border-color;
+}
+
+.border-top {
+  border-top: 1px solid $border-color;
+}
+
+.border-right {
+  border-right: 1px solid $border-color;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $border-color;
+}
+
+.border-left {
+  border-left: 1px solid $border-color;
+}
+
+ //  7. Utilities
+ // ---------
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.relative {
+  position: relative;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.show-grid {
+  background-size: 100% $base-spacing;
+  background-image: linear-gradient(to bottom,rgba(0,170,255,.3) 1px,transparent 1px);
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: auto;
+}
+
+.show-mobile {
+  display: none;
+  @include breakpoint(small down) {
+    display: block;
+  }
+}
+
+.hide-mobile {
+  @include breakpoint (small down) {
+    display: none;
+  }
+}
+
+.hide-tablet {
+  @include breakpoint (medium down) {
+    display: none;
+  }
+}
+
+.hide-tablet-plus {
+  @media screen and (max-width: 1160px) {
+    display: none;
+  }
+}
+
+.disabled {
+  opacity: .2;
+}
+
+.font-header {
+  @include font-header-regular();
+}
+
+//  8. Aspect ratios
+// ---------
+
+.aspect-ratio-sixteen-nine {
+  @include aspect-ratio(16, 9);
+}
+
+.aspect-ratio-sixteen-six {
+  @include aspect-ratio(16, 6);
+}
+
+.aspect-ratio-four-three {
+  @include aspect-ratio(4, 3);
+}
+
+.aspect-ratio-three-four {
+  @include aspect-ratio(3, 4);
+}
+
+.aspect-ratio-three-two {
+  @include aspect-ratio(3, 2);
+}
+
+.aspect-ratio-two-three {
+  @include aspect-ratio(2, 3);
+}
+
+.aspect-ratio-square {
+  @include aspect-ratio(1, 1);
+}

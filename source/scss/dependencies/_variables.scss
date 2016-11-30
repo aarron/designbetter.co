@@ -1,0 +1,122 @@
+//  Variables
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//  1. Vertical spacing
+//  2. Colors
+//  3. Component colors
+//  4. Fonts
+//  5. Buttons
+//  6. Transitions
+
+// 1. Vertical spacing
+// ---------
+
+$base-spacing: 24px;
+
+// 2. Colors
+// ---------
+// Color naming $color-[Color Name]-[Color Variation]
+// Example $color-magenta
+$color-black: #141414;
+$color-white: #ffffff;
+$color-gray: #9B9B9B;
+$color-gray-dark: #253840;
+$color-gray-light: #F5F5F5;
+$color-brown-light: #BBA895;
+$color-magenta: #BB306A;
+$color-purple: #1621A0;
+$color-green: #7E8B1D;
+$color-green-light: #D7D28D;
+$color-green-dark: #7E8B1D;
+$color-yellow: #FFE065;
+$color-orange: #E15630;
+$color-orange-dark: #B93928;
+$color-red: #DF2810;
+$color-red-dark: #78251A;
+$color-ocre-clair: #FBE0AE;
+$color-terre-dombre: #DBCEBF;
+$color-schieferw: #EBE9E5;
+$color-highlight: #FFF7B2;
+$color-teal: #15C3CB;
+$color-blue: #0000FF;
+$color-blue-dark: #0B1052;
+
+$colors: (
+  black: $color-black,
+  white: $color-white,
+  gray: $color-gray,
+  gray-dark: $color-gray-dark,
+  gray-light: $color-gray-light,
+  brown-light: $color-brown-light,
+  magenta: $color-magenta,
+  purple: $color-purple,
+  green: $color-green,
+  green-light: $color-green-light,
+  green-dark: $color-green-dark,
+  yellow: $color-yellow,
+  orange: $color-orange,
+  orange-dark: $color-orange-dark,
+  red: $color-red,
+  red-dark: $color-red-dark,
+  ocre-clair: $color-ocre-clair,
+  terre-dombre: $color-terre-dombre,
+  schieferw: $color-schieferw,
+  highlight: $color-highlight,
+  teal: $color-teal,
+  blue: $color-blue,
+  blue-dark: $color-blue-dark
+);
+
+// 3. Component colors
+// ---------
+
+$border-color: $color-gray;
+$link-color: $color-black;
+$link-color-hover: $color-black;
+$link-color-active: $color-black;
+$link-color-visited: $color-black;
+
+// 4. Fonts
+// ---------
+
+// Line heights
+$body-line-height: 1.6;
+$header-line-height: 1.1;
+
+// Font sizes
+$font-size-xxsmall: 14px;
+$font-size-xsmall: 18px;
+$font-size-small: 22px;
+$font-size-medium: 30px;
+$font-size-large: 38px;
+$font-size-sub-xlarge: 80px;
+$font-size-xlarge: 100px;
+
+// Font families
+$font-body: "arnhempro-blond", sans-serif;
+$font-header: "faktpro-normal", sans-serif;
+$font-bold: "faktpro-bold", sans-serif;
+$font-header-bold: "arnhempro-bold", sans-serf;
+
+//  5. Buttons
+// ---------
+
+// Primary
+$button-primary-background: $color-purple;
+$button-primary-color: $color-white;
+$button-primary-hover-background: $color-purple;
+$button-primary-hover-color: $color-white;
+
+// Secondary
+$button-secondary-background: $color-green;
+$button-secondary-color: $color-white;
+$button-secondary-hover-background: $color-green-light;
+$button-secondary-hover-color: $color-white;
+
+//  6. Transitions
+// ---------
+$transition-speed-fast: 250ms;
+$transition-speed-medium: 500ms;
+$transition-speed-slow: 500ms;

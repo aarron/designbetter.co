@@ -1,0 +1,306 @@
+<!-- Header -->
+{% set vars = {
+  'title': 'empathize',
+  'parent_page': 'design-thinking',
+  'og_title': 'Design Better - Empathize',
+  'og_url': 'http://designbetter.wpengine.com/principles-of-product-design/empathize/',
+  'og_description': 'Cultivate a culture of deep empathy…go beyond understanding, and really walk in their shoes, and understand their pain points.',
+  'og_image': '/img/og/hero-empathize.png'
+  }
+%}
+{% include 'source/htdocs/_includes/header.html' with vars %}
+
+<!-- Navigation -->
+{% set vars = {
+  'title': 'Design Better • Design Thinking • Empathize',
+  'background_color': 'red'
+  }
+%}
+{% include 'source/htdocs/_includes/navigation.html' with vars %}
+
+<div id="top-scroll">
+
+<!-- Hero Image -->
+{% set vars = {
+  'image_source': '/img/heros/hero-empathize.svg',
+  'image_source_small': '/img/heros/hero-empathize-small.svg',
+  'image_alt': 'Empathize'
+  }
+%}
+{% include 'source/htdocs/_includes/page-hero.html' with vars %}
+
+<!-- Intro w/ Paragraphs -->
+<section class="page-content page-content__article relative">
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h2 class="text-center wow fadeInUp padding-top-xlarge margin-bottom-xxlarge">Empathize</h2>
+    </div>
+  </div>
+
+  <!-- Audio Sidebar -->
+  {% set vars = {
+    'color' : 'red',
+    'audio_source': '/audio/empathize-audio.mp3',
+    'subscribe_itunes': 'https://geo.itunes.apple.com/us/album/this-american-life-stories/id335933324?mt=1&app=music',
+    'subscribe_google': 'https://www.thisamericanlife.org/blog/2010/10/this-american-life-android-app',
+    'subscribe_spotify': 'https://open.spotify.com/user/una_s/playlist/2p89CV9wAwBYUowlXEGOgi',
+    'subscribe_soundcloud': 'https://soundcloud.com/this-american-life'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio-sidebar.html' with vars %}
+
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp margin-top-none">Imagine that you live in a remote village in Nepal. It’s winter, and freezing sleet pounds the nearby roads, making them nearly impassable. You’ve just had your first baby, a little girl, and she’s premature and severely underweight. The room that you’re in, while warm to you, feels like an ice-bath to her. Without help soon, she will almost certainly die from hypothermia. What do you do?</p>
+      <p class="wow fadeInUp margin-top-none">Worldwide, about 15 million premature babies are born every year, and the most common preventable cause of infant mortality is hypothermia. As designers, we solve the problems of others, and solving the problem of infant mortality due to hypothermia seems like an extremely worthy design challenge. This is exactly what a team from Stanford’s d.school set out to accomplish as a project for the class Design for Extreme Affordability (often known just as "Extreme")<cite class="number"><a href="#citation">1</a></cite>.</p>
+      <p class="wow fadeInUp">The team ended up with a novel, innovative solution, but they never would have arrived there if they stayed within the protective bubble of Stanford’s campus. They needed to have empathy to see the problem clearly from the perspectives of the hospital staff, the doctors, and most importantly, the parents of the child in danger.</p>
+      <p class="wow fadeInUp">Initially, the design team thought redesigning existing hospital incubators to be simpler and more cost effective would be the easiest solution. But when team member <a href="https://twitter.com/liang_linus" target="_blank">Linus Liang</a> toured a hospital in Nepal, he noticed something strange: many of the incubators were sitting empty. Interviewing a doctor about this, he learned that many of the homes where these babies were born were thirty or more miles away on rough rural roads, and that the parents faced the fight for their babies’ lives at home, without much hope of making it to a hospital.</p>
+      <p class="wow fadeInUp">The Extreme team used this insight to inform their decisions about the direction of the product; instead of a cheaper incubator (their initial concept, but likely ineffective given the evidence from the ground) they decided to design something to help babies at home in rural areas : a portable incubator, much like a tiny, heated sleeping bag, that they called <a href="http://embraceglobal.org/" target="_blank">Embrace</a>.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/brown.png',
+    'quote': '<strong>Empathy is at the heart of design</strong>. Without the understanding of what others see, feel, and experience, design is a pointless task. ”',
+    'source_name' : 'Tim Brown',
+    'source_title' : 'CEO, IDEO'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">While prototyping the Embrace, the team interviewed many moms, healthcare workers, and shopkeepers, who helped them iterate on solutions. By showing prototypes, they learned about critical barriers to adoption:</p>
+      <ul class="wow fadeInUp">
+        <li>In a small village in India, a mother explained that they believe western medicines to be very powerful, so they often halve the doses.<cite class="number">2</cite> The warmer on the Embrace had a temperature indicator on the side, and she indicated that the mothers would only heat it halfway to the ideal temperature. This lead the team to iterate on the design, removing the temperature strip and changing the design to an "OK" indicator.</li>
+        <li>The team also learned that in many communities, electricity is unavailable, or unreliable. So they designed a version of the warmer that could be heated with hot water.</li>
+      </ul>
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/empathize/empathy-img1.png',
+        'caption': '<a href="http://embraceglobal.org/embrace-warmer/" target="_blank" class="text-gray">The Embrace Infant Warmer</a>'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+      <p class="wow fadeInUp">With these insights, the team was able to create a product that was easy to use correctly, and in the locations it was designed for. They formed a company based on this product, grew the company to 90 people, and have helped over 3,000 babies. By using empathy and focusing on the people who would use the product—in this team’s case, a literal journey that exposed them to the feelings and challenges of their users—the Embrace team was able to come up with a product that saves lives.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h3 class="wow fadeInUp margin-bottom-none">Practicing Empathy</h3>
+      <p class="wow fadeInUp margin-top-none">Empathy is the foundation of the whole Design Thinking process. Using a <a href="https://medium.com/salesforce-ux/beginner-s-mind-62a28d144a5c#.6kwfmlqwk" target="_blank">beginner’s mindset</a> and immersing yourself in the user’s experience is a great way  to uncover deep needs and insights. It also ties directly to the <a href="/principles-of-product-design/guess-less">Guess Less</a> principle of product design. In this Empathize section of our course, we will dive into a case study where empathy helped with the creation of an innovative product for Bank of America. We’ll then walk through some exercises you can employ to gain more empathy with, and insights from, your own users.</p>
+      <p class="wow fadeInUp">How can empathy help us design better products? To find out, try this exercise (adapted from the <a href="https://dschool.stanford.edu/groups/designresources/wiki/4dbb2/The_Wallet_Project.html" target="_blank">Wallet Project</a> exercise taught at Stanford’s d.school). It should only take about 15 minutes. (Go ahead, we’ll wait for you.) </p>
+      <a class="bar-callout-link text-white js-modal-toggle" data-modal-target="case-study__wallet" href="">
+        <div class="bar-callout margin-vertical-xlarge background-red">
+          <h3 class="margin-vertical-large padding-horizontal-large">The Ideal Wallet: Design</h3>
+          <svg class="open-arrow" width="30px" height="29px" viewBox="0 0 30 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Open" transform="translate(1.000000, 1.000000)" stroke="#FFFFFF">
+                <g id="Page-1">
+                  <path d="M26.7678,0.5 L1.7678,25.5" id="Stroke-1" stroke-width="3"></path>
+                  <polyline id="Stroke-3" stroke-width="3" points="0.7678 0.5 26.7678 0.5 26.7678 26.5"></polyline>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  {% include 'source/htdocs/_includes/ellipses.html' %}
+
+  <!-- Case Study Intro -->
+  <div class="row">
+    <div class="medium-6 medium-offset-2 columns">
+      <h3 class="header-citation margin-left-xlarge"><strong>Case Study: </strong>IDEO and Bank of America's Keep the Change Program</h3>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/marc_schmidt.png',
+    'quote': 'Ultimately, people want to feel that they are in control...managing money is not generally something people like to deal with…[this project] was about helping people build better habits, but also relate to their money in more positive ways. ”',
+    'source_name' : '<a href="http://www.christianmarcschmidt.com/" target="_blank">Christian Marc Schmidt</a>',
+    'source_title' : 'Interaction at IDEO during the Keep the Change project'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">Let’s try a thought experiment. Put yourself in the state of mind of someone living paycheck to paycheck. For some of us who as designers spent time freelancing and waiting...and waiting...to get paid by clients, this might not be a hard thing to imagine.</p>
+      <p class="wow fadeInUp">What are some of your biggest fears? Getting your water or heat shut off because you can’t pay bills on time? Maybe things are bad enough that you worry you won’t  make rent and end up getting evicted. Certainly you probably don’t have time (or the means) to worry about setting up a savings plan. A <a href="https://www.princeton.edu/main/news/archive/S37/75/69M50/index.xml?section=topstories" target="_blank">2013 study at Princeton</a> showed that being in this state of mind actually impairs the brainpower needed for navigating other areas of life.</p>
+      <p class="wow fadeInUp">How do you go about designing a banking product for someone who is stuck in this vicious cycle? In 2004, the design firm IDEO tackled exactly this challenge for Bank of America. Their target users were not restricted to people in this demographic, but the insights that lead to Bank of America’s innovative "Keep the Change" program came in part from <a href="http://www.fastcodesign.com/1669452/want-breakthrough-ideas-first-listen-to-the-freaks-and-geeks" target="_blank">extreme users</a>.  Such users had unconventional ways of solving banking problems, which gave the IDEO team ideas for a banking service that would help solve the needs of people who were having a difficult time achieving a sense of control over their finances.<cite class="number">3</cite></p>
+    </div>
+  </div>
+
+    <!-- Block Quote -->
+    {% set vars = {
+      'image_source' : '/img/avatars/tucker.png',
+      'quote': 'There was an almost unexpected and very emotional effect from this new service...people who had previously never had savings suddenly did...and it wasn’t the amount that mattered; even a small amount of money in their savings account gave them a sense of power and control over their finances. ”',
+      'source_name' : 'Faith Tucker',
+      'source_title' : 'Senior Vice President &amp; Product Developer at Bank of America during the Keep the Change Project'
+      }
+    %}
+    {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">IDEO was given the challenge by Bank of America to find novel ways of enticing people to open new accounts. The bank was hoping that IDEO’s human-centered, ethnographic-based approach to design would bring innovation to an industry that is typically very conservative and reluctant to change.</p>
+      <p class="wow fadeInUp">To accomplish this, IDEO embedded themselves alongside Bank of America team members, and conducted observations in several cities across America. They spoke to families and individuals, learning about their spending and banking habits.  As they synthesized their observations, they began to notice some interesting patterns.</p>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284309792'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">Often, moms were in charge of the finances (not a huge surprise, perhaps). This was in the early 2000’s, before online banking and mobile devices had more or less replaced the idea of keeping a balanced checkbook. Some of these moms had a practice of rounding up the number in their checkbooks; this made addition easier of course, but it also gave a small buffer in their spending.</p>
+      <p class="wow fadeInUp">Armed with this insight, and also with the knowledge that many of these families had difficulty saving what money they had, IDEO came up with a novel service idea for Bank of America: people could enroll in a savings account that would round up purchases made with their debit cards. The overage would be transferred to a savings account automatically; in addition, the bank would match the money transferred to savings up to a certain dollar amount.</p>
+      <p class="wow fadeInUp">As you might imagine, this program became very popular, and not only with people who had trouble saving money. Since the program launched in September of 2005, over 12.3 million customers have enrolled, saving a total of over 2 billion dollars. 60% of all new customers enroll in the program. </p>
+      <p class="wow fadeInUp">When we interviewed Faith Tucker, who is now at Paypal but at the time was Senior Vice President &amp; Product Developer at Bank of America, she was clearly proud of the emotional impact this service had on people who previously had difficulty saving money. The amount was largely inconsequential; it was more about the change in mental state and feeling of empowerment that these customers had. To a certain degree, it removed the feeling of shame that came along with being unable to save money, which was replaced with pride at taking more control over their financial situation.</p>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+  'video_source' : '//fast.wistia.net/embed/iframe/sle7pp2lf3?autoPlay=true?videoFoam=true&playerColor=DF2810',
+  'image_source': '/img/design-thinking/empathize/julie_zhou.jpg',
+  'caption':'In the film <a href="https://www.designdisruptors.com/" target="_blank" class="text-gray">Design Disruptors</a>, Julia Zhou (VP Product Design, Facebook) and Mia Blume (Product Design Manager, Pinterest), talk about the importance of having empathy for your user.'
+  }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  {% include 'source/htdocs/_includes/ellipses.html' %}
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h3>Establishing Empathy Remotely: The Camera Study</h3>
+      <p class="wow fadeInUp">Product teams need to move fast, and are often working on a harsh timeline. It can be hard to convince stakeholders that user research, in the form of an ethnography, can be completed quickly and still have an impact. However, there are some great techniques available to do exactly that. If you are highly constrained on time and budget, try a <a href="https://medium.com/research-things/minimum-viable-ethnography-a047e9358df0#.2sa3zk568" target="_blank">Minimum Viable Ethnography</a>, pioneered by user research expert Erika Hall of Mule Design.</p>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284311664'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p>If you have a little more time, you can try a user camera study. The advantage of this approach is that you can get a semi-unfiltered view into the day-to-day environment of your users, and gain insights that may not be available via a phone or video-chat interview.</p>
+      <a class="bar-callout-link text-white" href="">
+        <div class="bar-callout background-red margin-vertical-xlarge js-modal-toggle" data-modal-target="case-study__camera" >
+          <h3 class="margin-vertical-large padding-horizontal-large">Camera Studies &amp; User Permissions</h3>
+          <svg class="open-arrow" width="30px" height="29px" viewBox="0 0 30 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Open" transform="translate(1.000000, 1.000000)" stroke="#FFFFFF">
+                <g id="Page-1">
+                  <path d="M26.7678,0.5 L1.7678,25.5" id="Stroke-1" stroke-width="3"></path>
+                  <polyline id="Stroke-3" stroke-width="3" points="0.7678 0.5 26.7678 0.5 26.7678 26.5"></polyline>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  {% include 'source/htdocs/_includes/ellipses.html' %}
+
+  <!-- h3  + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h3 class="wow fadeInUp margin-bottom-none">Empathy as the heart of design</h3>
+      <p class="wow fadeInUp margin-top-none">Empathy is a journey into the feelings of others; sometimes it’s a physical journey, like the one the Embrace team took to Nepal. At other times, it is a virtual journey, where users share their screens with you, or pictures of their environment in a camera study. Whatever your methods, a good empathy study will give you new perspectives on the lives of your users: the challenges they face, the things that keep them up at night, the moments that delight them. Having this empathy can give you the insights you need to solve hard, worthwhile problems.</p>
+      <p class="wow fadeInUp">Without empathy, IDEO would not have been able to help Bank of America create a product which helps their financially strained customers feel empowered about their savings.  Embrace wouldn’t have been able to create a product that has saved the lives of thousands of premature babies.  Empathy connects designers to the people who will use their products, empowering them to create products which ultimately meet real human needs.</p>
+      <p class="wow fadeInUp">As humans, we <a href="http://greatergood.berkeley.edu/article/item/the_evolution_of_empathy" target="_blank">evolved to have a powerful sense of empathy</a>; the primatologist Frans de Waal writes that the power of empathy to help people collaborate is one of the reasons we became so successful as a species. Wield this power as a designer and you’ll have the foundation, and the heart, to create great products for humans everywhere.</p>
+     </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+  'video_source' : '//fast.wistia.net/embed/iframe/gczd9d0xkh?autoPlay=true?videoFoam=true&playerColor=DF2810',
+  'image_source': '/img/headshots/headshot_maeda.jpg',
+  'caption':'John Maeda on empathy and personas.'
+  }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  {% include 'source/htdocs/_includes/ellipses.html' %}
+
+  <!-- Citations -->
+  <div class="row align-center margin-vertical-xlarge">
+    <div class="medium-8 large-7 columns border-top" id="citation">
+      <small class="text-black margin-top-large">
+      1. <a class="text-black" href="http://extreme.stanford.edu/projects/embrace" target="_blank">http://extreme.stanford.edu<span class="hide-tablet">/projects/embrace</span></a><br>
+      2. <a class="text-black" href="http://www.slate.com/blogs/the_eye/2013/11/04/embrace_infant_warmer_creative_confidence_by_tom_and_david_kelley.html" target="_blank">http://www.slate.com<span class="hide-tablet">/blogs/the_eye/2013/11/04</span></a><br>
+      3. <a class="text-black" href="https://www.ideo.com/work/keep-the-change-account-service-for-bofa" target="_blank">https://www.ideo.com<span class="hide-tablet">/work/keep-the-change-account-service-for-bofa</span></a><br>
+      </small>
+    </div>
+  </div>
+
+  <!-- Read On -->
+  <div class="background-gray-light padding-vertical-xxlarge margin-top-xxlarge section-read-on chapter">
+    <div class="row align-center">
+      <div class="medium-10 columns">
+        <h2 class="text-center wow fadeInUp">Read On</h2>
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://blog.prototypr.io/2-design-thinking-dont-conflate-interviews-with-empathy-1a99ed06af1" target="_blank">Interviews aren’t the only way to gain empathy</a></li>
+          <li><a href="https://abookapart.com/products/just-enough-research" target="_blank">Just Enough Research</a></li>
+          <li><a href="http://www.wiredtocare.com/?page_id=39" target="_blank">Wired to Care</a></li>
+        </ul>
+      </div>
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://dschool.stanford.edu/groups/designresources/wiki/4dbb2/The_Wallet_Project.html" target="_blank">D.school Wallet Project</a></li>
+          <li><a href="http://www.creativeconfidence.com/" target="_blank">Creative Confidence</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</div><!-- end #top-scroll -->
+
+<section id="footer-scroll-nav" class="relative">
+  {% include 'source/htdocs/_includes/_design-thinking.html' %}
+  {% set vars =
+    {
+      'background_color':'white'
+    }
+  %}
+  {% include 'source/htdocs/_includes/footer-html.html' with vars %}
+</section>
+
+<!-- Case Studies -->
+{% include 'source/htdocs/design-thinking/empathize/_camera-studies.html' %}
+{% include 'source/htdocs/design-thinking/empathize/_ideal-wallet.html' %}
+<!-- End Case Studies -->
+
+<!-- Footer -->
+{% include 'source/htdocs/_includes/footer.html' %}

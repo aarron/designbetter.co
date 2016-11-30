@@ -1,0 +1,7 @@
+@media print {
+  p,
+  li {
+    color: $color-black;
+    @include font-size-xsmall();
+  }
+}

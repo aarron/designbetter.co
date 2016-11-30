@@ -1,0 +1,19 @@
+//  Heros
+//  -----------------------------
+section {
+  &.page-hero {
+    text-align: center;
+    overflow-x: hidden;
+    img {
+      max-width: 1400px;
+      width: 70%;
+      @include breakpoint(medium down) {
+        max-width: 100%;
+
+      }
+    }
+    @include breakpoint(small down) {
+      padding-top: $base-spacing;
+    }
+  }
+}

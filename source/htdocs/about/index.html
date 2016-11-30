@@ -1,0 +1,91 @@
+<!-- Header -->
+{% set vars = {
+  'title': 'about',
+  'parent_page': 'about',
+  'og_title': 'About',
+  'og_url': 'http://designbetter.wpengine.com/about',
+  'og_description': 'After studying top product design teams from around the globe, and talking with industry experts, we’ve uncovered 7 universal principles of product design. Design Thinking—a process that helps companies solve wicked problems with clear eyes—serves as the foundation of these principles.',
+  'og_image': 'http://designbetter.wpengine.com/img/heros/home-footer.png'
+  }
+%}
+{% include 'source/htdocs/_includes/header.html' with vars %}
+
+<!-- Navigation -->
+{% set vars = {
+  'title': 'Design Better • About',
+  'background_color': 'schieferw',
+  'inverse_text_color': true
+  }
+%}
+{% include 'source/htdocs/_includes/navigation.html' with vars %}
+
+<div class="row align-center">
+  <div class="medium-7 columns">
+    <h2>Product design is hard.  Like any craft, there’s much to master to do it well. We want to make it easier for you to design great products.</h2>
+    <p>After studying top product design teams from around the globe, and talking with industry experts, we’ve uncovered 7 universal principles of product design. Design Thinking—a process that helps companies solve wicked problems with clear eyes—serves as the foundation of these principles.</p>
+    <p>
+      <strong><a href="http://twitter.com/aarron" target="_blank">Aarron Walter</a> and <a href="http://twitter.com/ewoolery" target="_blank">Eli Woolery</a></strong><br>InVision Design Education
+    </p>
+  </div>
+</div>
+<div class="row align-center margin-top-xlarge">
+  <div class="small-12 columns text-center">
+    <a href="#getintouch"></a>
+    <h2>Get In Touch</h2>
+  </div>
+</div>
+<div class="row align-center margin-bottom-xxlarge">
+  <div class="small-12 medium-7 columns">
+    <form action="" method="post" class="form-contact" name="contact">
+      <div class="margin-vertical-xlarge form-item__message-subject">
+        <p>My message is about:</p>
+        <div class="option">
+          <label class="radio-label">An onsite workshop at my company
+            <input type="radio" name="messageSubject" value="An onsite workshop">
+            <div class="indicator"></div>
+          </label>
+        </div>
+        <div class="option">
+          <label class="radio-label">Feedback
+            <input type="radio" name="messageSubject" value="Feedback">
+            <div class="indicator"></div>
+          </label>
+        </div>
+        <div class="option">
+          <label class="radio-label">Just saying hi!
+            <input type="radio" name="messageSubject" value="Just saying hi">
+            <div class="indicator"></div>
+          </label>
+        </div>
+      </div>
+      <div class="margin-top-xlarge margin-bottom-xxlarge form-my-information">
+        <p>My information:</p>
+        <div class="group">
+          <input type="text" name="fullName" required>
+          <span class="highlight"></span>
+          <label>Your full name</label>
+        </div>
+        <div class="group">
+          <input type="email" name="email" required>
+          <span class="highlight"></span>
+          <label>Your email</label>
+        </div>
+        <div class="group">
+          <input type="url" name="siteURL" required>
+          <span class="highlight"></span>
+          <label>Your website URL</label>
+        </div>
+        <div class="group form-item__textarea">
+          <textarea class="textarea" name="message" required></textarea>
+          <span class="highlight"></span>
+          <label>Write your message</label>
+          <!-- <div class="textarea--hidden"></div> -->
+        </div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+{% include 'source/htdocs/_includes/footer.html' with 'background_color': 'schieferw' %}

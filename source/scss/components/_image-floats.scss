@@ -1,0 +1,38 @@
+//  Heros
+//  -----------------------------
+
+.image-float,
+.text-float {
+  width: 50%;
+  @include breakpoint(small down) {
+    width: 100%;
+  }
+  &.image-float-right {
+    float: right;
+    margin-top: $base-spacing;
+    margin-left: $base-spacing;
+    margin-bottom: $base-spacing;
+  }
+  &.image-float-left {
+    float: left;
+    margin-top: $base-spacing;
+    margin-right: $base-spacing;
+    margin-bottom: $base-spacing;
+  }
+  .image-caption {
+    text-align: center;
+    color: $color-purple;
+    @include font-size-xsmall();
+  }
+}
+
+.text-float {
+  background-color: $color-brown-light;
+  padding: $base-spacing;
+  h4 {
+    @include font-size-xsmall();
+  }
+  p {
+    @include font-size-xsmall();
+  }
+}

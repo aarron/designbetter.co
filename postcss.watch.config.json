@@ -1,0 +1,15 @@
+{
+  "use": [
+    "postcss-import",
+    "autoprefixer",
+    "css-mqpacker"
+  ],
+  "input": "build/css/style.min.css",
+  "output": "build/css/style.min.css",
+  "local-plugins": true,
+  "watch": false,
+  "map": true,
+  "autoprefixer": {
+    "browsers": "> 5%"
+  }
+}

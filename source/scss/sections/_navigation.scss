@@ -1,0 +1,553 @@
+//  Navigation
+//  -----------------------------
+.top-bar {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  text-align: center;
+  transform: translateY(0px);
+  transition: transform 0.4s cubic-bezier(.17,.67,.32,1);
+  overflow: hidden;
+
+  @include breakpoint(small down) {
+    position: relative;
+  }
+
+  h1 {
+    position: relative;
+    color: $color-white;
+    @include font-size-small();
+    @include font-header-regular();
+
+    a {
+      text-decoration: none;
+      color: $color-white;
+
+      &:hover {
+        opacity: .9;
+      }
+    }
+  }
+
+  h1:not(.navigation-headline) {
+    @include breakpoint(small down) {
+      // display: none;
+      padding-top: 5px;
+    }
+  }
+
+  button {
+    @include font-size-small();
+    @include font-header-regular();
+    color: $color-white;
+  }
+
+  .top-bar__content {
+    z-index: 5;
+  }
+
+  .story-navigation {
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    color: $color-white;
+    @include font-size-small();
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      transition: .2s;
+      padding: 10px;
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+  .story-navigation__print {
+    position: fixed;
+  }
+
+  &.modal-open {
+    transform: translateY(-80px);
+    transition: transform 0.4s cubic-bezier(.17,.67,.32,1);
+  }
+
+  &.nav-up {
+    transform: translateY(-80px);
+    @include breakpoint(small down) {
+      transform: translateY(0px);
+    }
+  }
+
+  .top-bar__alt-color {
+    background-color: $color-red;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    transform: translateY(80px);
+    transition: transform 0.4s cubic-bezier(.17,.67,.32,1);
+  }
+
+  // this class is added via JS to change color
+  &.top-bar--alt {
+    .top-bar__alt-color {
+      transform: translateY(0);
+      transition: transform 0.4s cubic-bezier(.17,.67,.32,1);
+    }
+  }
+}
+&.top-bar--inverse-text {
+  h1 {
+    a {
+      color: $color-black;
+
+      &:hover {
+        opacity: .9;
+      }
+    }
+  }
+  .story-navigation {
+    display: none;
+  }
+}
+#nav-text {
+  display: none;
+}
+#page-home {
+  .story-navigation {
+    display: none;
+  }
+  #nav-text {
+    display: inline;
+  }
+}
+
+.nav-toggle {
+  position: fixed;
+  border: 1px solid transparent;
+  padding: 18px 0px 15px 7px;
+  width: 40px;
+  height: 40px;
+  z-index: 300;
+  top: 20px;
+  left: 24px;
+  color: $color-white;
+  transform: rotate(0deg);
+  transition: .2s ease-out;
+  @include font-size-small();
+  @include breakpoint(small down) {
+    position: absolute;
+  }
+  span {
+    position: absolute;
+    display: block;
+    content: '';
+    left: 0;
+    cursor: pointer;
+    height: 2px;
+    width: 20px;
+    background: $color-white;
+    opacity: 1;
+    transition: all .25s cubic-bezier(.41,.33,.47,1.37);
+    transform-origin: left center;
+  }
+  span:nth-child(1) {
+    top: 8px;
+  }
+  span:nth-child(2) {
+    top: 16px;
+    transition: all .2s ease-out;
+  }
+  span:nth-child(3) {
+    top: 24px;
+  }
+  &.nav-toggle--inverse span,
+  &.nav-toggle--inverse span:before,
+  &.nav-toggle--inverse span:after {
+    background: $color-black;
+  }
+  &.hidden {
+    display: none;
+  }
+  &.open {
+    @include breakpoint(small down) {
+      position: fixed;
+    }
+  }
+}
+
+.nav-toggle.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+  left: 0px;
+}
+
+.nav-toggle.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 22px;
+  left: 0px;
+}
+
+.nav-toggle.open {
+  &.nav-toggle--inverse span,
+  &.nav-toggle--inverse span:before,
+  &.nav-toggle--inverse span:after {
+    background: $color-white;
+  }
+
+  &.nav-toggle--black span,
+  &.nav-toggle--black span:before,
+  &.nav-toggle--black span:after {
+    background: $color-black;
+  }
+}
+
+
+.top-bar button.subscribe-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  &.text-black {
+    color: $color-black;
+  }
+
+  @include breakpoint (small down) {
+    top: 32px;
+    right: 24px;
+    font-size: 14px;
+  }
+}
+
+.full-nav {
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(80px);
+  opacity: 0;
+  z-index: -1;
+  transition: transform 0.4s cubic-bezier(.17,.67,.32,1), opacity 0.4s ease-out, visibility 0.4s ease-out;
+
+  .full-nav__content {
+    opacity: 0;
+    transition: opacity 0.25s 0s cubic-bezier(.17,.67,.32,1);
+  }
+
+  .margin-left-xlarge {
+    @include breakpoint (medium down) {
+      margin-left: auto;
+    }
+  }
+  .top-bar {
+    width: auto;
+    position: static;
+  }
+  .nav-intro a {
+    display: inline-block;
+    transition: .2s;
+  }
+  .nav-intro a::after {
+    content: '';
+    display: block;
+    background-color: transparent;
+    height: 1px;
+    width: 100%;
+    margin-top: -8px;
+    transition: .2s;
+  }
+  .nav-intro a:hover::after {
+    background-color: $color-white;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .header-design-thinking,
+  .header-about,
+  .header-principles-of-product-design {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0;
+  }
+  li {
+    @include font-header-light();
+    font-size: 18px;
+    @include breakpoint(medium up) {
+      font-size: 20px;
+    }
+    @include breakpoint(large up) {
+      font-size: 24px;
+    }
+    border-bottom: 1px solid #323232;
+    color: $color-white;
+  }
+
+  h2:not(.full-nav__headline) {
+   border-bottom: 1px solid #323232;
+  }
+  .full-nav-list {
+    ul {
+      margin-top: 0;
+    }
+    li {
+      margin-bottom: 0px;
+    }
+    a {
+      color: $color-gray;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 0px;
+      padding: 20px 0 15px 0;
+      border-bottom: 1px solid transparent;
+      line-height: 1;
+      background: none;
+      transition: all .3s ease-out;
+      width: 100%;
+
+      .list-text {
+        transition: border-color .3s ease-out;
+        border-bottom: 1px solid transparent;
+        @include breakpoint (small down) {
+          line-height: 1.2;
+        }
+      }
+      &:hover {
+        color: $color-white;
+        .list-text {
+          border-bottom: 1px solid $color-white;
+        }
+      }
+    }
+    .columns:first-child {
+      padding-right: 2em;
+      @include breakpoint (medium down) {
+        padding-right: 0.625rem;
+      }
+    }
+    .columns:nth-child(2) {
+      padding-left: 2em;
+
+      @include breakpoint (medium down) {
+        padding-left: 0.625rem;
+      }
+    }
+  }
+  .nav-footer {
+    p {
+      @include font-header-regular();
+      @include font-size-xsmall();
+      line-height: 1.3em;
+      a {
+        color: $color-white;
+        transition: .2s;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        background: none;
+        border-bottom: none;
+      }
+      a::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 4px;
+        background-color: $color-white;
+        height: 1px;
+        width: 100%;
+        transition: .2s;
+      }
+      a:hover::after {
+        background-color: transparent;
+      }
+    }
+  }
+  #page-footer {
+    padding: 0 0 15px 0;
+    p {
+      @include font-size-small();
+      line-height: 1.3em;
+    }
+    a::after {
+      background-color: $color-white;
+      bottom: 8px;
+    }
+    a:hover::after {
+      background-color: transparent;
+    }
+  }
+
+  // Reveal Animation
+  &.modal-open {
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+    overflow-x: hidden;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+    transform: translateY(0px);
+    transition: opacity 0.4s cubic-bezier(.17,.67,.32,1), transform 0.4s cubic-bezier(.17,.67,.32,1), visibility 0s;
+
+    .full-nav__content {
+      opacity: 1;
+      transition: opacity 803ms 100ms cubic-bezier(0.0, 0.0, 0.2, 1);
+      @include breakpoint (medium down) {
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+.top-bar-case-study {
+  .site-navigation {
+    position: absolute;
+    left: 34px;
+    top: 25px;
+  }
+}
+
+/*Active states*/
+
+.seven-principles {
+  .full-nav .full-nav-list .header-seven-principles a {
+    color: $color-white;
+  }
+}
+.design-thinking {
+  .full-nav .full-nav-list .header-design-thinking a {
+    color: $color-white;
+  }
+}
+
+.about {
+  .full-nav .full-nav-list .header-about a {
+    color: $color-white;
+  }
+}
+
+#page-story-first {
+  .full-nav .full-nav-list .nav-story-first a {
+    color: $white;
+    .list-text {
+      border-color: $color-white;
+    }
+  }
+}
+#page-pencils-before-pixels {
+  .full-nav .full-nav-list .nav-pencils-before-pixels a {
+    color: $white;
+    .list-text {
+      border-color: $color-white;
+    }
+  }
+}
+#page-break-the-black-box {
+  .full-nav .full-nav-list .nav-break-the-black-box a {
+    color: $white;
+    .list-text {
+      border-color: $color-white;
+    }
+  }
+}
+
+#page-fast-feedback {
+  .full-nav .full-nav-list .nav-fast-feedback a {
+    color: $white;
+    .list-text {
+      border-color: $color-white;
+    }
+  }
+}
+
+#page-guess-less {
+  .full-nav .full-nav-list .nav-guess-less a {
+    color: $white;
+    .list-text {
+      border-color: $color-white;
+    }
+  }
+}
+
+#page-show-tell {
+  .full-nav .full-nav-list .nav-show-tell a {
+    color: $white;
+    .list-text {
+      border-color: $color-white;
+    }
+  }
+}
+
+#page-lateral-design {
+  .full-nav .full-nav-list .nav-lateral-design a {
+    color: $white;
+    .list-text {
+      border-color: $color-white;
+    }
+  }
+}
+
+#page-why-we-need-design-thinking {
+  .full-nav .full-nav-list .nav-why-we-need-design-thinking a {
+    color: $white;
+    .list-text {
+      border-color: $color-white;
+    }
+  }
+}
+
+#page-empathize {
+  .full-nav .full-nav-list .nav-empathize a {
+    color: $white;
+    .list-text {
+      border-color: $color-white;
+    }
+  }
+}
+
+#page-define {
+  .full-nav .full-nav-list .nav-define a {
+    color: $white;
+    .list-text {
+      border-color: $color-white;
+    }
+  }
+}
+
+#page-ideate {
+  .full-nav .full-nav-list .nav-ideate a {
+    color: $white;
+    .list-text {
+      border-color: $color-white;
+    }
+  }
+}
+
+#page-prototype {
+  .full-nav .full-nav-list .nav-prototype a {
+    color: $white;
+    .list-text {
+      border-color: $color-white;
+    }
+  }
+}
+
+#page-test {
+  .full-nav .full-nav-list .nav-test a {
+    color: $color-white;
+    .list-text {
+      border-color: $color-white;
+    }
+  }
+}
+

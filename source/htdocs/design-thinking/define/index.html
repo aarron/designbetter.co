@@ -1,0 +1,343 @@
+<!-- Header -->
+{% set vars = {
+  'title': 'define',
+  'parent_page': 'design-thinking',
+  'og_title': 'Design Better - Design Thinking',
+  'og_url': 'http://designbetter.wpengine.com/principles-of-product-design/define/',
+  'og_description': 'It’s not just about the shiny object…the product is the whole experience.',
+  'og_image': '/img/og/hero-define.png'
+  }
+%}
+{% include 'source/htdocs/_includes/header.html' with vars %}
+
+<!-- Navigation -->
+{% set vars = {
+  'title': 'Design Better • Design Thinking • Define',
+  'background_color': 'red'
+  }
+%}
+{% include 'source/htdocs/_includes/navigation.html' with vars %}
+
+<div id="top-scroll">
+
+<!-- Hero Image -->
+{% set vars = {
+  'image_source': '/img/heros/hero-define.svg',
+  'image_source_small': '/img/heros/hero-define-small.svg',
+  'image_alt': 'Design Thinking'
+  }
+%}
+{% include 'source/htdocs/_includes/page-hero.html' with vars %}
+
+<!-- Intro w/ Paragraphs -->
+<section class="page-content page-content__article relative">
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp padding-top-xlarge margin-bottom-xxlarge">Define</h2>
+    </div>
+  </div>
+
+  <!-- Audio Sidebar -->
+  {% set vars = {
+    'color' : 'red',
+    'audio_source': '/audio/define-audio.mp3',
+    'subscribe_itunes': 'https://geo.itunes.apple.com/us/album/this-american-life-stories/id335933324?mt=1&app=music',
+    'subscribe_google': 'https://www.thisamericanlife.org/blog/2010/10/this-american-life-android-app',
+    'subscribe_spotify': 'https://open.spotify.com/user/una_s/playlist/2p89CV9wAwBYUowlXEGOgi',
+    'subscribe_soundcloud': 'https://soundcloud.com/this-american-life'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio-sidebar.html' with vars %}
+
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">In 1968, when Apollo 8 became the first spacecraft to circumnavigate the moon, the crew had one photographic mission: capture detailed images of the moon’s surface. As the astronauts rounded the dark side of the moon, the Earth became visible: a brilliant blue and white marble. Earth was remarkable not only for its serene beauty from this perspective, but also for its apparent fragility; the only life-sustaining planet in our solar system, dwarfed by the vast emptiness of space.</p>
+      <p class="wow fadeInUp">With the photograph from this event, which became known as “Earthrise,” the Apollo 8 astronauts inadvertently sparked a spontaneous reframing of the environmental problems threatening our planet: no longer were we on a vast planet with seemingly endless resources, but rather a small, very finite lifeboat in an infinite universe.<cite class="number"><a href="#citation">1</a></cite> This change in perspective helped charge the modern environmental movement, inspiring the creation of Earth Day in 1970.</p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center margin-vertical-xlarge">
+    <div class="medium-10 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/define/earthrise.jpg',
+		'caption' : 'Earthrise, an image from the first manned mission to the moon, helped frame the modern environmental movement.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Reframing the way that a problem is viewed can inspire a movement, as it did in this case. It can also be a powerful way to create innovative design solutions to challenging problems, and even create new and disruptive business models. During the Empathize phase of the design thinking process, you collected stories and insights from your users. This Define phase will give you an opportunity to synthesize these findings and come up with a problem statement, called a point of view (POV), that can help you reframe the problem and open up new and innovative solution spaces.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Developing a Point of View (POV)</h2>
+      <p class="wow fadeInUp">A POV is composed of three elements:</p>
+      <ul class="wow fadeInUp">
+        <li><em>Who</em> is your user? (Note as many specific details as possible.)</li>
+        <li><em>What</em> is their deep, unmet need?</li>
+        <li><em>Why</em> is this insightful? (List the insights you gleaned from your empathetic needfinding process.)</li>
+      </ul>
+      <p class="wow fadeInUp">As an example, below is a POV that the founders of the startup <a href="https://www.awesomebox.com/" target="_blank">AwesomeBox</a>, a gift-giving platform, used in the early days of developing their product. They were trying to design a product for people who have a hard time giving thoughtful gifts. They interviewed and observed hundreds of potential customers, from which they created POV’s like this:</p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center margin-vertical-xlarge">
+    <div class="medium-10 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/define/Awesomebox_POV_mod.png'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Let’s create some hypothetical POVs using Netflix, as they’re a good example of a company that disrupted an existing business model by reframing the problem for their users.</p>
+      <p class="wow fadeInUp">In their early days, Netflix might have framed their POV like this: </p>
+      <p class="wow fadeInUp"><em>“Caroline is a 26 year old single mom who loves sci-fi movies; she needs a way to rent DVDs that works with her busy schedule, and makes her feel relaxed after a long day of work and taking care of her daughter.”</em></p>
+      <p class="wow fadeInUp">Using this point of view, Netflix certainly could have come up with a solution that delivers DVDs by mail, but their solution space would have been constrained and they might have missed a much larger opportunity.</p>
+      <p>Now consider how Netflix could have reframed the problem with a different POV: </p>
+      <p><em>Caroline is a 26 year old single mom who loves sci-fi movies; she needs a way to access new and entertaining content in a way that allows her to consume it at her own pace and makes her feel excited about discovering new shows which she can share with her friends. </em></p>
+      <p>With the problem statement rewritten like this, Netflix has opened up all kinds of opportunities for innovation. Let’s unpack them:</p>
+      <p><em> “She needs a way to access new and entertaining content...”</em><br>Nowhere does this mention DVDs; in the early days, a mail delivery solution would still work, but over time Netflix could develop the streaming services that helped their service become so popular. Also, "new and entertaining" doesn’t necessarily limit them to licensing content. Netflix could also develop and distribute their own shows.</p>
+      <p><em>“...in a way that allows her to consume it at her own pace...”</em><br>Again, mail delivery of DVDs would be a partial solution to this constraint, but once streaming is an option, this becomes an even bigger opportunity. Add in original content, and now Caroline can binge-watch House of Cards while her daughter is sleeping. (We never said that innovative solutions always have a positive social impact.) </p>
+      <p><em>“...and makes her feel excited about discovering new shows..”</em><br>Netflix famously developed a "recommendation algorithm" which helps viewers discover new content based on the shows they watch and the ratings that they give; this feature wouldn’t have necessarily stemmed from the previous POV.</p>
+      <p><em>“...which she can share with her friends.” </em><br>This last insight, while minor on it’s surface, is a huge reason for the viral growth of Netflix—especially after they began developing their own content. Once viewers began to rave about shows like <em>House of Cards, Stranger Things</em>, etc., and the only way to access these shows was via Netflix, then continued growth was almost assured.</p>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284351017'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Clearly, there would have been a lot of value left on the table had Netflix used the first POV to guide their designs. In addition to helping you reframe a problem, a good POV can help <a href="http://us5.campaign-archive1.com/?u=7e093c5cf4&id=cfe9dbcac8" target="_blank">align your team</a>, provide a way to compare competing ideas, and help fuel brainstorms. In fact, the d.school at Stanford came up with a great checklist of all the things that a good POV should help you accomplish:</p>
+
+  <!-- Case Study Block -->
+      <a class="bar-callout-link text-white" href="">
+        <div class="bar-callout background-red margin-vertical-xlarge js-modal-toggle" data-modal-target="case-study__pov-checklist" >
+          <h3 class="margin-vertical-large padding-horizontal-large">Point of View (POV) Checklist</h3>
+          <svg class="open-arrow" width="30px" height="29px" viewBox="0 0 30 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Open" transform="translate(1.000000, 1.000000)" stroke="#FFFFFF">
+                <g id="Page-1">
+                  <path d="M26.7678,0.5 L1.7678,25.5" id="Stroke-1" stroke-width="3"></path>
+                  <polyline id="Stroke-3" stroke-width="3" points="0.7678 0.5 26.7678 0.5 26.7678 26.5"></polyline>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </a>
+      <p class="wow fadeInUp">In the remaining sections of this article, we will dive into a case study where developing a POV provided inspiration for a healthcare project with a lot of impact. Then we’ll share an exercise that can help you quickly generate some POV’s of your own.</p>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284352174'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- h2 + p -->
+  <div class="row">
+    <div class="medium-8 medium-offset-2 columns">
+      <h3 class="header-citation margin-left-xlarge"><strong>Case Study: </strong>GE Healthcare MRI Redesign</h3>
+    </div>
+  </div>
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">We first met Doug Dietz when doing the research for this article. Over the phone, Doug is a kind, affable midwesterner—the sort of guy you imagine it would be fun to go to a Milwaukee Brewers game with. But beneath his unassuming presence is a formidable design mind; with over 25 years of experience at GE Healthcare, first as a principal designer and now Innovation Architect, Doug has helped develop medical equipment such as MRI and CT scanners for one of the world’s largest corporations.</p>
+      <p class="wow fadeInUp"><a href="https://www.youtube.com/watch?v=jajduxPD6H4" target="_blank">In 2008, Doug ran into a problem</a>. He was at a hospital where one of his new MRI machines had recently been installed. The machine had won a prestigious industrial design award and Doug was eager to see the machine in situ. </p>
+      <p class="wow fadeInUp">Before he had much of a chance to ask the technician about the machine, he was asked to step outside of the room, as a patient was scheduled to come in for an appointment. What he witnessed in the hallway changed the course of his career, and helped him reframe the MRI user experience. <cite class="number"><a href="#citation">3</a></cite></p>
+      <p class="wow fadeInUp">A young family walked in, their 7 year old daughter obviously distressed. As the family got closer, Doug could see that she was weeping. The father leaned over and said, “Remember, we talked about this, you can be brave.”</p>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'red',
+    'text_color': 'white',
+    'text': '<strong>Doug peered</strong> into the room where the young girl was about to enter the scanner. Crouching down, he had a <strong>new perspective</strong> on the room—and on the machine that he had so proudly designed. He could <strong>immediately</strong> understand why the girl was terrified: <strong>warning stickers</strong> plastered the machine, and yellow and black tape marked the floor like a <strong>crash-test scene</strong>. The machine itself looked like a beige “brick with a hole in it.”'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Given this new perspective, it was no mystery why many children have to be sedated to get MRI or CT scans: everything about the experience can be frightening, from the room, to the machine, to the claustrophobia and loud noises. Doug came away from that day with a new mission: how might GE redesign this experience for children, so that it became a positive experience and not something to be dreaded?</p>
+      <p class="wow fadeInUp">Doug’s boss recommended he attend an executive education workshop at the d.school at Stanford, to get the design thinking toolkit that might help him solve this big, emotionally charged problem. The workshop helped him frame the problem as a POV, in the form of a Madlib which they structured in the following way:</p>
+      <p class="wow fadeInUp"><em>
+        “We met…”<br>
+        “We were amazed to realize that…”<br>
+        “It would change the world if…”
+      </em></p>
+      <p class="wow fadeInUp">Using this framework, Doug and his team were able to iterate on their POV until they came up with this:</p>
+      <p class="wow fadeInUp"><em>“We met scared families trying not to fall apart during the hospital visit.</em></p>
+      <p class="wow fadeInUp"><em>We were amazed to realize that they have to sedate 80% of the children between 3 and 8 years old, in order to have them be scanned.</em></p>
+      <p class="wow fadeInUp"><em>It would change the world if we could capitalize on the child’s amazing imagination to transform the radiology experience into a positive, memorable adventure.”</em></p>
+      <p class="wow fadeInUp">By reframing the problem using this POV, Doug and his team realized that the beginning of the user experience started at home, when the parents were trying to figure out what the procedure was like and how to explain it to their children. They were able to outline the whole user journey for the family, and determine the different touchpoints that they could influence or redesign.</p>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284352695'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">The team didn’t have the budget to do a full redesign of the machines, so once they had identified a few promising opportunities, they decided to implement a low-fidelity <a href="/design-thinking/prototype">prototype</a>. By applying decals to the exterior of the machine and the walls of the scanning room, they were able to transform the dull, monotone experience into a colorful pirate adventure, where the captain's helm led into the inside of the “ship” (this feature had the added benefit of making the opening seem much larger and less claustrophobic). <cite class="number"><a href="#citation">4</a></cite> They created a script for the operator, who led the children through the pirate adventure.</p>
+    </div>
+  </div>
+
+  <!-- Centered Image -->
+  <div class="row align-center margin-vertical-large">
+    <div class="medium-8 large-7 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/define/piratey4.jpg',
+        'caption': 'Photo courtesy Children\'s Hospital of Pittsburgh of UPMC'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">The results from this redesign, and from others like it, were no less than amazing. Sedation rates dropped from 80% to fractions of a percent. But just as important as the numbers to Doug are the human stories behind them. </p>
+      <p class="wow fadeInUp">While at the pirate-themed scanner, Doug was talking to the parents of a little girl  about the room’s piña colada scented aromatherapy, something that they were getting a kick out of. The little girl came up to the mom and tugged at her shirt. The third time, the mom looked down and asked what it was. "Can we come back tomorrow?" the little girl said. </p>
+      <p class="wow fadeInUp">For at least one family, Doug and his team had transformed the experience from something terrifying to something to look forward to. By using their POV as a way to reframe the problem, his team really was able to change the world.</p>
+      <!-- Case Study Block -->
+      <a class="bar-callout-link text-white" href="">
+        <div class="bar-callout background-red margin-vertical-xlarge js-modal-toggle" data-modal-target="case-study__using-madlibs" >
+          <h3 class="margin-vertical-large padding-horizontal-large"><strong>Exercise</strong>: Using Madlibs to Generate POV’s (15 Minutes)</h3>
+          <svg class="open-arrow" width="30px" height="29px" viewBox="0 0 30 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Open" transform="translate(1.000000, 1.000000)" stroke="#FFFFFF">
+                <g id="Page-1">
+                  <path d="M26.7678,0.5 L1.7678,25.5" id="Stroke-1" stroke-width="3"></path>
+                  <polyline id="Stroke-3" stroke-width="3" points="0.7678 0.5 26.7678 0.5 26.7678 26.5"></polyline>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">The Exponential Power of Reframing</h2>
+      <p class="wow fadeInUp">In their wonderful <a href="http://www.eamesoffice.com/the-work/powers-of-ten/" target="_blank">1977 film for IBM</a>, the designers Charles and Ray Eames explored how your perspective changes by looking at the relative scale of objects. For example, the film zooms out from a man and woman on a picnic blanket at the beginning of the film to the grass surrounding them.</p>
+    </div>
+  </div>
+
+    <!-- Video Block -->
+    {% set vars = {
+      'video_source' : 'https://www.youtube.com/embed/0fKBhvDjuy0?autoplay=true',
+      'image_source': '/img/design-thinking/define/Stills-from-Powers-of-Ten-1977.jpg',
+      'caption':'<em>Powers of Ten</em> by Charles and Ray Eames'
+      }
+    %}
+    {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">The film quickly progresses from earth to the edge of the universe, then zooms back in to the nucleus of a carbon atom. In the process, you get a wonderful feeling for not only the immensity of our universe at both ends of the scale, but also how reframing your viewpoint can give you a new perspective on something you thought was already familiar and ordinary. </p>
+      <p class="wow fadeInUp">As designers, <a href="http://www.fastcodesign.com/1672354/how-reframing-a-problem-unlocks-innovation" target="_blank">we can leverage the power of reframing</a> to help us solve wicked problems and to innovate. We can create POVs to help guide our product design process, and connect us to our users. And if we’re lucky, we might just see the world in a new light along the way.</p>
+    </div>
+  </div>
+
+  <!-- Citations -->
+  <div class="row align-center margin-vertical-xlarge" id="citation">
+    <div class="medium-8 large-7 columns border-top">
+      <small class="text-black margin-top-large">
+      1. <a class="text-black" href=" http://longnow.org/essays/reframing-problems/" target="_blank"> http://longnow.org<span class="hide-tablet">/essays/reframing-problems/</span></a><br>
+      2. <a class="text-black" href=" http://dschool.stanford.edu/use-our-methods/the-bootcamp-bootleg/" target="_blank"> http://dschool.stanford.edu<span class="hide-tablet">/use-our-methods/the-bootcamp-bootleg/</span></a><br>
+      3. <a class="text-black" href="https://challenges.openideo.com/challenge/creative-confidence/inspiration/the-story-of-doug-dietz-creative-confidence-in-the-mri-suite" target="_blank">Creative Confidence in the MRI Suite</a><br>
+      4. <a class="text-black" href="http://www.slate.com/blogs/the_eye/2013/10/18/creative_confidence_a_new_book_from_ideo_s_tom_and_david_kelley.html" target="_blank">http://www.slate.com/blogs<span class="hide-tablet">/the_eye/2013/10/18/</span></a><br>
+      5. <a class="text-black" href="https://jtbd.info/5-tips-for-writing-a-job-story-7c9092911fc9#.kx78xial5" target="_blank">https://jtbd.info<span class="hide-tablet">/5-tips-for-writing-a-job-story-7c9092911fc9#.kx78xial5</span></a><br>
+      </small>
+    </div>
+  </div>
+
+  <!-- Read On -->
+  <div class="background-gray-light padding-vertical-xxlarge margin-top-xxlarge section-read-on chapter">
+    <div class="row align-center">
+      <div class="medium-10 columns">
+        <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Read On</h2>
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="http://www.fastcodesign.com/1672354/how-reframing-a-problem-unlocks-innovation" target="_blank">How Reframing A Problem Unlocks Innovation </a></li>
+          <li><a href="http://www.readytoreframe.com/" target="_blank">Reframe: Shift the Way You Work, Innovate, and Think</a></li>
+          <li><a href="https://medium.com/@shahrsays/dont-make-a-journey-map-9-archetypes-of-good-bad-and-how-to-decide-what-to-use-d65abd30ec6f" target="_blank">Don’t Make a Journey Map: 9 archetypes</a></li>
+        </ul>
+      </div>
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://www.fastcompany.com/3050265/hit-the-ground-running/three-ways-to-reframe-a-problem-to-find-innovative-solution" target="_blank">Three Ways to Reframe a Problem to Find an Innovative Solution</a></li>
+          <li><a href="https://blog.intercom.io/using-job-stories-design-features-ui-ux/" target="_blank">Designing features using Job Stories </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</div><!-- end #top-scroll -->
+
+<section id="footer-scroll-nav" class="relative">
+  {% include 'source/htdocs/_includes/_design-thinking.html' %}
+  {% set vars =
+    {
+      'background_color':'white'
+    }
+  %}
+  {% include 'source/htdocs/_includes/footer-html.html' with vars %}
+</section>
+
+<!-- Case Studies -->
+{% include 'source/htdocs/design-thinking/define/_pov-checklist.html' %}
+{% include 'source/htdocs/design-thinking/define/_using-madlibs.html' %}
+<!-- End Case Studies -->
+
+<!-- Footer -->
+{% include 'source/htdocs/_includes/footer.html' %}

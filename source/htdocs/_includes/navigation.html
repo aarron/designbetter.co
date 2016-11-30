@@ -1,0 +1,21 @@
+
+<a class="nav-toggle js-modal-toggle {% if inverse_text_color is defined %} nav-toggle--inverse {% endif %}" href="#" data-modal-target="full-nav">
+  <span></span>
+  <span></span>
+  <span></span>
+</a>
+
+<div class="top-bar background-{{ background_color }} {% if inverse_text_color is defined %} top-bar--inverse-text {% endif %}" id="page-top-bar">
+  <div class="top-bar__alt-color"></div>
+  <div class="top-bar__content">
+    <div class="row">
+      <div class="medium-12 columns hide-tablet">
+        <h1><a href="/">{{ title }}</a><span id="nav-text">Principles of Product Design</span></h1>
+      </div>
+      <div class="medium-12 columns show-tablet">
+        <h1><a href="/">DesignBetter.co</a></h1>
+      </div>
+    </div>
+  </div>
+  <button class="subscribe-btn js-modal-toggle {% if inverse_text_color is defined %}text-black{% endif %}" data-modal-target="subscribe-form-section" data-invert-toggle="true">Subscribe</button>
+</div>

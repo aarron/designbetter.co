@@ -1,0 +1,20 @@
+<a href="{{ link }}" class="link-block">
+  <div class="title text-center text-{{ primary_color }}">
+    <h2 class="background-hover-{{ primary_color }} margin-none inline"><strong>{{ header }}</strong></h2><br>
+
+    {% if header_2 %}
+
+      <h2 class="background-hover-{{ primary_color }} margin-none inline header-2"><strong>{{ header_2 }}</strong></h2>
+
+    {% endif %}
+
+    <div>
+      <p class="margin-none font-header">{{ subheader }}</p>
+    </div>
+  </div>
+  <img src="{{ image_source }}" alt="{{ header }}" />
+  <div class="box box-{{ alignment }} box-{{ position }} background-{{ background_color }} outline-{{ primary_color }} text-{{ text_color }}">
+    <p><strong>{{ text }}</strong></p>
+    <p>{{ citation }}</p>
+  </div>
+</a>

@@ -1,0 +1,19 @@
+<!-- Header -->
+{% include 'source/htdocs/_includes/header.html' with {'title': 'case-study'} %}
+
+{% include 'source/htdocs/case-study/content/_camera-studies.html' %}
+
+<script type="text/javascript">
+  window.onload =
+  function() {
+    window.print();
+  }
+</script>
+
+<!-- Footer -->
+{% set vars =
+  {
+    'text_color':'white'
+  }
+%}
+{% include 'source/htdocs/_includes/footer.html' with vars %}

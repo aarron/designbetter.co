@@ -1,0 +1,506 @@
+<!-- Header -->
+{% set vars = {
+  'title': 'guess-less',
+  'parent_page': 'seven-principles',
+  'og_title': 'Design Better - Guess Less',
+  'og_url': 'http://designbetter.wpengine.com/principles-of-product-design/guess-less/',
+  'og_description': 'You win a race at the finish line, not the starting block.',
+  'og_image': '/img/og/hero-guess.png'
+  }
+%}
+{% include 'source/htdocs/_includes/header.html' with vars %}
+
+<!-- Navigation -->
+{% set vars = {
+  'title': 'Design Better • Principles of Product Design • Guess Less',
+  'background_color': 'purple'
+  }
+%}
+{% include 'source/htdocs/_includes/navigation.html' with vars %}
+
+<div id="top-scroll">
+
+<!-- Hero Image -->
+{% set vars = {
+  'image_source': '/img/heros/hero-guess.svg',
+  'image_source_small': '/img/heros/hero-guess-small.svg',
+  'image_alt': 'Guess Less'
+  }
+%}
+{% include 'source/htdocs/_includes/page-hero.html' with vars %}
+
+<!-- Intro w/ Paragraphs -->
+<section class="page-content relative page-content__article">
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp padding-top-xlarge margin-bottom-xxlarge">Guess Less</h2>
+    </div>
+  </div>
+
+  <!-- Audio Sidebar -->
+  {% set vars = {
+    'color' : 'purple',
+    'audio_source': '/audio/guess-audio.mp3',
+    'subscribe_itunes': 'https://geo.itunes.apple.com/us/album/this-american-life-stories/id335933324?mt=1&app=music',
+    'subscribe_google': 'https://www.thisamericanlife.org/blog/2010/10/this-american-life-android-app',
+    'subscribe_spotify': 'https://open.spotify.com/user/una_s/playlist/2p89CV9wAwBYUowlXEGOgi',
+    'subscribe_soundcloud': 'https://soundcloud.com/this-american-life'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio-sidebar.html' with vars %}
+
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Have you ever bought a lottery ticket? I admit, I’ve played a few times. You won’t be surprised to learn that I never did win the big jackpot. Seeing winners on the evening news gives the false impression that anyone could win, but the odds of winning are long—<em>very</em> long.</p>
+      <p class="wow fadeInUp">Rod Wolfe knows a thing or two about long odds. His friends call him <a href="http://time.com/3937179/lightning-strikes-man-twice-rod-wolfe-survivor/" target="_blank">"Lightning Rod"</a> because he’s been struck by lightning not once, but twice. What are the chances? Well, you’re more likely to be the next Rod Wolfe than you are the next lottery winner.</p>
+      <p class="wow fadeInUp">The software industry has a lot in common with the lottery. We see big winners in the news everyday—Facebook, Uber, Airbnb. Their success bolsters our ambitions of making the next big product. Our ambitions are big and we act fast hoping to beat competitors to the market.</p>
+      <p class="wow fadeInUp">Software success hinges on a Lottery-like collection of variables: the right product with the right features for the right audience in the right market. If you’re even a little bit off in your planning, you can end up wasting time and resources, and potentially putting your company in a very difficult situation.</p>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe/2xzsmuxsrb?autoPlay=true?stillUrl=http://localhost:3000/img/story-img2.png?rel=1472761364365',
+    'image_source': '/img/headshots/headshot_burka.jpg',
+	'caption':'<strong><a href="https://twitter.com/dburka" target="_blank" class="text-gray">Danial Burka</a>, GV</strong>: In this excerpt from <a href="http://designdisruptors.com" class="text-gray" target="_blank">Design Disruptors</a>, Burka talks about the importance of learning before designing.</em>'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/hall.jpg',
+    'quote': 'If you’re going to solve a problem, you want sufficient information to solve it. ”',
+    'source_name' : '<a href="https://twitter.com/mulegirl" target="_blank">Erika Hall</a>',
+    'source_title' : 'Mule Design'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe/5qss287e33?autoPlay=true?stillUrl=http://localhost:3000/img/story-img2.png?rel=1472761364365',
+    'image_source': '/img/headshots/headshot_hall.jpg',
+    'caption':'<strong><a href="https://twitter.com/mulegirl" target="_blank" class="text-gray">Erika Hall</a>, Mule Design</strong>: Erika discusses the how research is a part of doing design well.</em>'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Guesses Make Messes</h2>
+      <p class="wow fadeInUp"><a href="http://buffer.com" target="_blank">Buffer</a>, makers of a popular publishing platform for social networks, found themselves in financial turmoil in part because they’d over-invested in products and features that weren’t relevant to their customers.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/gasicogne.jpg',
+    'quote': 'We have a bias toward action at Buffer, and believe that moving fast and being bold are important. Optimism has seen us through a lot of mistakes at Buffer, like the countless new features and products we spent months building only to realize we need to scrap them. Content suggestions and our Daily iOS app are just a couple. But after a certain point in a company, the mistakes we make don’t just affect the product features. They affect people’s lives. ”',
+    'source_name' : '<a href="https://open.buffer.com/layoffs-and-moving-forward/" target="_blank">Joel Gascoigne</a>',
+    'source_title' : 'CEO at Buffer'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Buffer had to let 10 employees go and made painful cuts in their budget to help them recover. The good news is they’re starting to get back on track, but optimism and assumptions almost took them down. If you’ve spent time in the software industry you know Buffer’s story isn’t unique. </p>
+      <p class="wow fadeInUp">So many companies base their strategies on optimistic guesses and get it wrong far too often.</p>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': '<strong>Guessing is expensive</strong>—if you’re wrong you could be out of business. <strong>Guessing puts you at a competitive disadvantage</strong>—when you know little about the customers you serve, you know little about how to succeed.<strong>Guessing is arrogant</strong>—you’re lying to yourself if you think you understand your customers yet you’re not studying them first-hand.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">There’s a way to tweak your odds of succeeding, though. Rather than making assumptions about customers, we can start to learn from them. Customer research is easy to do and can be folded into any workflow—Sprints, Agile, Lean, whatever! As you start to think about customer research, you’ll probably find you have a lot of data already on hand that can inform your work—you just need to bring it to the surface.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/martini.jpg',
+    'quote': '<a href="http://ctt.ec/800Cs" target="_blank" class="tweet">You win a race at the finish line, not the starting block.<i class="fa fa-twitter" aria-hidden="true"></i></a> ”',
+    'source_name' : '<a href="https://blog.prototypr.io/so-your-boss-doesn-t-believe-in-user-research-40d8128db08e#.wfmh74q1r" target="_blank">Laura Martini</a>',
+    'source_title' : 'CEO at Buffer'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe/boheprtlqq?autoPlay=true?stillUrl=http://localhost:3000/img/story-img2.png?rel=1472761364365',
+    'image_source': '/img/headshots/headshot_martini.jpg',
+    'caption':'<strong><a href="https://blog.prototypr.io/so-your-boss-doesn-t-believe-in-user-research-40d8128db08e#.wfmh74q1r" target="_blank" class="text-gray">Laura Martini</a>, Medisas</strong> : “There is a fetishazition of speed in Silicon Valley, without a real definition of what speed means.”</em>'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">Guessing makes your odds of success long. Let’s stop playing the product design lottery and start getting the insights we need to make great products.</p>
+      <p class="wow fadeInUp">Here’s how to do it.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Research Fast and Make Things</h2>
+      <p class="wow fadeInUp">Customer research fits into every workflow, every role, and every company size. Whether you’re a designer, project manager, or director, the goal is to guess less and work from a position of being informed and confident.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/kowitz.jpg',
+    'quote': 'When designers don’t know which problems to solve, we spin our wheels. We make products prettier when we could be solving customer’s needs and generating real value. So any company that’s serious about design should get equally serious about listening to customers. ”',
+    'source_name' : '<a href="https://library.gv.com/what-fuels-great-design-and-why-most-startups-don-t-do-it-a8dd2c4f5cb4#.w4erdjf09" target="_blank">Braden Kowitz</a>',
+    'source_title' : 'Design Partner at GV'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">There are two types of research you can do to learn about your customers:</p>
+      <ul class="wow fadeInUp">
+        <li><strong>Quantitative: </strong>These are the things we can measure. Examples include analytics that communicate customer behavioral patterns and aggregate stats about customer cohorts.</li>
+        <li><strong>Qualitative: </strong>These are things that tell us about the qualities of a product or experience. Customer interviews, for example, give us insights about how a customer feels, which can provide a lot of insight into what motivates their behavior.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': '<strong>Guessing is expensive</strong>—if you’re wrong you could be out of business. <strong>Guessing puts you at a competitive disadvantage</strong>—when you know little about the customers you serve, you know little about how to succeed. <strong>Guessing is arrogant</strong>—you’re lying to yourself if you think you understand your customers yet you’re not studying them first-hand.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Think of quantitative and qualitative research as the <a href="https://www.youtube.com/watch?v=ktUx57i63e0" target="_blank">Wonder Twins</a>. They each have incredible powers, but they’re much more useful when they work together. Relying on just one can sometimes lead you down the wrong path.</p>
+      <p class="wow fadeInUp">For instance, a couple of years ago the user research team at MailChimp stumbled upon an interesting piece of quantitative data: many customers connected their Facebook accounts to their MailChimp accounts. Based on the quantitative findings, the product team started to consider how to further the MailChimp-Facebook connection, but the qualitative findings from customer interviews told a different tale. Most customers only connected to Facebook because it seemed like something they <em>should</em> do given the social network’s popularity, <em>but they never actually did anything meaningful with the integration</em>. The product team changed course once the qualitative findings clarified the motivations behind the customer behavior. </p>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284165501'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': '<strong>Numbers</strong> give the illusion of certainty, but they can be <strong>misleading</strong> if not verified with <strong>qualitative findings</strong>.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Surveys</h3>
+      <p class="wow fadeInUp margin-none">Surveys are a handy way to learn about your customers, and can be conducted ad hoc or even automated. There are a host of different surveys you could run, but use them sparingly, as too many will alienate customers.</p>
+      <p class="wow fadeInUp">There is an art to creating effective surveys, and the <a href="https://library.gv.com/improve-your-startup-s-surveys-and-get-even-better-data-7b0272f74c23#.uxkcogqna" target="_blank">Google Ventures team has a wonderful guide</a> that will help you avoid rookie mistakes as you begin this practice.</p>
+    </div>
+  </div>
+
+  {% include 'source/htdocs/_includes/ellipses.html' %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp"><strong>Tips for building effective surveys:</strong></p>
+      <ul class="fadeInUp wow">
+        <li>Start simple with clear goals about what you want to learn.</li>
+        <li>Keep your surveys as short as possible to get better response rates. "Nice-to-know" questions should be cut, as they just increase the length of your survey.</li>
+        <li>Never ask respondents for information you could get yourself. For example, don’t ask when someone signed up for your service if you’ve already got that info in your database. </li>
+        <li>Randomize answers to question to avoid  <a href="http://austinresearch.co.uk/avoiding-response-bias-due-to-answer-order/" target="_blank">response order bias</a>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': '<strong>Pro tip!</strong> Use a tool like <a href="https://zapier.com/" target="_blank">Zapier</a> to forward all <strong>survey responses</strong> into a shared Google Sheet, or even an <strong>Evernote account</strong> where your team can search through <strong>all</strong> responses.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <ul class="fadeInUp wow">
+        <li>Conclude with an open ended question like, "Is there anything else you want to tell us?", to give respondents an opportunity to surface interesting issues that may surprise you. This is a great way to find good candidates for interviews.</li>
+        <li>Run a pilot test of your survey with a small sample of people before you send it to everyone. This will help you find questions that may be missing response options, or identify places where things aren’t as clear as they could be.</li>
+        <li><a href="http://blog.mailchimp.com/reducing-irrelevance/" target="_blank">Spend time carefully writing the email asking customers to take your survey</a>, as it will greatly influence your response rate.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284167285'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Automated Surveys</h3>
+      <p class="margin-none"><strong>Who they help: </strong>Everyone!</p>
+      <p class="wow fadeInUp"><strong>Why they’re useful: </strong>After you set up an automated survey, data keeps streaming in, giving you fresh insights regularly.</p>
+      <p class="wow fadeInUp">Types of automated surveys you might send:</p>
+      <ul class="wow fadeInUp">
+        <li><a href="https://en.wikipedia.org/wiki/Net_Promoter" target="_blank"><strong>Net Promoter Score</strong></a>: Learn about your customers’ loyalty to your brand. <a href="https://delighted.com/" target="_blank">Delighted</a> is a lovely tool to run regular NPS surveys.</li>
+        <li><strong>After sign up: </strong>Find out why customers signed up, and from which competitor they’re switching. This is very useful for marketing teams as it helps identify the language that motivates buying behavior. Send this within a few days of sign up while their memories are still fresh.</li>
+        <li><strong>After account closing: </strong>Find out why they’re leaving. Is it you or just circumstance? Are they switching to a competitor? Link to your survey on the page in your app confirming their account is closed.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284190732'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': '<strong>Pro tip!</strong> Ask a question <strong>or two</strong> at the beginning of the survey to help you <strong>filter responses later</strong>. For example, a question like <strong>“How old is your business?”</strong> or “About how many people are in your organization?” can expose <strong>significantly different</strong> responses from various customer cohorts.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <ul class="wow fadeInUp">
+        <li><strong>Topic specific: </strong>You can use a tool like <a href="https://ethn.io/" target="_blank">Ethnio</a> or <a href="https://qualaroo.com/product/" target="_blank">Qualaroo</a> to deliver a micro-survey to very specific customers. By placing a small code snippet on a carefully selected page in your Knowledge Base you can find a customer with expertise on almost any topic.</li>
+        <li><strong>After account closing: </strong>Find out why they’re leaving. Is it you or just circumstance? Are they switching to a competitor? Link to your survey on the page in your app confirming their account is closed.</li>
+        <li><strong>Topic specific: </strong>You can use a tool like <a href="https://ethn.io/" target="_blank">Ethnio</a> or <a href="https://qualaroo.com/product/" target="_blank">Qualaroo</a> to deliver a micro-survey to very specific customers. By placing a small code snippet on a carefully selected page in your Knowledge Base you can find a customer with expertise on almost any topic.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center">
+    <div class="medium-10 text-center columns wow fadeInUp">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/guess-less/airbnb-ethnio.png',
+        'caption': 'Airbnb uses Ethnio to learn about customers and identify the right ones to interview.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h3 class="margin-bottom-none">Ad Hoc Surveys</h3>
+      <p class="margin-none wow fadeInUp"><strong>Who they help: </strong>Teams doing a deep dive on a feature or topic.</p>
+      <p class="wow fadeInUp"><strong>Why they’re useful: </strong>They can give you an aggregate view of customers’ thoughts on a particular topic, and they’ll help you find outliers who may make for good interviews.</p>
+      <p class="wow fadeInUp">Ad hoc surveys can be conducted in many ways. You can send <a href="https://24ways.org/2013/data-driven-design-with-an-annual-survey/" target="_blank">an annual survey</a> to collect customer data that can be used to inform a number of projects throughout the year. You could also send a survey to gather insights or guide development on a specific feature or new product.</p>
+      <p class="wow fadeInUp">You needn’t survey <em>all</em> of your customers to get the results you need. Sending to too many people will produce lower response rates and introduce unwanted noise in your data. Instead, use your customer data to target the right people for your study before you send. For example, want to learn more about your customers who sell things online? Find a segment of those customers who have a shopping cart platform, like Shopify, integrated with your app. Want to hear from customers who are highly engaged with your product? Segment by ‘times logged in this month.’</p>
+      <p class="wow fadeInUp">Netflix, Airbnb, and Intuit have all used automated and ad hoc surveys to inform their work.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h3 class="margin-bottom-none">Customer Interviews</h3>
+      <p class="margin-none wow fadeInUp">Customer interviews deliver a <em>wealth</em> of information that will help you design more successful products. They’ll give you a glimpse into the emotions that drive customer behavior, help you understand your customers’ workflows, and let you hear the language people use when describing your product. This is essential stuff!</p>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': '<strong>Pro tip!</strong> Customer interviews are the <strong>best way</strong> to find the idea for your next product or the vision for the future version of your product. Getting a glimpse into the daily lives of your customers will show you where they struggle and the opportunities for designing products that will solve their problems.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">But your time is limited and you probably can’t spend weeks talking to dozens of customers. How will you find the people who will give you the most insight? The answer lies in your survey responses!</p>
+      <p class="wow fadeInUp">Your survey generated data from a variety of customers who can help you better understand how to design your product. Drop your survey response data into Excel and filter to find any of these types of customers:</p>
+      <ul>
+        <li>People nearby you can visit in person</li>
+        <li>People who just signed up</li>
+        <li>People who just closed their account</li>
+        <li>People with interesting traits, behaviors, or off-the-wall responses</li>
+        <li>People who’ve said they would or would not recommend your product to a friend</li>
+      </ul>
+      <p class="wow fadeInUp">When you’ve found customers of interest, send them a short, personal email asking for a bit of their time to learn more about them. Interviews by Skype or Google Hangouts can be conducted in a conference room where your whole team can listen in—they’ll comprehend the feedback more easily if they can hear from the customer themselves. About 20-30 minutes is all that’s needed for a phone interview. It’s always a good idea to record interviews so you can reference them later.</p>
+      <p class="wow fadeInUp">Visiting customers in person takes a bit more time, but can be eye-opening. You’ll get to see the hardware they use, the distractions of their office, the flow of their day, and you’ll get to meet some of their colleagues. The entire experience will be a vivid reminder to you and your team that you’re designing products for real people.</p>
+      <p class="wow fadeInUp"><strong>Tips for conducting customer interviews:</strong></p>
+      <ul>
+        <li>Customer interviews needn’t always be connected to a project. You can dedicate a day or two per month to talk to customers to keep your team in the habit of learning.</li>
+        <li>Keep the number of people conducting the interview to a minimum so you don’t overwhelm your participant.</li>
+        <li>Assign a person to take notes so the person asking questions is free to drive the conversation.</li>
+        <li>Watch for signs of an energy change from the subject, raised voice, the use of profanity to punctuate a story, leaning in to emphasize a point—These indicate what’s important to your customer, and directs you to ideas for refinement or even new products.</li>
+        <li>Bring a voice recorder to capture the interview so you don’t feel compelled to furiously capture every word.</li>
+        <li>Each interview will yield one or two golden insights. Don’t get lost in the details—train your ears to listen for the meaningful insights.</li>
+        <li>Use the <a href="https://jtbd.info/a-script-to-kickstart-your-jobs-to-be-done-interviews-2768164761d7#.cxcrllb2j" target="_blank">Switch Interview technique</a> to learn from people who just bought or just left your product.</li>
+      </ul>
+      <p class="wow fadeInUp">While at MailChimp, my team noticed a small trend of customers departing us for more complex and way more expensive competitors. Using our surveys, we were able to recruit customers who had just recently closed an account and cited a competitor's platform as the reason. We set up 60-minute calls with a handful, and spent two days interviewing these former customers.</p>
+      <p class="wow fadeInUp">The survey pointed us in the right direction, but the interviews provided the missing link: these customers weren't leaving us because of our app's shortcomings; they were leaving because of a perception problem. Namely, they mistook the simplicity of the app for a lack of sophistication. These former customers were looking for a complex tool to make them feel like the accomplished professionals they are. It was eye-opening, and helped illuminate a new product direction for MailChimp.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Existing Data</h3>
+      <p class="wow fadeInUp margin-none">Sometimes guessing less simply means becoming aware of the data you already have on hand. That’s exactly what happened at Bambora, a new global payments company based in Stockholm. Creative Director <a href="https://www.linkedin.com/in/andersfardigh/" target="_blank">Anders Färdigh</a> and his design team craved more insight to guide their work, but the thought of building a dedicated research team felt premature. Maybe there was a simpler starting point?</p>
+      <p class="wow fadeInUp"><a href="/principles-of-product-design/break-the-black-box">During a meeting</a> with their COO, Patrik Göthlin, Anders discovered that much of the insight his team needed was already being gathered. Patrick’s operations team was doing extensive <a href="https://en.wikipedia.org/wiki/Net_Promoter" target="_blank">Net Promoter Score</a> research, surveying Bambora’s customers to determine their loyalty to the brand, and following up with detractors to learn where they were falling short. They’d even been visiting customers in person to capture feedback about their products. There was so much information already on hand to help the design and product teams prioritize their work.</p>
+      <p class="wow fadeInUp">In large organizations it’s hard to know what research is already siloed within other teams. That’s why it’s important to spend time talking with colleagues on other teams to learn about their work and the research already underway. </p>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284635494'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <ul class="wow fadeInUp">
+        <li><strong>Sales: </strong>These folks are talking with customers everyday all day. They’re collecting insights about product shortcomings and data about every potential customer. You may find that some of the data the sales team tracks in Salesforce could help you identify interesting customers to interview.</li>
+        <li><strong>Marketing: </strong>Analytics often falls to the marketing team to track. They can give you access to Google Analytics and other tools that may help you understand customer pathways and raise questions about interesting customer behaviors. Marketers are often at events talking with customers, and may have insights to share with you.</li>
+        <li><strong>Customer Service: </strong>Few teams have as much actionable information for refining your product as the customer service team. They hear the struggles of your customer daily and they know what themes are strongest. Make a habit of talking to many customer service agents to get the broadest perspective on your customers’ pain points.</li>
+        <li><strong>Data Science: </strong>Your customer database is a goldmine of information. If you have a data science team then chances are they’re already querying that database to find customer cohorts. This team will be your most treasured ally as you dig deeper into customer research.</li>
+        <li><strong>Engineering: </strong>Chances are you’re already working closely with the engineering team on the product, but you should also be talking to them about the data they could be logging for you. Curious about which integrations customers connect first to your app, or failure rates of a particular workflow? Your engineering colleagues can probably log that data for you and have the app email you a report. </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Learning in the Background</h3>
+      <p class="wow fadeInUp margin-none"><strong>Fullstory</strong></p>
+      <p class="wow fadeInUp">Have you ever wished you could just watch any of your customers using your product to see where they stumble? <a href="http://fullstory.com" target="_blank">Fullstory</a> gives you that super power. It’s like a DVR for your app or website—it captures every session in your app and lets you play them back. </p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center">
+    <div class="medium-10 text-center columns wow fadeInUp">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/guess-less/fullstory.png'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Want to see sessions of every customer who’s signed up in the past week and clicked the help button? Or maybe you want to see sessions where a specific error happend so you can diagnose the problem. Fullstory has incredible search options to help you filter sessions to find exactly what you’re looking for.</p>
+      <p class="wow fadeInUp margin-none"><strong>Intercom</strong></p>
+      <p class="wow fadeInUp"><a href="https://www.intercom.io/customer-feedback" target="_blank">Intercom’s customer feedback features</a> can help you get in touch with customers who have taken specific actions, so you can then ask them about their experience. Once you’ve defined the rules for the customers you want to speak with, you can create automated messages to be sent via email or in-app messaging. All of the feedback collected from your customers lands in a shared inbox where your team can tag and organize messages so you can identify patterns.</p>
+      <p class="wow fadeInUp margin-none"><strong>Builtwith</strong></p>
+      <p class="wow fadeInUp">You can learn a lot about your customers just by examining the tools they use, and Builtwith will help you discover every technology your customers use to power their website. When a new customer signs up for your product, pass their URL over to the Builtwith API to retrieve and store their tech stack data for your research.</p>
+      <p class="wow fadeInUp">Why is that useful? Knowing that a customer is using Shopify, MailChimp, and Zendesk gives you clues about their business—they sell stuff online and have marketing and customer service teams; they’re using tools that are very design focused; and they’re using tools that are DIY, so they may not have developers on staff. </p>
+      <p class="wow fadeInUp">As you look at the tech stacks of your customers you’ll begin to read them like tea leaves, giving you clues that can guide you to the right interviews and aggregate data to understand customer cohorts.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Against All Odds</h2>
+      <p class="wow fadeInUp">You know why the lottery is fun despite being a losing game? There's not much at stake. I know the odds are wildly against me, but when I lose I'll only be out a few bucks. Rent will still get paid.</p>
+      <p class="wow fadeInUp">Product design also has tough odds, but the stakes are much higher. If your product fails to get traction with your customers, you and your colleagues could be out of a job. </p>
+      <p class="wow fadeInUp"><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">"Fail fast" is the mantra of the software industry. The surest way to achieve that goal is by basing your product design on guesses.<i class="fa fa-twitter" aria-hidden="true"></i></a> Successful, design-driven companies are doing just the opposite—they're <em>succeeding</em> fast by guessing less. They're finding ways to inform their work each step of the way, tapping into existing data, setting up systems to continuously gather feedback, and they're talking to their customers all the time. Research isn’t some monolithic, academic process. It can fit into every workflow, every role, and every company size. Whether you’re a designer, project manager, or director, the goal is to guess less and work from a position of strength by being informed.</p>
+    </div>
+  </div>
+
+  <!-- Read On -->
+  <div class="background-gray-light padding-vertical-xxlarge margin-top-xxlarge section-read-on chapter">
+    <div class="row align-center">
+      <div class="medium-10 columns">
+        <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Read On</h2>
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="http://www.uxbooth.com/articles/complete-beginners-guide-to-design-research/" target="_blank">The Complete Beginner’s Guide to Design Research</a></li>
+          <li><a href="https://medium.com/research-things/minimum-viable-ethnography-a047e9358df0#.etuxx8htj" target="_blank">Minimum Viable Ethnography</a></li>
+          <li><a href="https://library.gv.com/micro-surveys-a-faster-way-to-learn-about-your-users-9a5ad64e1af2#.figgwr2wo" target="_blank">Micro-surveys: a faster way to learn about your users</a></li>
+          <li><a href="https://library.gv.com/what-fuels-great-design-and-why-most-startups-don-t-do-it-a8dd2c4f5cb4#.7z2m33tvc" target="_blank">What fuels great design (and why most startups don’t do it)</a></li>
+          <li><a href="http://us5.campaign-archive1.com/?awesome=no&u=7e093c5cf4&id=126cf8a9ac" target="_blank">Survey Says…</a></li>
+          <li><a href="https://medium.com/the-job-to-be-done" target="_blank">Jobs To Be Done</a></li>
+        </ul>
+      </div>
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://abookapart.com/products/just-enough-research" target="_blank">Just Enough Research</a></li>
+          <li><a href="https://library.gv.com/improve-your-startup-s-surveys-and-get-even-better-data-7b0272f74c23#.uxkcogqna" target="_blank">Improve Your Startup’s Surveys and Get Even Better Data</a></li>
+          <li><a href="http://alistapart.com/article/usable-yet-useless-why-every-business-needs-product-discovery" target="_blank">Usable yet Useless: Why Every Business Needs Product Discovery</a></li>
+          <li><a href="https://24ways.org/2013/data-driven-design-with-an-annual-survey/" target="_blank">Data-Driven Design Powered By An Annual Survey</a></li>
+          <li><a href="http://us5.campaign-archive1.com/?awesome=no&u=7e093c5cf4&id=b837b7819f" target="_blank">Prepping Open Response Survey Data for Analysis</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- end #top-scroll -->
+
+<section id="footer-scroll-nav" class="relative">
+  {% include 'source/htdocs/_includes/_product-principles.html' %}
+  {% set vars =
+    {
+      'background_color':'white'
+    }
+  %}
+  {% include 'source/htdocs/_includes/footer-html.html' with vars %}
+</section>
+
+<!-- Footer -->
+{% include 'source/htdocs/_includes/footer.html' %}

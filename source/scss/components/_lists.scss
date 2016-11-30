@@ -1,0 +1,14 @@
+//  List
+//  ---------------------------
+ul,
+ol {
+  padding-left: 0;
+  @include breakpoint(small down) {
+    margin-top: 0;
+    padding-left: 15px;
+  }
+}
+.no-style {
+  padding: 0;
+  list-style-type: none;
+}

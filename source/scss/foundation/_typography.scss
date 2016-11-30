@@ -1,0 +1,227 @@
+//  Typography
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//   1. Headers
+//   2. Paragraphs, links and list
+//   3. Strong, emphasis, other
+
+// 1. Header
+// ---------
+
+h1, h2, h3, h4, h5, h6 {
+  @include font-header-regular();
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+  line-height: $header-line-height;
+}
+
+h1, .h1 {
+  @include font-size-xlarge();
+  @include font-h1-bold();
+}
+
+h2, .h2 {
+  margin-top: $base-spacing*2;
+  @include font-size-large();
+  @include breakpoint (small down) {
+    margin-top: $base-spacing;
+  }
+}
+
+h3, .h3 {
+  margin-top: $base-spacing*2;
+  @include font-header-regular();
+  @include font-size-medium();
+  line-height: $body-line-height;
+  @include breakpoint (small down) {
+    line-height: 1.2;
+  }
+}
+
+h4, .h4 {
+  @include font-size-small();
+  line-height: $body-line-height;
+}
+
+h5, .h5 {
+  @include font-header-regular();
+  @include font-size-small();
+  line-height: $body-line-height;
+}
+
+h6, .h6 {
+  @include font-header-regular();
+  @include font-size-xsmall();
+  line-height: $body-line-height;
+}
+
+ // 2. Paragraphs, links and list
+ // ---------
+
+p, ul, ol, pre, table {
+  @include font-size-small();
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+}
+
+ul li,
+ol li {
+  margin-bottom: $base-spacing;
+}
+
+p a,
+ol a,
+ul:not(.nav-list) a,
+table a,
+blockquote a {
+  transition: .2s !important;
+  transition: color $transition-speed-medium ease;
+  &:link {
+    color: $link-color;
+    text-decoration: none;
+    background-color: $color-highlight;
+  }
+  &:visited {
+    color: $link-color-visited;
+  }
+  &:hover {
+    color: $link-color-hover;
+  }
+  &:active, &:focus {
+    color: $link-color-active;
+  }
+}
+
+p,
+li {
+  a {
+    border-bottom: 1px solid currentColor; // Change back to  if you see major issues globally;
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+blockquote a {
+  line-height: 1.5;
+  border-bottom: 3px solid $color-black;
+  background-color: transparent;
+  &:hover {
+    border-color: transparent;
+  }
+  @include breakpoint(small down) {
+    border-bottom: none;
+  }
+}
+
+blockquote cite a {
+  border-bottom: 1px solid $color-black;
+  &:hover {
+    border-color: transparent;
+  }
+  @include breakpoint(small down) {
+    border-bottom: none;
+    line-height: $body-line-height;
+    text-decoration: underline !important;
+  }
+}
+
+// 3. Blockquotes
+// ---------
+
+blockquote {
+  font-feature-settings: "ss03" on;
+  margin: 0;
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+  @include font-bold-bold();
+  @include font-size-large();
+  @include breakpoint(medium down) {
+    margin: 25px 0;
+  }
+  @include breakpoint (small down) {
+    max-width: 400px;
+    padding: 5px;
+    line-height: 1.2;
+  }
+  cite {
+    @include font-body-regular();
+    span,
+    span {
+      @include font-header-regular();
+      color: $color-gray;
+    }
+    span a {
+      color: $color-gray !important;
+      border-color: $color-gray;
+    }
+  }
+  footer {
+    @include font-size-small();
+    margin-top: $base-spacing;
+  }
+}
+
+blockquote:before {
+  content: '“';
+  margin-left: -20px;
+}
+
+// 4. Strong, emphasis, other
+// ---------
+
+::selection {
+  background-color: $color-highlight;
+}
+
+em {}
+
+strong,
+b {
+  @include font-bold-bold();
+}
+
+i {}
+
+time {}
+
+hr {
+  border-color: $border-color;
+}
+
+small {
+  @include font-header-regular();
+  @include font-size-xxsmall();
+  color: $color-gray;
+  display: block;
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid $color-gray;
+    transition: .2s;
+    display: inline-block;
+    line-height: .6;
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+cite {
+  @include font-header-regular();
+  font-style: normal;
+  a {
+    background-color: transparent !important;
+  }
+}
+
+cite.number {
+  position: relative;
+  @include font-body-regular();
+  @include font-size-xxsmall();
+  top: -5px;
+  a {
+    border-color: transparent;
+  }
+}

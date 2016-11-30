@@ -1,0 +1,178 @@
+//  Fonts
+//  ---------------------------
+//
+//  Table of Contents:
+//
+//  1. Imports
+//  2. Font sizes
+//  3. Type faces and weights
+
+// 1. Imports
+// ---------
+
+@font-face {
+  font-family: 'arnhempro-blond';
+  src: url('/fonts/arnhempro-blond.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/arnhempro-blond.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/arnhempro-blond.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/arnhempro-blond.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+@font-face {
+  font-family: 'arnhempro-bold';
+  src: url('/fonts/arnhempro-bold.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/arnhempro-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/arnhempro-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/arnhempro-bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: normal;
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+@font-face {
+  font-family: 'faktpro-normal';
+  src: url('/fonts/faktpro-normal.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/faktpro-normal.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/faktpro-normal.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/faktpro-normal.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+@font-face {
+  font-family: 'faktpro-bold';
+  src: url('/fonts/faktpro-bold.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/faktpro-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/faktpro-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/faktpro-bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: normal;
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+
+// 2. Font sizes
+// ---------
+@mixin font-size-xxsmall() {
+  font-size: $font-size-xxsmall;
+  line-height: $body-line-height;
+}
+
+@mixin font-size-xsmall() {
+  font-size: $font-size-xsmall;
+  line-height: $body-line-height;
+}
+
+@mixin font-size-small() {
+  font-size: $font-size-xsmall;
+  line-height: 1.4;
+  @include breakpoint(medium up) {
+    font-size: 20px;
+    line-height: $body-line-height;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    font-size: $font-size-small;
+    line-height: $body-line-height;
+  }
+}
+
+@mixin font-size-medium {
+  font-size: $font-size-small;
+  line-height: $body-line-height;
+  @include breakpoint(medium up) {
+    font-size: 24px;
+    line-height: $body-line-height;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    font-size: $font-size-medium;
+    line-height: $body-line-height;
+  }
+}
+
+@mixin font-size-large {
+  font-size: $font-size-small;
+  line-height: $header-line-height;
+  @include breakpoint(medium up) {
+    font-size: $font-size-medium;
+    line-height: $header-line-height;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    font-size: $font-size-large;
+    line-height: $header-line-height;
+  }
+}
+
+@mixin font-size-xlarge {
+  font-size: $font-size-large;
+  line-height: $header-line-height;
+  @include breakpoint(medium up) {
+    font-size: $font-size-sub-xlarge - 15px;
+    line-height: $header-line-height;
+  }
+  @media screen and (max-height: 801px) and (min-width: 1024px) {
+    font-size: $font-size-sub-xlarge;
+    line-height: $header-line-height;
+  }
+  @media screen and (min-height: 801px) and (min-width: 1024px) {
+    font-size: $font-size-xlarge;
+    line-height: $header-line-height;
+  }
+}
+
+
+// 3. Type faces and weights
+// ---------
+
+// TODO: revisit need for REM vs PX font sizing
+
+@mixin font-body-light() {
+  font-family: $font-body;
+  font-style: normal;
+  font-weight: 100;
+}
+
+@mixin font-body-regular() {
+  font-family: $font-body;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-body-bold() {
+  font-family: $font-body;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin font-header-light() {
+  font-family: $font-header;
+  font-style: normal;
+  font-weight: 100;
+}
+
+@mixin font-header-regular() {
+  font-family: $font-header;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-header-bold() {
+  font-family: $font-header;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin font-bold-bold {
+  font-family: $font-bold;
+  font-style: bold;
+  font-weight: 900;
+}
+
+@mixin font-h1-bold {
+  font-family: $font-header-bold;
+  font-style: normal;
+  font-weight: 600;
+}

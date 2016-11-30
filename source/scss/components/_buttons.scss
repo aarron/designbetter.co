@@ -1,0 +1,243 @@
+//  Buttons
+//  ---------------------------
+
+// TODO: Needs clean up
+
+//colors
+$color_curious_blue_approx: #2199e8;
+$color_romance_approx: #fefefe;
+$color_lochmara_approx: #1583cc;
+$color_tapa_approx: #777;
+$color_chicago_approx: #5f5f5f;
+$color_emerald_approx: #3adb76;
+$color_chateau_green_approx: #22bb5b;
+$color_yellow_sea_approx: #ffae00;
+$color_pirate_gold_approx: #cc8b00;
+$color_flame_pea_approx: #ec5840;
+$color_thunderbird_approx: #da3116;
+$color_chathams_blue_approx: #0c4d78;
+$color_masala_approx: #3c3c3c;
+$color_jewel_approx: #157539;
+$color_rusty_nail_approx: #805700;
+$color_falu_red_approx: #881f0e;
+$color_bright_blue: #2536FF;
+$color_bright_red: #E04530;
+
+.button {
+	display: inline-block;
+	text-align: center;
+	line-height: 1;
+	cursor: pointer;
+	transition: background-color $transition-speed-fast ease-out, color $transition-speed-fast ease-out;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	border-radius: 0;
+	padding: 0.85em 1em;
+	margin: 0 0 .3rem 0;
+  @include font-header-regular();
+	font-size: 0.9rem;
+  @include breakpoint (medium down) {
+    padding: .85em .35em .85em .85em;
+  }
+	&.tiny {
+		font-size: 0.6rem;
+	}
+	&.small {
+		font-size: 0.75rem;
+	}
+	&.large {
+		font-size: 1.25rem;
+	}
+	&.expanded {
+		display: block;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	&.primary {
+    background-color: $button-primary-background;
+  	color: $button-primary-color;
+		&:hover {
+      background-color: $button-primary-hover-background;
+  		color: $button-primary-hover-color;
+		}
+		&:focus {
+      background-color: $button-primary-hover-background;
+  		color: $button-primary-hover-color;
+		}
+	}
+	&.secondary {
+    background-color: $button-secondary-background;
+		color: $button-secondary-color;
+		&:hover {
+      background-color: $button-secondary-hover-background;
+  		color: $button-secondary-hover-color;
+		}
+		&:focus {
+      background-color: $button-secondary-hover-background;
+  		color: $button-secondary-hover-color;
+		}
+	}
+	&.success {
+		background-color: $color_emerald_approx;
+		color: $color_romance_approx;
+		&:hover {
+			background-color: $color_chateau_green_approx;
+			color: $color_romance_approx;
+		}
+		&:focus {
+			background-color: $color_chateau_green_approx;
+			color: $color_romance_approx;
+		}
+	}
+	&.warning {
+		background-color: $color_yellow_sea_approx;
+		color: $color_romance_approx;
+		&:hover {
+			background-color: $color_pirate_gold_approx;
+			color: $color_romance_approx;
+		}
+		&:focus {
+			background-color: $color_pirate_gold_approx;
+			color: $color_romance_approx;
+		}
+	}
+	&.alert {
+		background-color: $color_flame_pea_approx;
+		color: $color_romance_approx;
+		&:hover {
+			background-color: $color_thunderbird_approx;
+			color: $color_romance_approx;
+		}
+		&:focus {
+			background-color: $color_thunderbird_approx;
+			color: $color_romance_approx;
+		}
+	}
+	&.hollow {
+		border: 1px solid $color_curious_blue_approx;
+		color: $color_curious_blue_approx;
+		background-color: transparent;
+		&:hover {
+			background-color: transparent;
+			border-color: $color_chathams_blue_approx;
+			color: $color_chathams_blue_approx;
+		}
+		&:focus {
+			background-color: transparent;
+			border-color: $color_chathams_blue_approx;
+			color: $color_chathams_blue_approx;
+		}
+		&.primary {
+			border: 1px solid $color_curious_blue_approx;
+			color: $color_curious_blue_approx;
+			&:hover {
+				border-color: $color_chathams_blue_approx;
+				color: $color_chathams_blue_approx;
+			}
+			&:focus {
+				border-color: $color_chathams_blue_approx;
+				color: $color_chathams_blue_approx;
+			}
+		}
+		&.secondary {
+			border: 1px solid $color_tapa_approx;
+			color: $color_tapa_approx;
+			&:hover {
+				border-color: $color_masala_approx;
+				color: $color_masala_approx;
+			}
+			&:focus {
+				border-color: $color_masala_approx;
+				color: $color_masala_approx;
+			}
+		}
+		&.success {
+			border: 1px solid $color_emerald_approx;
+			color: $color_emerald_approx;
+			&:hover {
+				border-color: $color_jewel_approx;
+				color: $color_jewel_approx;
+			}
+			&:focus {
+				border-color: $color_jewel_approx;
+				color: $color_jewel_approx;
+			}
+		}
+		&.warning {
+			border: 1px solid $color_yellow_sea_approx;
+			color: $color_yellow_sea_approx;
+			&:hover {
+				border-color: $color_rusty_nail_approx;
+				color: $color_rusty_nail_approx;
+			}
+			&:focus {
+				border-color: $color_rusty_nail_approx;
+				color: $color_rusty_nail_approx;
+			}
+		}
+		&.alert {
+			border: 1px solid $color_flame_pea_approx;
+			color: $color_flame_pea_approx;
+			&:hover {
+				border-color: $color_falu_red_approx;
+				color: $color_falu_red_approx;
+			}
+			&:focus {
+				border-color: $color_falu_red_approx;
+				color: $color_falu_red_approx;
+			}
+		}
+	}
+	&.disabled {
+		opacity: 0.25;
+		cursor: not-allowed;
+	}
+	&.dropdown::after {
+		content: '';
+		display: block;
+		width: 0;
+		height: 0;
+		border: inset 0.4em;
+		border-color: $color_romance_approx transparent transparent;
+		border-top-style: solid;
+		border-bottom-width: 0;
+		position: relative;
+		top: 0.4em;
+		float: right;
+		margin-left: 1em;
+		display: inline-block;
+	}
+	&.arrow-only::after {
+		margin-left: 0;
+		float: none;
+		top: -0.1em;
+	}
+}
+.button[disabled] {
+	opacity: 0.25;
+	cursor: not-allowed;
+}
+
+.button[name='itunes'],
+.button[name='google-play'],
+.button[name='spotify'] {
+  // background-color: #E8EAFF;
+}
+.button[name='itunes']:hover,
+.button[name='google-play']:hover,
+.button[name='spotify']:hover,
+.button[name='soundcloud']:hover {
+  background-color: #B3B9FF;
+}
+
+
+.button[name='download']:hover {
+  background-color: #E8EAFF;
+}
+[data-whatinput='mouse'] .button {
+	outline: 0;
+}
+button a {
+  text-decoration: none;
+}

@@ -1,0 +1,490 @@
+<!-- Header -->
+{% set vars = {
+  'title': 'story-first',
+  'parent_page': 'seven-principles',
+  'og_title': 'Design Better - Story First',
+  'og_url': 'http://designbetter.wpengine.com/principles-of-product-design/story-first/',
+  'og_description': 'I think what’s most important is you have to have a North Star or vision set. If people don’t have that then the mess builds up.',
+  'og_image': '/img/og/hero-story.png'
+  }
+%}
+{% include 'source/htdocs/_includes/header.html' with vars %}
+
+<!-- Navigation -->
+{% set vars = {
+  'title': 'Design Better • Principles of Product Design • Story First',
+  'background_color': 'purple'
+  }
+%}
+{% include 'source/htdocs/_includes/navigation.html' with vars %}
+
+<div id="top-scroll">
+
+<!-- Hero Image -->
+{% set vars = {
+  'image_source': '/img/heros/hero-story.svg',
+  'image_source_small': '/img/heros/hero-story-small.svg',
+  'image_alt': 'Story First'
+  }
+%}
+{% include 'source/htdocs/_includes/page-hero.html' with vars %}
+
+<!-- Intro w/ Paragraphs -->
+<section class="page-content relative page-content__article">
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7">
+      <h2 class="text-center wow fadeInUp padding-top-xlarge margin-bottom-xxlarge">Story First</h2>
+    </div>
+  </div>
+
+  <!-- Audio Sidebar -->
+  {% set vars = {
+    'color' : 'purple',
+    'audio_source': '/audio/story-audio.mp3',
+    'subscribe_itunes': 'https://geo.itunes.apple.com/us/album/this-american-life-stories/id335933324?mt=1&app=music',
+    'subscribe_google': 'https://www.thisamericanlife.org/blog/2010/10/this-american-life-android-app',
+    'subscribe_spotify': 'https://open.spotify.com/user/una_s/playlist/2p89CV9wAwBYUowlXEGOgi',
+    'subscribe_soundcloud': 'https://soundcloud.com/this-american-life'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio-sidebar.html' with vars %}
+
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp"><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Story is a profoundly important device to unite design teams around a shared product vision.<i class="fa fa-twitter" aria-hidden="true"></i></a> This powerful communication tool helps us retain information and empathize with others. As companies scale and teams sprint through product iterations, it’s easy to lose sight of how your product should fit into the lives of your customers. The best way to keep everyone pointed in the right direction is with a clear, compelling story—a story that will unite and guide teams towards success. </p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/wood.png',
+    'quote': '<a href="http://ctt.ec/800Cs" target="_blank" class="tweet">I think what’s most important is you have to have a North Star or vision set. If people don’t have that then the mess builds up.<i class="fa fa-twitter" aria-hidden="true"></i></a> ”',
+    'source_name' : '<a href="https://twitter.com/hellostanley" target="_blank">Stanley Wood</a>',
+    'source_title' : 'Design Director at Spotify'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Product roadmaps guide team milestones, but they only show us <em>what</em> to build and <em>when</em>. They don’t show us why we’re building a product. Stories, however, are great at explaining why. In <em>Start with Why</em>, author Simon Sinek proclaims that, "People don't buy what you do; they buy why you do it. And what you do simply proves what you believe." Similarly, the best product teams don’t merely <em>follow</em> a process; they march toward a shared destination—a vision of the future presented as a story that answers, "Why are we building this?"
+      </p>
+      <p class="wow fadeInUp">We’ve been using stories to answer big questions for thousands of years. Long before humans could write, we used stories to share our most important messages. Through story, <a href="http://www.ancient-origins.net/human-origins-folklore/australian-aboriginals-creation-myth-00229" target="_blank">Aborigines passed down their origin through thousands of generations,</a> and <a href="https://en.wikipedia.org/wiki/Lascaux" target="_blank">ancient cave painters depicted the movements of the constellations and the magic of the spirit world</a>. Story is a tried and true methodology for collective understanding.</p>
+      <p class="wow fadeInUp">We’ve been encoding information in stories for so long that our minds have evolved into story super-processors, easily plucking out important messages for long-term recall and helping us empathize with others. <a href="https://people.stanford.edu/jaaker/" target="_blank">Jennifer Aaker</a>, Professor of Marketing at the Stanford Graduate School of Business, has found that "people remember information when it’s weaved into narratives up to 22 times more than facts alone." <cite class="number"><a href="#citation">1</a></cite> <a href="http://www.theatlantic.com/health/archive/2014/11/the-psychological-comforts-of-storytelling/381964/" target="_blanke">Findings from a study published in the journal Science</a> suggest that literary fiction "uniquely engages the psychological processes needed to gain access to characters’ subjective experiences." In other words, we can more keenly empathize with others when we learn about them through story.</p>
+      <p class="wow fadeInUp">Like thousands of stories told through the ages, product stories connect people and ideas. There are many ways to tell a product story, but they all start with a little bit of planning.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/cagan.jpg',
+    'quote': 'When done well, the product vision is one of our most effective recruiting tools, and it serves to motivate the people on your teams to come to work every day. Strong technology people are drawn to an inspiring vision; they want to work on something meaningful.”',
+    'source_name' : '<a href="https://twitter.com/cagan" target="_blank">Marty Cagan</a>',
+    'source_title' : 'Partner at Silicon Valley Product Group'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Planning a Product Story</h2>
+      <p class="wow fadeInUp">Product stories find their origins in research not genius. Customer interviews will expose important moments of frustration, aspiration, and triumph—all of which are potential plot points in your story. <a href="http://blog.invisionapp.com/improving-ux-with-pixars-storytelling-rules/" target="_blank">Pixar uses a simple narrative structure</a> to capture the essence of a story.</p>
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/story-first/pixar-narrative.png',
+        'caption': 'Pixar Narrative Short Hand Worksheet'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+      <p class="wow fadeInUp">Pixar’s narrative shorthand makes it easy to flesh out a plot for a product story, and makes plain why your product is important to build. For example, let’s plug Airbnb’s product into this framework:</p>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': '<strong>Once upon a time</strong> there was an artistic couple in Asheville, NC living in a charming home with a guest cottage outback. <strong>Every day</strong> they left each other and their lovely home to earn the money to help them pay their mortgage. <strong>One day</strong> they discovered a way to earn extra money by renting their guest cottage. <strong>Because of that</strong>, they were able to pay off their mortgage more quickly and save a bit extra for retirement. <strong>Because of that</strong>,  they spent less time working and more time together. <strong>Until finally</strong> they were able to retire and live the life they’d dreamed of.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Unlike design comps and prototypes, product stories aren’t concerned with the UI of the product—just the people who will use it and in what context. A product story is very high level, answering one simple question: how will this product fit into the lives of others?</p>
+      <p class="wow fadeInUp"><strong>To answer this question, we can follow these principles:</strong></p>
+      <ul class="wow fadeInUp">
+        <li><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">A good product story demonstrates how a cast of characters—your customers—behaves in specific settings.<i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">An effective product story shows how your product creates value in your customers’ lives.<i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li>An achievable product story takes place in the near future—freeing your team from the technical constraints of today. Show people the future that can be created if everyone works together. </li>
+        <li>A product story is a visual explanation. It should be shared as a storyboard, a map, a comic, a series of illustrations, or a video.</li>
+      </ul>
+    </div>
+  </div>
+
+  {% include 'source/htdocs/_includes/ellipses.html' %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Humans are visual thinkers. We often need to see something before we can comprehend it. <a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Visuals will turn the abstract ideas of a product concept into a North Star that can guide teams to deliver on that vision.<i class="fa fa-twitter" aria-hidden="true"></i></a></p>
+      <p class="wow fadeInUp">One thing to keep in mind is that a product story shouldn’t be overly prescriptive about how to realize that future. Every team involved—designers, developers, marketers, ops—will have to use their own domain expertise and judgement to deliver on their end of the work. The product story should inspire and inform but never dictate.</p>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe/2j0y3ka15n?autoPlay=true?videoFoam=true&playerColor=1621A0',
+    'image_source': '/img/headshots/headshot_cheng.jpg',
+    'caption':'Kevin Cheng, founder of Incredible Labs, talks about the relationship between storytelling and design.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Creating the Product Story</h2>
+      <p class="wow fadeInUp">Product stories can take many forms: journey maps, storyboards, videos, even comics. Like any story, there’s an element of entertainment required to generate excitement among your teams, and stakeholders.</p>
+      <h3 class="wow fadeInUp margin-bottom-none">User Journey Maps</h3>User Journey Maps</h3>
+      <p class="wow fadeInUp margin-none">In <a href="http://rosenfeldmedia.com/books/storymapping/" target="_blank">The User’s Journey</a>, Donna Lichaw points out that stories tend to follow a common structure. We’re introduced to the characters, their goals, and the setting for the story in the exposition. Conflict ensues, rising to a climactic event, then the characters find a resolution to their problems. Pixar’s narrative structure seen earlier follows a very similar story arc.</p>
+    </div>
+  </div>
+
+  <!-- Blockquote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/buckhouse.jpg',
+    'quote': 'A story map is not a mock up, it is a guide to make sure everyone is solving the same problem, building the same product and pointing at the same piece of paper while making decisions. ”<cite class="number"><a href="#citation">2</a></cite>  ',
+    'source_name' : '<a href="https://www.sequoiacap.com/people/james-buckhouse/" target="_blank">James Buckhouse</a>',
+    'source_title' : 'Sequoia Capital'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Centered Image -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/story-first/story-img3.png',
+        'caption': 'The common structure stories follow as explained by Donna Lichaw in her book <a href="http://rosenfeldmedia.com/books/storymapping/" target="_blank" class="text-gray">The User’s Journey</a>.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+      <p class="wow fadeInUp">Following this story structure we can create a user journey map—an exploration of the myriad ways in which users interact with your product or service over time and across different channels.</p>
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/story-first/story-img4.png',
+        'caption': '<a href="http://rosenfeldmedia.com/books/storymapping/" class="text-gray" target="_blank">Donna Lichaw</a> uses the story arc to depict the user’s journey as she discovers and starts using Slack.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+      <p class="wow fadeInUp">A user journey map can be done <a href="http://uxmastery.com/how-to-create-a-customer-journey-map/">in many</a> <a href="http://uxmastery.com/how-to-create-a-customer-journey-map/">ways</a>, but simple sketches like those presented in <em>The User’s Journey</em> are particularly powerful as they’re fast and more fun than formal documents.</p>
+      <p class="wow fadeInUp"><strong>Quick tips to build your user journey map:</strong></p>
+      <ul class="wow fadeInUp">
+        <li>Identify the main character’s goals and the problems they face.</li>
+        <li>Be specific where possible. Quotes from customers and specific findings from research will give your user journey map details that will bring it to life.</li>
+        <li>Point out the hurdles the user must overcome to get to the resolution they desire.</li>
+        <li>Include the devices and channels of communication involved in the user’s journey.</li>
+        <li>Speech bubbles let you expose the customer’s thoughts and words along the way.</li>
+        <li>Use a whiteboard or big paper on a wall to work as a team on your user journey map.</li>
+        <li>Your user journey map will reach more people if it’s informative and fun.</li>
+      </ul>
+    </div>
+  </div>
+
+  {% include 'source/htdocs/_includes/ellipses.html' %}
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe/7a1fllmqx9?autoPlay=true?videoFoam=true&playerColor=1621A0',
+    'image_source': '/img/headshots/headshot_cheng_v2.jpg',
+    'caption':'At Incredible Labs (acquired by Yahoo), Kevin Cheng built the virtual assistant Donna. Using comics to build user journeys, he and his team were able to identify where the current pain points and opportunities were in day-to-day scheduling.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Storyboards</h3>
+      <p class="wow fadeInUp margin-none">Storyboards—a collection of illustrated panels with short descriptions depicting key points in a story—are a tool often used by animation and film studios to quickly work through narrative concepts. They were first developed at Walt Disney Studios during the production of <em>Three Little Pigs</em> in 1933. <cite class="number"><a href="#citation">3</a></cite></p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center margin-vertical-xlarge">
+    <div class="medium-10 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/story-first/disney-storyboard.jpg',
+        'caption': 'Walt Disney and staff animators discuss storyboard sketches as they plan a film.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">However, storyboards have found their way into the product design process over the past few years. According to <a href="https://twitter.com/nathanblec" target="_blank">Nate Blecharczyk</a>, co-founder and CTO at Airbnb, the act of creating a storyboard was a "galvanizing event for the company." Brian Chesky, CEO of Airbnb, was inspired by how Disney Studios made a huge leap from short animations to their first full-length film, <em>Snow White and the Seven Dwarves</em>, using storyboarding to shape the narrative.</p>
+      <p class="wow fadeInUp">Airbnb’s quick initial success portended a large opportunity for growth, but Chesky struggled to see where they might best invest the company’s resources. Taking a cue from Disney, he worked with the design team to produce a storyboard showing the story of their two types of customers: guests and a hosts.</p>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe/xotof8kjok?autoPlay=true?videoFoam=true&playerColor=1621A0',
+    'image_source': '/img/seven-principles/story-first/airbnb-snow-white.png',
+    'caption':'In the film <a class="text-gray" href="https://www.designdisruptors.com/" target="_blank">Design Disruptors</a>, Joe Zadeh, VP of Product at Airbnb, explains the Snow White storyboard project that helped the company create a vision for the product.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">As Brian Chesky explains, "When you have to storyboard something, the more realistic it is, the more decisions you have to make."<cite class="number"><a href="#citation">4</a></cite> The act of drawing the frames of their storyboards forced the Airbnb team to consider the way their customers feel in each step of the process of renting or hosting.</p>
+      <p class="wow fadeInUp">Visualizing the experience puts you and your team there in the scene, building empathy with users as you strategize the design solutions. Airbnb’s storyboard helped everyone in their rapidly growing company rally around a common cause to design the products that will best serve their customers.</p>
+      <p class="wow fadeInUp">Though Airbnb’s storyboards are very high-fidelity, you don’t need to hire Pixar-quality illustrators to produce your company’s story.</p>
+      <p class="wow fadeInUp"><strong>Quick tips for building your storyboard:</strong></p>
+      <ul class="wow fadeInUp">
+        <li>Post sticky notes in a grid on a conference room wall and sketch out each scene with Sharpies. Stick figures will suffice, but if you want to refine your drawing skills a bit check out <a href="http://rosenfeldmedia.com/books/see-what-i-mean/" target="_blank">See What I Mean</a>, Kevin Cheng’s guide to drawing product stories. The act of thinking through the characters and the context of how your product will be used is the most important part of this process.</li>
+        <li>Create photo storyboards using your phone. Get a few people together to act out the product experience, and snap photos of each step. Having a <a href="http://www.amazon.com/dp/B00HK8V4NC/ref=psdc_172646_t1_B004SGF82M" target="_blank">cheap wireless printer</a> on hand will make it easy to produce a high-fidelity storyboard in just a couple of hours. Drop your photos into Keynote or Powerpoint to create a quick presentation that can be shared in meetings or emails.</li>
+        <li>Online tools like <a href="https://boords.com/" target="_blank">Boards</a> let you piece together a storyboard quickly and share with colleagues.</li>
+      </ul>
+    </div>
+  </div>
+
+  {% include 'source/htdocs/_includes/ellipses.html' %}
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Video</h3>
+      <p class="wow fadeInUp margin-none">When the stakes are high on a project and the timeline to completion is long, consider producing your product story as a video, which will help the people making a product connect with the customer experience. Video simulates real-life so well that it transports us to new places and make us feel like we’re part of the story. Video’s immersive qualities also make it good at forming long term memories—yet another important advantage when mobilizing large teams towards a common cause.</p>
+      <p class="wow fadeInUp">Video is also easy to share. Once you upload your video to a service like Vimeo, your product vision will have a URL that can be dropped in an email or a Slack channel for all to view and reference as needed.</p>
+      <p class="wow fadeInUp">One disadvantage to producing video product stories is the required time commitment: you’ll need to write a script, gather some people to serve as your actors, and maybe rent some basic video equipment.</p>
+      <p class="wow fadeInUp">While preparing for a major app redesign, the UX team I led at MailChimp produced <a href="https://vimeo.com/97337160" target="_blank">a vision video to guide the company</a> on what was to be a 4 month project. The research team had noticed after a number of customer visits that people were doing work differently. Persistent internet connections on phones and tablets let people work anywhere and all the time, ducking in and out of small tasks. This created a sense of found time that was quickly being filled up with more to-dos. As people became overwhelmed with their work, they needed to hand things off to others. Seeing these behavioral patterns, we realized we needed to rethink how MailChimp handled collaboration across many devices.</p>
+      <p class="wow fadeInUp">The project required the collaboration of many teams. We wrote a short script and worked with our in-house videographer to produce a brief vision video in about ten days.</p>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source': 'https://player.vimeo.com/video/97337160?autoplay=true&color=1621A0',
+    'image_source' : '/img/placeholders/video-story-mailchimp.png',
+    'caption': 'This vision video guided the MailChimp team on a 4 month long redesign of their mobile and web apps to meet the changing needs of customers.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">The production was inexpensive and relatively fast, but the outcome was of high enough fidelity to guide designers, developers, marketers, and other stakeholders around the company as they worked to realize the vision set forth.</p>
+      <p class="wow fadeInUp"><strong>Quick tips to build your video:</strong></p>
+      <ul class="wow fadeInUp">
+        <li>Determine if the scope of the project warrants a video. New products, long projects, and cross-channel experiences are well served by video product stories.</li>
+        <li>Plan ahead—video shoots can take a bit more time.</li>
+        <li>Avoid specifics like a detailed UI—focus on how the product needs to fit into the lives of your customers, not how the product looks.</li>
+        <li>Keep things simple. Enlist colleagues and friends to act out the parts. Use a DSLR camera to shoot and simple editing software like iMovie to produce your video.</li>
+        <li>Skip the dialogue to speed up video production. Use speech bubble overlays instead.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Product Story Offshoots</h2>
+      <p class="wow fadeInUp">
+        Stories are always better with well developed characters. User Personas and Job Stories can help you transform findings about customers into clear portraits of the people you’re designing for and their behavioral motivations.
+      </p>
+      <h3 class="wow fadeInUp margin-bottom-none">User Personas</h3>
+      <p class="wow fadeInUp margin-none">User Personas are archetypal representations of key customer segments. They give a name and a face to otherwise abstract customer data, inspiring empathy and informing design.</p>
+      <p class="wow fadeInUp">Personas can take many forms from documents to posters, but they’re most effective when made visible to all. <a href="https://blog.mailchimp.com/new-mailchimp-user-persona-research/" target="_blank">The MailChimp UX team created a series of persona posters</a> to guide their product. While pulling a shot from the espresso machine or lunching in the common space, the persona posters reminded everyone in the company of the people using their product.</p>
+    </div>
+  </div>
+
+  <!-- Centered Image -->
+  <div class="row align-center margin-vertical-large">
+    <div class="medium-8 large-7 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/story-first/fpo-image-5.png',
+        'caption': '<a class="text-gray" href="https://blog.mailchimp.com/new-mailchimp-user-persona-research/" target="_blank">MailChimp’s user persona posters</a> reminded all teams of the people using their product.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp"><strong>Quick tips for creating user personas:</strong></p>
+      <ul class="wow fadeInUp">
+        <li>Line up interviews with customers in each key segment</li>
+        <li>Analyze the findings from your interviews to determine common traits and goals within each customer segment</li>
+        <li>Create a profile representative of the largest common groupings</li>
+        <li>Refresh often, as personas are merely a snapshot in time and not built to last</li>
+      </ul>
+    </div>
+  </div>
+
+  {% include 'source/htdocs/_includes/ellipses.html' %}
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Job Stories</h3>
+      <p class="wow fadeInUp margin-none">Job Stories come from the Jobs to Be Done framework developed by Clay Christensen, Harvard Business School professor and author of the influential book <a href="https://www.amazon.com/Innovators-Dilemma-Revolutionary-Change-Business/dp/0062060244" target="_blank">The Innovator’s Dilemma</a>. Core to Christensen’s Jobs to Be Done theory is that <a href="https://www.youtube.com/watch?v=f84LymEs67Y" target="_blank">we don’t buy products, we hire them to do a job</a>. By discerning the job a product is hired to do, we can better understand the motivations of customers.</p>
+      <p class="wow fadeInUp">Job Stories are based on customer interviews that employ <a href="">a very specific technique</a> that takes the customer back to the moment of purchase to expose the situations and motivations that lead to their decision.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/klement.png',
+    'quote': 'Job Stories can only come from real customer interviews. Before designing a feature or new product, you must talk to real people and uncover all the anxieties and contexts which were in play when they used your or a competitor’s product. ”<cite class="number"><a href="#citation">5</a></cite>',
+    'source_name' : '<a href="https://twitter.com/alanklement" target="_blank" target="_blank">Adam Klement</a>',
+    'source_title' : 'Product Designer'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Job Stories and User Personas are very different. Personas represent specific segments of customers that have a shared set of characteristics, skills, and perspectives. Job Stories are only concerned with a customer’s motivations within a specific context.</p>
+      <p class="wow fadeInUp">A Job Story follows a simple structure:</p>
+      <img src="/img/seven-principles/story-first/job-story.png" alt="job-story"  class="wow fadeInUp margin-vertical-xlarge" />
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': 'Breaking <strong>Down</strong> the Job Story<br>Each section of the Job Story reveals a specific piece of information: <strong>Situation: </strong> When ___________<br><strong>Motivation: </strong>I want to ___________<br><strong>Expected outcome: </strong> so I can ___________'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">For instance: </p>
+      <p class="wow fadeInUp"><strong>When</strong> I commute to and from work for hours each day in my car <strong>I want to</strong> do something productive and stimulating <strong>so I can</strong> feel like I’m not wasting time and actually make my commute productive.</p>
+      <p class="wow fadeInUp">A Job Story like this provides rich insight into the problem to be solved: this commuting time is ripe for the right product or service to make wasted time instead feel like a newfound opportunity.</p>
+      <p class="wow fadeInUp"><strong>Quick tips to create your Job Story:</strong></p>
+      <ul class="wow fadeInUp">
+        <li>Interview customers following <a href="https://medium.com/@marksweep/jobs-to-be-done-interview-script-d290c42b2b48#.md0yis1dd" target="_blank">the Jobs To Be Done interview process</a></li>
+        <li>Identify the situation, motivations, and  desired outcomes related to the customer’s purchase</li>
+        <li>Create a Job Story for each customer interview</li>
+        <li>Compare Job Stories for each interview to find patterns</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe/39d0js2hoo?autoPlay=true?videoFoam=true&playerColor=1621A0',
+    'image_source': '/img/headshots/headshot_danzico.jpg',
+    'caption':'"It’s not only about the content that NPR produces, it’s about the way the we work together, and making that very story-driven." - <a href="http://bobulate.com/" class="text-gray" target="_blank">Liz Danzico</a>, NPR and SVA'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- h2 + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Fitting Into The Lives of Others</h2>
+      <p class="wow fadeInUp">The storytelling mechanism you choose is less important than the story you tell. The act of creating a product story before you begin the design process not only helps you mobilize your teams, it also forces you to clarify your intentions for your product. You’ll step out of the maker’s mindset and consider how your product will fit into the lives of others.</p>
+      <p class="wow fadeInUp" id="citation">Peering through the microscope at the details and execution of a project is important, but only after we’ve gotten the perspective from the Earth to our North Star, getting a glimpse at the future we can create. Story First is a simple principle to help you and your whole company work together on big ideas.</p>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284128829'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- Citations -->
+  <div class="row align-center margin-vertical-xlarge">
+    <div class="medium-8 large-7 columns border-top">
+      <small class="text-black margin-top-large">
+      1. <a class="text-black" href="http://leanin.org/education/harnessing-the-power-of-stories/" target="_blank">http://leanin.org<span class="hide-tablet">/education/harnessing-the-power-of-stories/</span></a><br>
+      2. <a class="text-black" href="https://medium.com/design-story/story-map-3cc64033128e#.7s63x7pj2" target="_blank">https://medium.com<span class="hide-tablet">/design-story/story-map-3cc64033128e#.7s63x7pj2</span></a><br>
+      3. <a class="text-black" href="https://en.wikipedia.org/wiki/Storyboard" target="_blank">https://en.wikipedia.org<span class="hide-tablet">/wiki/Storyboard</span></a><br>
+      4. <a class="text-black" href="http://www.fastcompany.com/3002813/how-snow-white-helped-airbnbs-mobile-mission" target="_blank">http://www.fastcompany.com<span class="hide-tablet">/3002813/how-snow-white-helped-airbnbs-mobile-mission</span></a><br>
+      5. <a class="text-black" href="https://jtbd.info/5-tips-for-writing-a-job-story-7c9092911fc9#.kx78xial5" target="_blank">https://jtbd.info<span class="hide-tablet">/5-tips-for-writing-a-job-story-7c9092911fc9#.kx78xial5</span></a><br>
+      </small>
+    </div>
+  </div>
+
+  <!-- Read On -->
+  <div class="background-gray-light padding-vertical-xxlarge margin-top-xxlarge section-read-on chapter">
+    <div class="row align-center">
+      <div class="medium-10 columns">
+        <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Read On</h2>
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="http://www.fastcodesign.com/1672917/the-8-steps-to-creating-a-great-storyboard" target="_blank">The 8 Steps to Creating A Great Storyboard</a></li>
+          <li><a href="https://medium.com/the-year-of-the-looking-glass/designs-north-star-d469193063c5#.pig9rp5rs" target="_blank">Design’s North Star</a></li>
+		  <li><a href="http://svpg.com/vision-vs-strategy/" target="_blank">Vision vs. Strategy</a></li>
+          <li><a href="http://blog.invisionapp.com/improving-ux-with-pixars-storytelling-rules/" target="_blank">Improving UX With Pixar’s 22 Rules of Storytelling</a></li>
+          <li><a href="http://rosenfeldmedia.com/books/see-what-i-mean/" target="_blank">See What I Mean by Kevin Cheng</a></li>
+          <li><a href="http://rosenfeldmedia.com/books/storymapping/" target="_blank">The User’s Journey by Donna Lichaw</a></li>
+          <li><a href="http://bigthink.com/insights-of-genius/the-literary-darwinists-the-evolutionary-origins-of-storytelling" target="_blank">The Literary Darwinists: The Evolutionary Origins of Storytelling</a></li>
+        </ul>
+      </div>
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="http://www.fastcompany.com/3002813/how-snow-white-helped-airbnbs-mobile-mission" target="_blank">How Snow White Helped Airbnb’s Mobile Mission</a></li>
+          <li><a href="http://www.theatlantic.com/health/archive/2014/11/the-psychological-comforts-of-storytelling/381964/" target="_blank">The Psychological Comforts of Storytelling</a></li>
+          <li><a href="https://medium.com/design-story/story-map-3cc64033128e#.iq25byj6q" target="_blank">Story Map</a></li>
+          <li><a href="https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27#.cn13l1mrf" target="_blank">Replacing the User Story With the Job Story</a></li>
+          <li><a href="https://jtbd.info/5-tips-for-writing-a-job-story-7c9092911fc9#.kx78xial5" target="_blank">5 Tips for Writing a Job Story</a></li>
+          <li><a href="http://jobstobedonehandbook.com/" target="_blank">The Jobs to Be Done Handbook by Bob Moesta and Chris Spiek</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- end #top-scroll -->
+
+<section id="footer-scroll-nav" class="relative">
+  {% include 'source/htdocs/_includes/_product-principles.html' %}
+  {% set vars =
+    {
+      'background_color':'white'
+    }
+  %}
+  {% include 'source/htdocs/_includes/footer-html.html' with vars %}
+</section>
+
+<!-- Footer -->
+{% include 'source/htdocs/_includes/footer.html' %}

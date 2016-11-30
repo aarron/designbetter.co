@@ -1,0 +1,497 @@
+<!-- Header -->
+{% set vars = {
+  'title': 'lateral-design',
+  'parent_page': 'seven-principles',
+  'og_title': 'Design Better - Lateral Design',
+  'og_url': 'http://designbetter.wpengine.com/principles-of-product-design/lateral-design/',
+  'og_description': 'Three elements define a product: the business, the code and the pixels. Give each a voice in all product decisions.',
+  'og_image': '/img/og/hero-lateral.png'
+  }
+%}
+{% include 'source/htdocs/_includes/header.html' with vars %}
+
+<!-- Navigation -->
+{% set vars = {
+  'title': 'Design Better • Principles of Product Design • Lateral Design',
+  'background_color': 'purple'
+  }
+%}
+{% include 'source/htdocs/_includes/navigation.html' with vars %}
+
+<div id="top-scroll">
+
+<!-- Hero Image -->
+{% set vars = {
+  'image_source': '/img/heros/hero-lateral.svg',
+  'image_source_small': '/img/heros/hero-lateral-small.svg',
+  'image_alt': 'Lateral Design'
+  }
+%}
+{% include 'source/htdocs/_includes/page-hero.html' with vars %}
+
+<!-- Intro w/ Paragraphs -->
+<section class="page-content relative page-content__article">
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp padding-top-xlarge margin-bottom-xxlarge">Lateral Design</h2>
+    </div>
+  </div>
+
+  <!-- Audio Sidebar -->
+  {% set vars = {
+    'color' : 'purple',
+    'audio_source': '/audio/lateral-audio.mp3',
+    'subscribe_itunes': 'https://geo.itunes.apple.com/us/album/this-american-life-stories/id335933324?mt=1&app=music',
+    'subscribe_google': 'https://www.thisamericanlife.org/blog/2010/10/this-american-life-android-app',
+    'subscribe_spotify': 'https://open.spotify.com/user/una_s/playlist/2p89CV9wAwBYUowlXEGOgi',
+    'subscribe_soundcloud': 'https://soundcloud.com/this-american-life'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio-sidebar.html' with vars %}
+
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">To design better, we need to look beyond the confines of our craft. Design is more than color and form; <strong>design is the act of planning with the intention to serve others</strong>. Under this definition, the borders of design stretch beyond a single team.</p>
+      <p class="wow fadeInUp">Engineers, product managers, and researchers all have an important part to play in the design of a product. Their work, like ours, shapes the user experience. But despite shared interests, teams are often siloed by discipline, which makes collaboration and communication difficult, even dysfunctional. </p>
+      <p class="wow fadeInUp"><em>Organizational design influences product design</em>—significantly. If the relationship between the people who make a product is broken, the product will be broken too.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Broken Teams, Broken Product</h3>
+      <p class="wow fadeInUp margin-none">Here’s a scenario that plays out in companies far too often: Katie and her team spent weeks perfecting the design of a new product. They presented the final concepts to stakeholders, got immediate sign off, then handed off their design files to Everett and his engineering team. </p>
+      <p class="wow fadeInUp">Though the dashboard design was stunning, Everett’s team had to gut it because the data Katie’s team wanted to display wasn’t actually available. They also had to throw out the account sign up design because the designers hadn’t included all the necessary fields. </p>
+      <p class="wow fadeInUp">As Everett’s team continued to build the app, the distance between the intentions of designers and the execution of engineers widened. When Katie finally got a peek at the app, she was horrified and said, "This looks nothing like the design we created!"</p>
+      <p class="wow fadeInUp">She walked across the building to engineering and stormed into Everett’s office to demand an explanation. Everett, frustrated that he and his team weren’t consulted earlier, curtly explained the design concept was ignorant of engineering requirements. </p>
+      <p class="wow fadeInUp">The relationship between design and engineering was already rocky—this wasn’t the first time they’d felt out of sync. Now it had gone from bad to worse, and the product was a reflection of their animosity. It was a mess.</p>
+      <p class="wow fadeInUp">Like an episode of <a href="https://www.youtube.com/watch?v=V3jxWCJUPQQ" target="_blank">HBO’s Silicon Valley</a>, this story may hit a little too close to home. Katie and Everett are out of step, as their organization is operating with a handicap—they have a vertical relationship. Design, at the top of the process, passes work down to engineering to execute—engineers aren’t part of the problem solving phase. Subsequently, Katie’s team missed key technical details and key parts of the design had to be scrapped.</p>
+      <p class="wow fadeInUp">Vertical relationships also flow the other way—from engineering to design. Engineers rush to build a product’s infrastructure and pass it to designers for decoration afterwards. The results are equally disjointed, as buttons and type might look nice, but workflows built around database models instead of mental models leave users confused and frustrated.</p>
+      <p class="wow fadeInUp">Both scenarios are broken. Great products blend design and technology seamlessly. The <em>feel</em> and function of a product are interconnected, and equally important—like the right and left hemispheres of our brain that pass information laterally to synthesize creative thinking and logic. </p>
+      <p class="wow fadeInUp">We can take a cue from nature. When we bring teams together to work laterally—working on the product at the same time in the same place—we can reduce process entropy and create better products.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Cross-Functional Teams</h2>
+      <p class="wow fadeInUp">Cross-functional teams are a hallmark of the Agile process. They bring together engineers, designers, and a product manager to define a product’s purpose, function, and feel.</p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center">
+    <div class="medium-10 text-center columns wow fadeInUp">
+
+      <!-- Image, Large Caption  -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/lateral-design/triforce.png',
+        'caption': 'Airbnb is organized into small, cross-functional teams that bring together design, engineering, and product management.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-large-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Cross-functional teams work laterally. <em>Together</em> product managers, designers, and engineers work to understand the problem and conceptualize solutions concurrently, not linearly, giving each team member a voice in key decisions. </p>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': 'The role of <strong>Product Manager</strong> (also called a Product Owner) can vary, but in most organizations they’re responsible for the <strong>product roadmap</strong> and achieving the business’ goals. They keep the team on schedule and <strong>clear any barriers</strong> to progress.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Unlike the vertical workflow Katie and Everett followed, cross-functional teams have no grand handoffs where communication falls apart and political battles erupt. No one is downstream. Pixels and code come together simultaneously around a clear business strategy.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/schleifer.jpg',
+    'quote': 'Three elements define a product: the business, the code and the pixels. Give each a voice in all product decisions. ”',
+    'source_name' : '<a href="http://firstround.com/review/defining-product-design-a-dispatch-from-airbnbs-design-chief/" target="_blank">Alex Schleifer</a>',
+    'source_title' : 'VP of Design at Airbnb'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe///jnlkwdy0h5?autoPlay=true?videoFoam=true&playerColor=1621A0',
+    'image_source': '/img/headshots/headshot_au.jpg',
+	'caption': '<a href="https://twitter.com/ireneau" target="_blank" class="text-gray">Irene Au</a>, design partner at Khosla Ventures, discusses the appropriate ratios of designers to developers.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Cross-functional teams have many benefits:</p>
+      <ul class="wow fadeInUp">
+        <li>Working closely, designers and engineers develop a strong understanding of their colleagues’ craft.</li>
+        <li>The rapport established within cross-functional teams fosters empathy and respect that make collaboration easier (and more <em>fun</em>).</li>
+        <li>Communication is much faster; designers are immediately made aware of the technical challenges their decisions create, and engineers learn when function diminishes form.</li>
+        <li>Diverse perspectives each step of the way lead to better product solutions.</li>
+        <li>Shared ownership dampens political fighting and builds trust.</li>
+      </ul>
+      <p class="fadeInUp wow">Though a team may disband after a feature launches, strong bonds remain (like friendships formed in summer camp). This can only strengthen the company culture.</p>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': 'Keep your cross-functional teams <strong>small</strong>—no more than 10 people to make communication easy. <strong>Any more</strong> and the team will have to spend <strong>time creating</strong> process documentation and <strong>scheduling meetings</strong> to keep everyone synced. <strong>Team collaboration</strong> and communicate happens more fluently when everyone in a <strong>shared space.</strong>'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/gothelf.jpg',
+    'quote': 'The benefit of small teams comes down to three words: communication, focus, and camaraderie. Smaller teams are easier to keep current on project status, changes, and new learning. Dedicating your team to one project keeps everyone on the team focused on the same priorities all the time. Having the team all in one place allows relationships to grow between colleagues. ”',
+    'source_name' : '<a href="http://www.jeffgothelf.com/" target="_blank">Jeff Gothelf</a>',
+    'source_title' : 'author of Lean UX'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Dipping a Toe in the Water</h2>
+      <p class="wow fadeInUp">To make sustainable improvements to the way your organization designs products, you may need to take a red pen to your organizational chart. These sorts of changes don’t come easy or quickly.</p>
+      <p class="wow fadeInUp">But before doing anything drastic, you can test the waters with some small experiments. Small projects with tight deadlines are a great place to start experimenting with cross-functional teams. If time is tight, start by investing just one week in a Design Sprint.</p>
+      <h3 class="wow fadeInUp margin-bottom-none">Design Sprints</h3>
+      <p class="wow fadeInUp margin-none">A design sprint is a five-day process developed by Google Ventures for answering critical business questions through design, prototyping, and testing ideas with customers. Because it takes just one week, it’s a low risk way to try out a lateral design process in a cross-functional team.</p>
+      <p class="wow fadeInUp">The Google Ventures group goes into great detail in their <a href="http://www.thesprintbook.com/" target="_blank">Sprint book</a> and its related websites, but in short, over five days a small team will go from understanding the problem space to validating a design solution.</p>
+      <p class="wow fadeInUp">The Google Ventures group goes into great detail in their <a href="http://www.thesprintbook.com/" target="_blank">Sprint book.</a> If you survive the sprint and produce a great product idea, you’ll have set the stage for more cross-functional teamwork in the future.</p>
+      <h3 class="wow fadeInUp margin-bottom-none">Working Groups</h3>
+      <p class="wow fadeInUp margin-none">Like design sprints, working groups assemble a cross-functional team to tackle a tough problem. But working groups stay together much longer than a week to produce a final product that’s actually shipped to customers. After the project is complete, everyone returns to their respective teams. </p>
+      <p class="fadeInUp wow">Working groups have: </p>
+      <ul class="wow fadeInUp">
+        <li>Clearly defined objectives and metrics to measure success</li>
+        <li>Designers, engineers, a product manager, and maybe even a design researcher</li>
+        <li>The autonomy to make key decisions about the product they’re building</li>
+        <li>A deadline to ship</li>
+      </ul>
+      <p class="fadeInUp wow">MailChimp has a long history of assembling working groups to focus on hairy projects. One such team was created to design a new drag-and-drop email editor.</p>
+      <p class="fadeInUp wow">A designer, a front-end developer, and two engineers—one of whom had a talent for prototyping—sequestered themselves behind closed door in a small MailChimp office to tackle the project. Sketching and debating, they looked at the problem from all angles.</p>
+      <p class="fadeInUp wow">Sketches turned into simple prototypes. The designer explored UI concepts and made refinements. Developers coded out the new design, tweaking interactions as they went. Back and forth they worked, always sharing progress with one another immediately and inviting debate.</p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center">
+    <div class="medium-10 text-center columns wow fadeInUp">
+
+      <!-- Image, Large Caption  -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/lateral-design/mailchimp-editor.jpg',
+        'caption': 'The MailChimp email editor is the product of lateral design in a working group.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-large-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="fadeInUp wow">Eventually, the prototype had reached its limits. After testing with the whole company and select customers, the new editor, <a href="https://blog.mailchimp.com/introducing-mailchimps-new-editor/" target="_blank">Neapolitan, eventually shipped</a>. This working group gave the company the opportunity to escape the gravitational pull of the product roadmap to go deep on an important feature that made working in MailChimp easier and faster. </p>
+      <p class="fadeInUp wow">Everyone on the working group returned to their respective teams with respect for their colleagues and their craft, and knowledge of what could be accomplished when designing laterally. </p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Going Further: Institutionalizing Lateral Design</h2>
+      <p class="wow fadeInUp">Big wins from working group projects can spark conversations about optimizing the rest of the company. The cross-functional team structure that enables lateral design can be scaled up by uniting Engineering, Product Management, and Design in an organizational structure commonly referred to as EPD.</p>
+      <p class="wow fadeInUp">Alex Schleifer, VP of Design at Airbnb, describes EPD as a three-legged stool that supports the organization. </p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/schleifer.jpg',
+    'quote': 'The team should resemble a three-legged stool, in which each leg represents one of the three areas that helps build a product. If it’s done from the start, each function can grow in parallel and proper ratio as the broader organization scales. ”',
+    'source_name' : '<a href="http://firstround.com/review/defining-product-design-a-dispatch-from-airbnbs-design-chief/" target="_blank">Alex Schleifer</a>',
+    'source_title' : 'VP of Design at Airbnb'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="fadeInUp wow">A stool with one leg shorter than the others causes instability and imbalance. Similarly, EPD organizations are unstable when one function of the troika is weaker or more powerful than the others. EPD’s strength comes from sharing power.</p>
+      <div class="image-float image-float-right wow fadeInUp">
+
+        <!-- Image, Large Caption  -->
+        {% set vars = {
+          'image_source' : '/img/seven-principles/lateral-design/epd-stool.png'
+          }
+        %}
+        {% include 'source/htdocs/_includes/image-large-caption.html' with vars %}
+
+      </div>
+      <p class="fadeInUp wow">Each function of EPD must be involved and aligned from a product’s inception to its launch. EPD teams are typically organized around product features by areas of the user experience: </p>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': '<a href="http://firstround.com/review/defining-product-design-a-dispatch-from-airbnbs-design-chief/" target="_blank">On the First Mark Capital blog</a> <strong>Alex Schleifer</strong> describes how Airbnb unifies <strong>staffing and hierarchy</strong> across EPD to make collaboration and planning more <strong>efficient</strong>.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <ul class="fadeInUp wow">
+        <li>Facebook organizes its teams by product feature like news feed, profile, or messenger. </li>
+        <li>Airbnb organizes teams around areas of the user experience like the guest or host experience.</li>
+      </ul>
+      <p class="fadeInUp wow">Like workgroups, each team is cross-functional, with representation from each leg of the EPD stool.</p>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe/dc1swla3ej?autoPlay=true?stillUrl=http://localhost:3000/img/story-img2.png?rel=1472761364365',
+    'image_source': '/img/headshots/headshot_dill.jpg',
+	'caption': '<a href="https://twitter.com/lil_dill" target="_blank" class="text-gray">Katie Dill</a>, Director of Experience Design at Airbnb, discusses how the EPD team structure works.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">The Challenges of Cross-Functional Teams</h2>
+      <p class="wow fadeInUp">Though cross-functional teams offer a number of advantages, they can be challenging. Workgroups, because they’re temporary, rarely surface significant issues. Instead, designers might feel like they’re on a vacation—they get to learn new things before returning to the comforts of home.</p>
+      <p class="wow fadeInUp">Permanent cross-functional teams are more like expatriating—designers will wrestle with their  identity and struggle to adapt to a foreign land. Read on to learn how these problems, though common, are being solved at a lot of great companies. Going into an EPD structure with open eyes and a set of solutions will help you transition smoothly.</p>
+      <h3 class="wow fadeInUp margin-bottom-none">Isolation</h3>
+      <p class="wow fadeInUp margin-none">As we saw in <a href="/principles-of-product-design/show-tell/" target="_blank">Show and Tell</a>, designers need regular feedback from other designers. In a cross-functional team, it’s common for a designer to operate alone, which leaves them craving conversations with peers. Organizations like Slack, Twitter, and the BBC offer some interesting solutions.</p>
+      <p class="wow fadeInUp"><strong>Slack: Paired Design</strong></p>
+      <p class="wow fadeInUp">Lateral design in cross-functional teams is a mainstay at Slack, but designers always work in pairs, with one acting as the lead designer. </p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/brito.jpg',
+    'quote': 'Pair design gives you a partner in crime to help you explore ideas more. It’s two people with similar or complementary skills riffing off each other. Plus when you have two people, it helps you get unstuck faster when you hit a roadblock. ”',
+    'source_name' : '<a href="https://twitter.com/uxdiogenes" target="_blank">Diogenes Brito</a>',
+    'source_title' : 'Product Designer at Slack'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe/0bbv8z8mt1?autoPlay=true?stillUrl=http://localhost:3000/img/story-img2.png?rel=1472761364365',
+    'image_source': '/img/headshots/headshot_brito_v2.jpg',
+	'caption': '<a href="https://twitter.com/uxdiogenes" target="_blank" class="text-gray">Diogenes Brito</a>, product designer at Slack, discusses how paired design helps designers avoid isolation and get unstuck faster.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp margin-none">You can pair designers even if you’re short staffed. Pair a designer with a colleague from another team who can spend about 8 hours per week (or just a little over an hour per day) working in tandem on design problems.</p>
+      <p class="wow fadeInUp"><strong>Twitter: Design Reviews</strong></p>
+      <p class="wow fadeInUp">In early 2014, Twitter transitioned from a centralized design team to embedding designers in cross-functional teams. In order to prevent designers from feeling isolated or unable to consistently learn from their colleagues, Mike Davidson, VP of Design, scheduled weekly <a href="/principles-of-product-design/show-tell/" target="_blank">design reviews</a> and other activities in the design studio to bring everyone together as a team. Congregating regularly gave all designers the opportunity to discuss the overall design style of the company and keep everyone in sync.</p>
+      <p class="wow fadeInUp"><strong>BBC: Rotate Teams</strong></p>
+      <p class="wow fadeInUp margin-none">The BBC, with more than 20,000 employees, lets employees work on a new team every year. This policy helps all employees, not just designers, form new relationships and broaden their understanding of the organization. </p>
+      <p class="wow fadeInUp">Designers who want to rotate within the UX&amp;D team speak to their manager to explore the idea. Approval is common if they’ve spent over a year on the same team. The Resource Manager facilitates the transfer, taking into account the designer’s skills, career goals, and current teams availabilities.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Aligning Style and Values</h3>
+      <p class="wow fadeInUp margin-none">Decentralized design teams have to work a bit harder to make sure design remains consistent across features and products. The style of each UI and the values that guide design decisions can fall into disarray if teams are left without clear guidelines. Many large organizations are working hard to solve this problem, but few more than Spotify.</p>
+      <p class="wow fadeInUp"><strong>Spotify: Design Systems and Values</strong></p>
+      <p class="wow fadeInUp">As a company scales, design consistency becomes more difficult to manage. Companies like <a href="https://developer.salesforce.com/lightning/design-system" target="_blank">Salesforce</a>, <a href="http://www.ibm.com/design/thinking/" target="_blank">IBM</a>, the <a href="http://www.bbc.co.uk/gel" target="_blank">BBC</a>, and <a href="https://design.atlassian.com/" target="_blank">Atlassian</a> created a design system to solve UI consistency issues, but Spotify used their design system to solve an organizational problem too. </p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center">
+    <div class="medium-10 text-center columns wow fadeInUp">
+
+      <!-- Image, Large Caption  -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/lateral-design/spotify-glue.png',
+        'caption': 'Spotify’s GLUE design system helps all teams produce consistent UIs, and is managed by a central team.
+'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-large-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">The team that manages Spotify’s design language—called GLUE (a Global Language for a Unified Experience)—is the center of the design universe in the company around which all other design work orbits. Designers regular sync up with the GLUE team to get guidance on new UIs and suggest additions to the design language.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/curtis.jpg',
+    'quote': 'A system isn’t a project with an end, it’s the origin story of a living and evolving product that’ll serve other products. ”',
+    'source_name' : '<a href="https://twitter.com/uxdiogenes" target="_blank">Nathan Curtis</a>',
+    'source_title' : 'Product Designer at Slack'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp"><a href="http://snook.ca/archives/opinion/staffing-design-systems-team" target="_blank">Design systems, once thought of as an occasional side project, are playing a more central role in large organizations</a>, making them a perfect place for designers to converge and find common solutions.</p>
+      <p class="wow fadeInUp"><strong>Guilds</strong></p>
+      <p class="wow fadeInUp">Designers in cross-functional teams throughout Spotify are joined together by a design guild—a community of interest where knowledge, tools, and best practices can be shared. Anyone, not just designers, are welcome to join discussions in the design guild. A guild coordinator is responsible for managing activities.</p>
+      <p class="wow fadeInUp"><a href="https://ucvox.files.wordpress.com/2012/11/113617905-scaling-agile-spotify-11.pdf" target="_blank">Spotify’s guild structure comes from the Agile practices developed by the engineering team.</a></p>
+      <p class="wow fadeInUp"><strong>Values</strong></p>
+      <p class="wow fadeInUp">Designers in cross-functional teams throughout Spotify are joined together by a design guild—a community of interest where knowledge, tools, and best practices can be shared. Anyone, not just designers, are welcome to join discussions in the design guild. A guild coordinator is responsible for managing activities.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/davidson.jpg',
+    'quote': 'As the only designer in a cross-functional team, you’re accountable to a different set of values than you would be if you were working with other designers. ”',
+    'source_name' : '<a href="https://twitter.com/mikeindustries" target="_blank">Mike Davidson</a>',
+    'source_title' : 'former VP of Design at Twitter'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Outnumbered as they often are in cross-functional teams, designers acquiesce to engineers who encourage smaller design iterations and a simpler approach. <em>Do we really need that animated transition? Does it add much value?</em> It’s difficult to champion the necessity of small details when you’re the lone designer. Many simply give in and get back to work.</p>
+      <p class="wow fadeInUp">There’s nothing wrong with a little pushback between designers and engineers—it keeps both from becoming self-indulgent. But often, engineers push back on design simply because they don’t understand how to measure the success of a design.</p>
+      <p class="wow fadeInUp">Engineers measure success quantitatively:</p>
+      <ul>
+        <li>How many lines of code were required?</li>
+        <li>Did this impact site performance?</li>
+        <li>How many bugs did we ship?</li>
+      </ul>
+      <p class="wow fadeInUp">Designers measure success qualitatively:</p>
+      <ul>
+        <li>Does it look good?</li>
+        <li>Is it easy to use?</li>
+        <li>Is it delightful? </li>
+      </ul>
+      <p class="wow fadeInUp">Just as an engineer’s work shouldn’t be measured by design metrics, a designer’s work shouldn’t be measured by those of an engineer. Instead, designers and engineers, working together, must form a shared understanding of what constitutes success.</p>
+      <p class="wow fadeInUp">Recognizing this need, Spotify articulated a series of design values—principles that communicate what’s most important when solving a design problem—and made them available to the whole company. Common values help designers articulate their design decisions. </p>
+      <p class="wow fadeInUp">For example, a large image occupying key space in a UI may seem indulgent to an engineer—<em>Is this photo really necessary? We could fit more data here if we get rid of it.</em> With the support of well defined design values in the vein of Spotify, a designer might respond, "Our design values state that a UI should ‘be alive’. This image creates movement, adds color, and brings an otherwise stagnate UI to life."</p>
+      <p class="wow fadeInUp">With a shared set of design values, priorities and how they’re communicated becomes clearer. </p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center">
+    <div class="medium-10 text-center columns wow fadeInUp">
+
+      <!-- Image, Large Caption  -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/lateral-design/spotify-design-values.png',
+        'caption': 'Spotify established design values to guide all teams as they work on disparate projects.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-large-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Lateral Design in Practice</h2>
+      <p class="wow fadeInUp"><strong>Organizational design influences product design</strong>. Shared ownership, collaborative problem solving, and blended teams are key.</p>
+      <p class="wow fadeInUp">Here’s your to-do list as you put lateral design into practice in your company:</p>
+      <ul class="wow fadeInUp">
+        <li>Starting small with a 1-week design sprint</li>
+        <li>When you’ve had a taste of the benefits of cross-functional teams, create a <strong>working</strong> group to tackle a project with a clear timeline and defined outcomes. You should have designers, developers, and a product manager on the team.</li>
+        <li>When your organization is ready to go further, organize teams in an EPD structure. Engineering, product, and design should share power, and report directly to the CEO or COO.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Read On -->
+  <div class="background-gray-light padding-vertical-xxlarge margin-top-xxlarge section-read-on chapter">
+    <div class="row align-center">
+      <div class="medium-10 columns">
+        <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Read On</h2>
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://orgdesignfordesignorgs.com/" target="_blank">Org Design for Design Orgs</a></li>
+          <li><a href="https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/150112174X/" target="_blank">Sprint: How to solve big problems and test new ideas in just five days</a></li>
+          <li><a href="https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/150112174X/" target="_blank">Sprint: How to solve big problems and test new ideas in just five days</a></li>
+          <li><a href="http://blog.invisionapp.com/structuring-design-team/" target="_blank">Structuring A Design Team In A Continuous Delivery Agile Environment</a></li>
+          <li><a href="https://blog.intercom.io/there-is-no-hand-off-product-design/" target="_blank">There’s No Handoff in Product Design</a></li>
+          <li><a href="http://firstround.com/review/defining-product-design-a-dispatch-from-airbnbs-design-chief/" target="_blank">Defining Product Design: A Dispatch from Airbnb's Design Chief</a></li>
+          <li><a href="http://www.fastcodesign.com/3060607/inside-the-organic-ux-design-process-at-slack" target="_blank">Inside The Organic UX Design Process At Slack</a></li>
+        </ul>
+      </div>
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1449311652/" target="_blank">Lean UX: Applying Lean Principles to Improve User Experience</a></li>
+          <li><a href="http://blog.invisionapp.com/envato-agile-ux-team/" target="_blank">How Envato’s Agile UX Team Works</a></li>
+          <li><a href="https://articles.uie.com/cohesive_design_teams/" target="_blank">Building a Cohesive Design Team</a></li>
+          <li><a href="https://medium.com/@hellostanley/design-doesnt-scale-4d81e12cbc3e#.m5whsgjvp" target="_blank">Design Doesn’t Scale</a></li>
+          <li><a href="http://firstround.com/review/the-power-of-the-elastic-product-team-airbnbs-first-pm-on-how-to-build-your-own/" target="_blank">The Power of the Elastic Product Team</a></li>
+          <li><a href="https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0#.crdmgsekr" target="_blank">Team Models for Scaling a Design System</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- end #top-scroll -->
+
+<section id="footer-scroll-nav" class="relative">
+  {% include 'source/htdocs/_includes/_product-principles.html' %}
+  {% set vars =
+    {
+      'background_color':'white'
+    }
+  %}
+  {% include 'source/htdocs/_includes/footer-html.html' with vars %}
+</section>
+
+<!-- Footer -->
+{% include 'source/htdocs/_includes/footer.html' %}

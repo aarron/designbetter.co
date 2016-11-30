@@ -1,0 +1,505 @@
+.lead,
+.section-read-on {
+  @include breakpoint(medium down) {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.lead a {
+  background-color: transparent !important;
+  color: $color-white !important;
+}
+.audio-sidebar {
+  width: 100%;
+  position: absolute;
+  top: 250px;
+
+  @include breakpoint(medium down) {
+    position: static;
+    top: auto;
+    text-align: center;
+  }
+  button {
+    text-align: left;
+  }
+  .play-text,
+  .pause-text {
+    color: $color-white;
+  }
+}
+
+.audio-sidebar-purple {
+  button[name='play-audio'] {
+    background-color: $color-purple;
+    &:hover {
+      background-color: $color-bright-blue;
+    }
+  }
+  button {
+    &:hover {
+      background-color: #B3B9FF;
+    }
+  }
+  .audio-range {
+  background-color: $color-blue-dark;
+  }
+  a, p, span {
+    color: $color-purple;
+  }
+  .subscribe-wrapper {
+  &:hover {
+    background-color: #E8EAFF;
+      .show-on-hover {
+        background-color: #E8EAFF;
+      }
+    }
+  }
+  .button[name='itunes']:hover,
+  .button[name='google-play']:hover,
+  .button[name='spotify']:hover,
+  .button[name='soundcloud']:hover {
+    background-color: #B3B9FF;
+  }
+  .button[name='download']:hover {
+    background-color: #E8EAFF;
+  }
+}
+
+.audio-sidebar-red {
+  button[name='play-audio'] {
+    background-color: $color-red;
+    &:hover {
+      background-color: $color-bright-red;
+    }
+  }
+  button {
+    &:hover {
+      background-color: #ff9999;
+    }
+  }
+  .audio-range {
+    background-color: $color-red-dark;
+  }
+  a, p, span {
+    color: $color-red;
+  }
+  path {
+    fill: $color-red;
+  }
+  .play-icon path,
+  .pause-icon path {
+    fill: $color-white;
+  }
+  .subscribe-wrapper {
+  &:hover {
+    background-color: #ffb2b2;
+      .show-on-hover {
+        background-color: #ffb2b2;
+      }
+    }
+  }
+  .button[name='itunes']:hover,
+  .button[name='google-play']:hover,
+  .button[name='spotify']:hover,
+  .button[name='soundcloud']:hover {
+    background-color: #ff9999;
+  }
+  .button[name='download']:hover {
+    background-color: #ffb2b2;
+  }
+}
+
+.audio-container button {
+  width: 100%;
+  height: 40px;
+  position: relative;
+
+  @include breakpoint(medium down) {
+    width: auto;
+    margin: 0;
+    svg:not(.pause-icon):not(.play-icon) {
+      display: block;
+    }
+  }
+
+
+}
+.play-audio {
+  @include breakpoint (medium down) {
+    width: 35px !important;
+    height: 40px !important;
+  }
+}
+.audio-range {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.pause-icon {
+  display: none;
+  position: absolute;
+  bottom: 12px;
+}
+
+.pause-text {
+  display: none;
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  @include breakpoint (medium down) {
+    display: none !important;
+  }
+}
+
+.play-icon,
+.play-text {
+  position: relative;
+}
+
+.playing {
+  .play-icon {
+    display: none;
+  }
+  .pause-icon {
+    display: inline-block;
+    position: absolute;
+  }
+  .play-text {
+    display: none;
+  }
+  .pause-text {
+    display: inline-block;
+    position: absolute;
+  }
+  #timeleft {
+    position: absolute;
+    left: 100px;
+    bottom: 10px;
+  }
+}
+
+.show-on-hover {
+  display: none;
+}
+
+.show-on-hover--mobile {
+  display: none;
+  margin-top: 8px;
+
+  @include breakpoint (medium down) {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  .button {
+    padding-bottom: 0.6em;
+  }
+
+  .button:hover,
+  .button:focus {
+    background-color: #E8EAFF;
+  }
+}
+
+.show-on-hover--mobile.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.subscribe-wrapper {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  height: auto;
+
+  @include breakpoint (medium down) {
+    display: inline-block;
+    width: auto;
+  }
+
+  &:hover {
+
+    .show-on-hover {
+      position: absolute;
+      display: block;
+
+      @include breakpoint (medium down) {
+        display: none;
+      }
+
+    }
+  }
+
+  button {
+    margin: 0;
+    background-color: transparent;
+
+    @media screen and (max-width: 1160px) {
+      display: inline-block;
+    }
+  }
+}
+
+.sidebar {
+  @include font-header-bold();
+  margin-top: 1em;
+  position: relative;
+  padding-left: $base-spacing*2;
+  @include breakpoint(small down) {
+    padding-right: $base-spacing;
+    padding-left: $base-spacing;
+  }
+  img {
+    margin-bottom: 25px;
+    display: block;
+  }
+  p {
+    @include font-size-xsmall();
+  }
+  a {
+    background-color: transparent !important;
+    color: $color-red;
+  }
+}
+
+.box {
+  @include font-header-regular();
+  width: 65%;
+  position: absolute;
+  text-align: left;
+  left: 0;
+  padding: 20px 20px 8px 20px;
+  max-width: 340px;
+  transition: .2s;
+  @include breakpoint(large down) {
+    left: 50px;
+  }
+  @include breakpoint(medium down) {
+    position: static;
+    left: 0px;
+    width: 100%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &.box-right {
+    left: auto;
+    right: 0;
+    @include breakpoint(large down) {
+      right: 50px;
+    }
+    @include breakpoint(medium down) {
+      right: 0px;
+    }
+  }
+  p {
+    @include font-size-xsmall;
+    margin: 0 0 $base-spacing/2;
+  }
+}
+
+.box-overlap {
+  bottom: -20px;
+  transition: .2s;
+}
+
+.box-below {
+  bottom: -100px;
+}
+
+.link-block {
+  text-decoration: none;
+  border: none;
+  .title {
+    h2 {
+      padding: 5px;
+    }
+  }
+  p {
+    display: inline-block;
+  }
+  p::after {
+    content: '';
+    display: block;
+    background-color: transparent;
+    height: 2px;
+    width: 100%;
+    margin-top: -8px;
+    transition: .2s;
+  }
+  h2 {
+    display: inline-block;
+    transition: .2s;
+  }
+  h2::after {
+    content: '';
+    display: block;
+    background-color: transparent;
+    height: 4px;
+    width: 100%;
+    margin-top: -10px;
+    transition:.2s;
+  }
+  .header-2 {
+    margin-top: -5px;
+  }
+  img {
+    max-width: 75%;
+    width: 75%;
+  }
+  &:hover {
+    .box-overlap {
+      bottom: -10px;
+    }
+  }
+}
+
+.section-read-on a {
+  background-color: transparent !important;
+  @include font-header-regular();
+}
+
+.bar-callout-link {
+  text-decoration: none;
+}
+
+.bar-callout {
+  display: flex;
+  justify-content: space-between;
+  transition: .2s;
+  &:hover {
+    background-color: $color-bright-red;
+  }
+  .open-arrow {
+    margin-top: 33px;
+    margin-right: 24px;
+    width: 22px;
+    height: 21px;
+    @media screen and (min-height: 801px) and (min-width: 1024px) {
+      margin-top: 32px;
+      margin-right: 24px;
+      width: 30px;
+      height: 29px;
+    }
+  }
+}
+
+.video-block--placeholder {
+  transition: .2s;
+  &:hover {
+    opacity: .8;
+    svg {
+      transform: scale(1.1);
+    }
+  }
+}
+.video-block {
+  position: relative;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: $base-spacing;
+  background-color: $color-black;
+  transition: .2s;
+  .video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.2;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    &.video--show {
+      opacity: 1;
+    }
+
+    small a {
+      color: $color-gray;
+    }
+  }
+
+  img {
+    position: absolute;
+    opacity: .8;
+    transition: .2s;
+  }
+  svg {
+    position: absolute;
+    left: 48%;
+    top: 44%;
+    z-index: 2;
+    transition: transform 0.2s;
+    @include breakpoint (medium down) {
+      left: 44%;
+    }
+  }
+  .stop {
+    display: none;
+  }
+}
+
+.video-block-full {
+  min-height: 500px;
+}
+
+.video-block-sidebar {
+  min-height: 150px;
+}
+
+.image-caption__large {
+  margin: 0 auto;
+  max-width: 60%;
+  @include breakpoint (small down) {
+    max-width: 100%;
+  }
+}
+
+p {
+  &.lead {
+    @include font-body-regular();
+    @include font-size-medium();
+    line-height: 1.83;
+    @include breakpoint (small down) {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    strong {
+      @include font-bold-bold();
+      font-weight: 600;
+      @include breakpoint (small down) {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.caption a {
+  color: $color-gray;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 65px;
+  height: auto;
+  border-radius: 50%;
+  vertical-align: top;
+
+  @include breakpoint(medium) {
+    max-width: 100px;
+    margin-right: $base-spacing/2;
+  }
+}

@@ -1,0 +1,445 @@
+<!-- Header -->
+{% set vars = {
+  'title': 'pencils-before-pixels',
+  'parent_page': 'seven-principles',
+  'og_title': 'Design Better - Pencils Before Pixels',
+  'og_url': 'http://designbetter.wpengine.com/principles-of-product-design/pencils-before-pixels/',
+  'og_description': 'We all start on paper at Slack and then explore from there. Having squiggly lines on paper keeps you focused on real problems.',
+  'og_image': '/img/og/hero-pencils.png'
+  }
+%}
+{% include 'source/htdocs/_includes/header.html' with vars %}
+
+<!-- Navigation -->
+{% set vars = {
+  'title': 'Design Better • Principles of Product Design • Pencils Before Pixels',
+  'background_color': 'purple'
+  }
+%}
+{% include 'source/htdocs/_includes/navigation.html' with vars %}
+
+<div id="top-scroll">
+
+<!-- Hero Image -->
+{% set vars = {
+  'image_source': '/img/heros/hero-pencils.svg',
+  'image_source_small': '/img/heros/hero-pencils-small.svg',
+  'image_alt': 'Pencils Before Pixels'
+  }
+%}
+{% include 'source/htdocs/_includes/page-hero.html' with vars %}
+
+<!-- Intro w/ Paragraphs -->
+<section class="page-content relative page-content__article">
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h2 class="text-center wow fadeInUp padding-top-xlarge margin-bottom-xxlarge">Pencils Before Pixels</h2>
+    </div>
+  </div>
+
+  <!-- Audio Sidebar -->
+  {% set vars = {
+    'color' : 'purple',
+    'audio_source': '/audio/pencils-audio.mp3',
+    'subscribe_itunes': 'https://geo.itunes.apple.com/us/album/this-american-life-stories/id335933324?mt=1&app=music',
+    'subscribe_google': 'https://www.thisamericanlife.org/blog/2010/10/this-american-life-android-app',
+    'subscribe_spotify': 'https://open.spotify.com/user/una_s/playlist/2p89CV9wAwBYUowlXEGOgi',
+    'subscribe_soundcloud': 'https://soundcloud.com/this-american-life'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio-sidebar.html' with vars %}
+
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">The work of the modern designer lives in the abstract world of the computer, where every move we make is precise and effortless. Precision has its place, but not in the early stages of the creative process, when our ideas are still nebulous. There’s danger when creative exploration starts with perfection.</p>
+      <p class="wow fadeInUp">Perfection can create the illusion of certainty, something architect <a href="https://www.youtube.com/watch?v=34tJ7JAjSW0" target="_blank">Frank Gehry</a> avoids as he begins a project. It’s discovery he craves. Craig Webb, Design Partner at <a href="http://www.foga.com/" target="_blank">Gehry Partners</a>, has heard Gehry say many times, "If I knew where I was going I wouldn’t go there." To Gehry, peak creativity lies in the unknown.</p>
+      <p class="wow fadeInUp">His process begins with rough concepts. He and his team sketch, make models, then reflect. If the outcome isn’t right, they throw it out without remorse to begin again. Crude outputs early on make the work imprecious and completely malleable.</p>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe/7a1fllmqx9?autoPlay=true?videoFoam=true&playerColor=1621A0',
+    'image_source': '/img/headshots/headshot_cheng_v2.jpg',
+    'caption':'"Sketching is extremely powerful because it is incredibly fluid." - Kevin Cheng</a>, Founder, Incredible Labs'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/gehry.jpg',
+    'quote': 'I’ve worked out my language through the sketches and through the models. ”',
+    'source_name' : '<a href="https://www.youtube.com/watch?v=34tJ7JAjSW0" target="_blank">Frank Gehry</a>'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p>The hundreds of models and sketches that cover the walls and surfaces of Frank Gehry’s studio are the artifacts of a creative process that starts wide, where there’s space for discovery of the best ideas before committing to a single direction.</p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center">
+    <div class="medium-10 text-center columns wow fadeInUp">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/pencils-before-pixels/gehry-studio.jpg',
+        'caption': 'Frank Gehry’s studio is an explosion of sketches and models, artifacts of a creative process that values discovery.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">Though Gehry’s work is unique, his process is not. Many creative thinkers start wide and narrow down. Unfortunately, many software design teams take a different approach—they start narrow and refine too soon.</p>
+      <p class="wow fadeInUp">Steve Jobs once famously likened the computer to a <a href="https://www.brainpickings.org/2011/12/21/steve-jobs-bicycle-for-the-mind-1990/" target="_blank">bicycle for the human mind</a>. Computers help us make short work of complicated tasks and connect us to vast amounts of data—superpowers indeed, but when misapplied they can hinder the creative process.</p>
+      <p class="wow fadeInUp">Computers let us jump straight to pixels—a space of precision where everything aligns to a grid, vividly colored and fully formed. Precise outputs are precious and hard to abandon. This narrows creative exploration to just a few ideas well rendered.</p>
+      <p class="wow fadeInUp">To find the best design solutions, we should follow Frank Gehry’s lead: crudely render many ideas to find the solution worthy of a more precise investigation.</p>
+      <p class="wow fadeInUp"><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">We can make more space in our creative process for critical thinking and design better by putting pencils before pixels.<i class="fa fa-twitter" aria-hidden="true"></i></a></p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">The Power of a Pencil</h2>
+      <p class="wow fadeInUp">The pencil is a humble tool that’s sparked millions of great ideas. It’s the inverse of a computer; it’s simple and limited in functionality, but its limitations make it so effective.</p>
+      <p>Pencils are important to the creative process because:</p>
+      <ol class="wow fadeInUp">
+        <li><em>Pencils are inclusive. </em>They’re not just for designers—anyone can use a pencil to express their ideas clearly. The pencil is the great equalizer.</li>
+        <li><em>Pencils are low-fi. </em>Quick sketches give no impression of a complete thought, signalling to all that it’s okay to offer feedback.</li>
+        <li><em>Pencils aren’t fiddly. </em>Instead of getting lost in software settings or style, you’ll focus instead on your ideas.</li>
+        <li><em>Pencils are fast. </em>You can explore vastly different solutions to the same problem in minutes, and you won’t feel bad throwing your sketches out because you invested so little time. </li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/unger.jpg',
+    'quote': '<a href="http://ctt.ec/800Cs" target="_blank" class="tweet">I start everything important with pencil and paper.<i class="fa fa-twitter" aria-hidden="true"></i></a> ”',
+    'source_name' : '<a href="https://twitter.com/russu" target="_blank">Russ Unger</a>',
+    'source_title' : 'Experience Design Director at 18F'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">There’s a magic that happens when we put our ideas on paper. <a href="http://www.xplane.com/" target="_blanke">Dave Gray, Founder of XPLANE</a> and co-author of <a href="https://www.amazon.com/Gamestorming-Playbook-Innovators-Rulebreakers-Changemakers/dp/0596804172" target="_blank">Gamestorming</a>, describes sketching as "a conversation with yourself." Gabriela Goldschmidt, professor emeritus at Technion Israel Institute of Technology, made similar observations <a href="http://www.academia.edu/11887815/The_dialectics_of_sketching" target="_blank">in a study of the sketching practices of architects published in the Creativity Research Journal</a>. She discovered that <a href="http://ctt.ec/800Cs" target="_blank" class="tweet">although sketches start from ideas already within the mind, they can mutate into the unexpected—forming new ideas.<i class="fa fa-twitter" aria-hidden="true"></i></a> Sketching is a thinking activity!</p>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': '<a href="https://www.amazon.com/Gamestorming-Playbook-Innovators-Rulebreakers-Changemakers/dp/0596804172/" target="_blank"><strong>Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers</strong></a> This bestselling book by Dave Gray, Sunni Brown, and James Macanufo includes more than 80 games—many of which involve sketching—to help you get your whole team working together to generate new ideas. '
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">Many product designers already know this intuitively. <a href="https://twitter.com/hellostanley" target="_blank">Stanley Wood</a>, Design Director at <a href="https://www.spotify.com/" target="_blank">Spotify</a>, told us that, "Many of our designers sketch but just so they can think through various ideas. Most of the time they don’t show them to anyone."</p>
+      <p class="wow fadeInUp">And sketching, of course, is also a powerful communication device. The design team at Slack shares sketches with colleagues to invite conversation about concepts without getting distracted by style.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/brito.jpg',
+    'quote': 'We all start on paper at Slack and then explore from there. It’s rare that people are so good with a tool that they can think within it. Having squiggly lines on paper keeps you focused on real problems.<br><br>You can move through ideas much faster, and there’s also something about the fact that a sketch is so clearly not the final product. People don’t get confused by the style and instead focus on the concept. ”',
+    'source_name' : '<a href="https://twitter.com/uxdiogenes" target="_blank">Diogenes Brito</a>',
+    'source_title' : 'Product Designer at Slack'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284179843'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class=" wow fadeInUp">The MailChimp design team discovered that sketching is an important bridge to engineering colleagues. <a href="https://twitter.com/tdominey" target="_blank">Todd Dominey</a>, MailChimp’s Director of Design, noticed that, "Pixels freak people out!" When engineers see a high fidelity design comp, they get the impression that the important decisions have been made without them, and now they’re expected to simply execute on the design. But when a sketch is presented, it’s clear that the creative process is still wide open for their participation.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">No Art Degree Required</h2>
+      <p>Depending on your background, the term "sketch" might conjure images of an artist in a Parisian cafe, leisurely capturing a scene with loose lines and precise shading. But you don’t need a beret or an art degree to sketch a quick UI or communicate an idea for a product (a cappuccino won’t hurt, though). If you can scribble some text and draw boxes, you’ve got all the skills you need to sketch.</p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center">
+    <div class="medium-10 text-center columns wow fadeInUp">
+
+      <!-- Image, Large Caption  -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/pencils-before-pixels/ui-sketch.png',
+        'caption': '<a href="http://ctt.ec/800Cs" target="_blank" class="tweet">A quick, ugly sketch still has the power to communicate an idea or help you discover new ideas.<i class="fa fa-twitter" aria-hidden="true"></i></a>'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-large-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp"><a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Sketching is something anyone can do—it’s not the sacred territory of designers.<i class="fa fa-twitter" aria-hidden="true"></i></a> Inviting others to participate in the design process will help you produce a more diverse set of design solutions. Engineers, product managers, executives, lawyers—anyone with a stake in your product—can help you turn abstract ideas into concrete solutions by sketching.</p>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'purple',
+    'text_color': 'white',
+    'text': '<strong>How to Trick Someone Into Sketching Their Idea</strong> <br>Have you ever had someone try to describe an idea so abstract that you just can’t see it? You ask them to sketch it and they respond, "Oh, I can’t draw!" No matter how you reassure them, they won’t risk looking a fool by making a simple sketch. <strong><a href="http://www.twitter.com/dkardys" target="_blank" class="text-purple">Dennis Kardys</a></strong>, Design Director at <strong><a href="http://www.wsol.com/" target="_blank" class="text-purple">WSOL</a></strong>, has heard this from many a client and has a simple trick to get people over their fear of drawing. Dennis begins to draw his client’s idea for them, but intentionally gets it wrong. "Is this what you mean?" he asks. The client tries to explain it once more, and again Dennis draws it the wrong way. Finally, frustration drives the client to snatch the pencil from his hand and draw it themselves. "Oh! I see!" Dennis responds. With the ice broken, Dennis finds that clients will let go of their reservations and continue to sketch additional ideas.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/beecher.png',
+    'quote': 'Sketching lets everyone participate. Business stakeholders can contribute to sketches, as can developers. This gives people beyond the design team buy-in on the final product. ”',
+    'source_name' : '<a href="https://twitter.com/fred_beecher" target="_blank">Fred Beecher</a>',
+    'source_title' : 'Director of User Experience Design at <a href="https://nerdery.com/" target="_blank">The Nerdery</a>'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">For most people, sketching doesn’t come naturally. You’ll need an activity to spark creative thinking and get colleagues comfortable with exploring ideas on paper.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Sketching Ideas Together</h2>
+      <p class="wow fadeInUp">A simple activity with tight constraints can be the catalyst you need to get your team comfortable. <a href="https://twitter.com/zakiwarfel" target="_blank">Todd Zaki Warfel</a>, Senior Director of User Experience and Design at Apttus, created <a href="http://gamestorming.com/games-for-fresh-thinking-and-ideas/6-8-5s/" target="_blank">a team sketching activity called 6-8-5</a>: you and your colleagues will generate 6 to 8 design solutions per person in just 5 minutes. No one will have enough time to get lost in fancy renderings, and that’s important. After all, the idea is to focus on ideas and ditch misgivings that "I can’t draw!" In this exercise, everyone’s sketches will be messy!</p>
+      <p>Sketching Ideas Together</p>
+      <ol class="wow fadeInUp">
+        <li>Get your team together—designers, engineers, product managers, and experts with important domain knowledge. Limit the group to 8 people or less to keep the discussion productive.</li>
+        <li>Give each person a sheet of A5 or 8.5"x11" paper. The paper will be folded 3 times to create 6 boxes (for 6 sketches). If you want to generate more ideas, fold the paper into quarters and give everyone two sheets.</li>
+
+        <!-- Image Float -->
+        <div class="image-float image-float-right wow fadeInUp">
+
+          <!-- Image, Large Caption  -->
+          {% set vars = {
+            'image_source' : '/img/seven-principles/pencils-before-pixels/6-8-5-grids.png'
+            }
+          %}
+          {% include 'source/htdocs/_includes/image-large-caption.html' with vars %}
+
+        </div>
+        <li>Frame the problem for everyone, and clearly state the desired outcomes of this project. "We want to help customers become active in this app more quickly. How might we achieve that?"</li>
+        <li>Set a timer for 5 minutes, and instruct everyone to sketch solutions individually (and silently, to help everyone focus). There’s no time for detail here; each person should create 6 to 8 quick, ugly sketches.</li>
+        <li>When the timer goes off, it’s time for each team member to present their ideas. Conversation amongst the group about each idea is important here. Critical feedback will help you see which ideas are best. Every team member should be given the opportunity to share their sketches.</li>
+      </ol>
+      <p class="wow fadeInUp">If time permits, you can do additional rounds to go deeper into each idea. Working together to solve problems gives everyone shared ownership in the product vision, and generates great results because so many diverse perspectives are present.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/irizarry.jpg',
+    'quote': '<a href="http://ctt.ec/800Cs" target="_blank" class="tweet">Sketching is a big part of our process. We get everyone together to sketch so we have shared ownership and vision.<i class="fa fa-twitter" aria-hidden="true"></i></a> ”',
+    'source_name' : '<a href="https://twitter.com/aaroni" target="_blank">Aaron Irizarry</a>',
+    'source_title' : 'Director of User Experience at <a href="http://www.nasdaq.com/" target="_blank">Nasdaq</a>'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class=" wow fadeInUp">You might be wondering why everyone’s sketching separately in this exercise instead of together on a whiteboard. <a href="http://www.newyorker.com/magazine/2012/01/30/groupthink" target="_blank">According to repeated studies on group brainstorming work</a>, we produce fewer ideas and of lesser quality when we work in groups. <a href="https://www.washingtonpost.com/opinions/brainstorming-an-idea-past-its-prime/2012/04/19/gIQAhKT5TT_story.html" target="_blank">Keith Sawyer, a psychologist at Washington University, has summarized the science</a>: "Decades of research have consistently shown that brainstorming groups think of far fewer ideas than the same number of people who work alone and later pool their ideas."</p>
+      <p class=" wow fadeInUp">Remember, early in the creative process we’re best served by covering as much territory as we can instead of going deep on one or two ideas. </p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">The Right Tools at the Right Time</h2>
+      <p class=" wow fadeInUp">The tools you use to sketch can influence how fast and far your creative explorations proceed. With fine line pens and mechanical pencils, you’ll be prone to create detailed sketches, which are slower. To avoid slipping into detail early on, <a href="https://twitter.com/jasonfried" target="_blank">Jason Fried</a>, co-founder of <a href="https://basecamp.com/" target="_blank">Basecamp</a>, uses <a href="https://www.amazon.com/Sharpie-1883338-Permanent-Marker-Chisel/dp/B0013CQ20Q/" target="_blank">fat markers for sketching</a> on <a href="https://www.edwardtufte.com/tufte/posters#graphpaper" target="_blank">large format graph paper</a>. With fat markers, it’s pretty hard to draw a detailed UI. Instead, you have to focus on the workflow and how people will use your product.</p>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//davegray.looplogic.com/jason-fried-on-design/embedded?autoplay=true&color=1621A0',
+    'image_source': '/img/seven-principles/pencils-before-pixels/jason_fried.png',
+    'caption':'<a href="http://xplaner.com" target="_blanke" class="text-gray">Dave Gray</a>, founder of XPLANE, speaks with Jason Fried of Basecamp about how he explores ideas through sketching.'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">As ideas are refined, <a href="https://www.amazon.com/Sharpie-Permanent-Markers-Point-Black/dp/B00006IFHD/" target="_blank">a medium Sharpie</a> or—my favorite—a <a href="https://www.amazon.com/Staedtler-Triplus-Fineliner-Black-0-3mm/dp/B009CQKL3Y/" target="_blank">Staedtler Triplus Fineliner</a> can help you explore your ideas with more precision. Loose paper works best for sketches, as they can be shared, posted on the walls, or mercifully recycled rather than lingering for posterity in your sketchbook. Designers who sketch UI concepts in detail find <a href="https://www.amazon.com/Copic-Markers-12-Piece-Toner-Gray/dp/B000MRSUN0/" target="_blank">Copic grey markers</a> add depth and clarity to sketches.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Sketching With Remote Teams</h3>
+      <p class="wow fadeInUp">Team sketching is an important part of the creative process at <a href="https://www.lullabot.com/" target="_blank">Lullabot</a>, a creative agency that serves clients like SpaceX, The Grammys, GE, and Martha Stewart. Each new project they take on starts with a sketching session, but not of the sort described above—this design team is entirely remote.</p>
+      <p class=" wow fadeInUp">Creative Director <a href="https://twitter.com/jponch" target="_blank">Jared Ponchot</a> has devised a simple and inexpensive way to sketch as a team despite the distance that separates them. He bought each designer <a href="https://www.amazon.com/IPEVO-Point-View-USB-Camera/dp/B002UBPBTC/" target="_blank">a simple USB document camera, the IPEVO</a>. At just $60 each, Jared even buys the cameras for engineers, clients, and other key collaborators in the company so they can participate in early sketching sessions.</p>
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/pencils-before-pixels/ipevo.jpg',
+        'caption': 'The IPEVO is an inexpensive USB document camera that’s perfect for sharing sketches with a remote design team via video conferencing systems.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+      <p class="wow fadeInUp">Like many remote teams, Lullabot runs their meetings via Google Hangouts. In their meetings they share sketches by simply switching the camera source to the IPEVO. Each team member can walk others through their ideas, or sketch live to explain a new concept.</p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center">
+    <div class="medium-10 text-center columns wow fadeInUp">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/pencils-before-pixels/sketch-hangout.png'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/seven-principles/pencils-before-pixels/ipevo-sketchbook.jpg',
+        'caption': 'The IPEVO cam can be used in a Google Hangout to show sketches with a remote team.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <p class="wow fadeInUp">Ponchot’s solution is simple and effective. It keeps his team focused on a breadth of design solutions early in a project instead of jumping straight to pixels, where they would get lost in execution.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns wow fadeInUp">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Ideas Before Execution</h2>
+      <p class="wow fadeInUp">Sketching before we jump to the computer has many benefits, the greatest of which is that <a href="http://ctt.ec/800Cs" target="_blank" class="tweet">sketching keeps us laser-focused on ideas instead of the charms of design execution.<i class="fa fa-twitter" aria-hidden="true"></i></a> Design is often described as the act of solving problems for others. We cannot live up to that mandate if polish eclipses exploration in our creative process.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/brewer.jpg',
+    'quote': 'Throughout my career, whenever I start at a lower fidelity it opens the door for more participation from others and makes me focus on identifying the core concerns. I always advocate exhausting exploration/discovery at the lowest possible fidelity and only when you can’t reasonably make progress, going to the next level. ”',
+    'source_name' : '<a href="https://twitter.com/jbrewer" target="_blank">Josh Brewer</a>',
+    'source_title' : 'CEO at Abstract'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Putting pencils before pixels can help you bring others into the design process and win you allies. Gaining the broad perspectives of your colleagues early on will also help your team produce better design solutions.</p>
+      <p class="wow fadeInUp">Here’s your to-do list to put <em>pencils before pixels</em> into practice:</p>
+      <ul class="wow fadeInUp margin-bottom-xlarge">
+        <li>Generate dozens of ideas on paper before designing on the computer; sketching is a thought process that will help you discover the unexpected.</li>
+        <li>Get engineers, product managers, and other key stakeholders to sketch with your team in the early phases of a project. This will clarify the project for all, and create a sense of shared ownership.</li>
+        <li>If your team or clients are remote, use a USB cams to share sketches and ideate as a team.</li>
+        <li>Constraints like fat markers or time limits on sketching can help you avoid getting lost in detail too soon.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Video Block -->
+  {% set vars = {
+    'video_source' : '//fast.wistia.net/embed/iframe/nak4sjoerh?autoPlay=true?videoFoam=true&playerColor=1621A0',
+    'image_source': '/img/headshots/headshot_danzico_v3.jpg',
+    'caption':'"Removing all barriers to getting ideas out into the world." - Liz Danzico</a>, Creative Director, NPR and Co-founder, MFA Interaction Design, SVA'
+    }
+  %}
+  {% include 'source/htdocs/_includes/video-block.html' with vars %}
+
+  <!-- Read On -->
+  <div class="background-gray-light padding-vertical-xxlarge margin-top-xxlarge section-read-on chapter">
+    <div class="row align-center">
+      <div class="medium-10 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Read On</h2>
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://www.amazon.com/Sketching-User-Experiences-Interactive-Technologies/dp/0123740371/" target="_blank">Sketching the User Experience</a></li>
+          <li><a href="https://www.amazon.com/gp/product/1591847036/" target="_blank">The Doodle Revolution: Unlock the Power to Think Differently</a></li>
+          <li><a href="http://www.drawtoast.com/" target="_blank">Draw Toast: Solving Wicked Problems by Sketching</a></li>
+          <li><a href="https://library.gv.com/the-product-design-sprint-diverge-day-2-c7a5df8e7cd0#.leys379ts" target="_blank">The product design sprint: diverge</a></li>
+          <li><a href="https://medium.com/@wesohaire/164-ideas-in-5-hours-of-remote-sketch-sessions-3ed753bb1751#.n81pyjsbd" target="_blank">164 Ideas in 5 Hours of Remote Sketching</a></li>
+          <li><a href="https://speakerdeck.com/jponch/designing-together-apart-bdconf-dc-2015" target="_blank">Designing Together Apart</a></li>
+        </ul>
+      </div>
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://www.amazon.com/gp/product/0385344627/" target="_blank">Drawing Ideas: A Hand-Drawn Approach for Better Design</a></li>
+          <li><a href="https://www.amazon.com/gp/product/0596804172/ target="_blank"">Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers</a></li>
+          <li><a href="https://www.smashingmagazine.com/2011/12/the-messy-art-of-ux-sketching/" target="_blank">The Messy Art Of UX Sketching</a></li>
+          <li><a href="http://52weeksofux.com/post/346650933/sketch-sketch-sketch" target="_blank">Sketch, Sketch, Sketch</a></li>
+          <li><a href="http://us5.campaign-archive1.com/?awesome=no&u=7e093c5cf4&id=41dcb1c291" target="_blank">Sketching Software</a></li>
+          <li><a href="http://adaptivepath.org/ideas/sketchboards-discover-better-faster-ux-solutions/" target="_blank">Sketchboarding: Discover Better Faster UX Solutions</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- end #top-scroll -->
+
+<section id="footer-scroll-nav" class="relative">
+  {% include 'source/htdocs/_includes/_product-principles.html' %}
+  {% set vars =
+    {
+      'background_color':'white'
+    }
+  %}
+  {% include 'source/htdocs/_includes/footer-html.html' with vars %}
+</section>
+
+<!-- Footer -->
+{% include 'source/htdocs/_includes/footer.html' %}

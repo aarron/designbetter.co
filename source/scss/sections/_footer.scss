@@ -1,0 +1,170 @@
+//  Footer
+//  -----------------------------
+.page-footer {
+  padding: $base-spacing;
+  @include breakpoint(small down) {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .row {
+    padding-top: $base-spacing;
+    padding-bottom: $base-spacing * 2;
+    border-top: 1px solid $color-black;
+
+    .column {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @include font-header-regular();
+  p a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+  }
+  p a::after {
+    content: '';
+    display: block;
+    background-color: $color-black;
+    width: 100%;
+    margin-top: -6px;
+    transition: .2s;
+    @include breakpoint (small down) {
+      background-color: transparent;
+    }
+  }
+  p a:hover::after {
+    background-color: transparent;
+  }
+  &.text-white {
+    p a {
+      color: $color-white;
+      text-decoration: none;
+    }
+    p a::after {
+      background-color: $color-white;
+    }
+    p a:hover::after {
+      background-color: transparent;
+    }
+    .svg-rocket {
+      fill: $color-white;
+    }
+    .row {
+      border-top: 1px solid $color-white;
+    }
+  }
+  &.text-black {
+    p a {
+      color: $color-black;
+    }
+    p a::after {
+      background-color: $color-black;
+    }
+    p a:hover::after {
+      background-color: transparent;
+    }
+    .svg-rocket {
+      fill: $color-black;
+    }
+    .row {
+      border-top: 1px solid $color-black;
+    }
+  }
+}
+footer {
+  cite {
+    display: inline-block;
+    max-width: 62%;
+    margin-left: $base-spacing/3;
+
+    @include breakpoint(medium) {
+      max-width: 75%;
+      margin-left: $base-spacing/2;
+    }
+  }
+}
+
+.full-nav {
+  .page-footer {
+    .row {
+      border-color: $color-white;
+    }
+  }
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes takeoff {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    bottom: -16px;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.js-to-the-top {
+  position: relative;
+  transition: transform 0.2s 0.4s ease-in;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    width: 3px;
+    height: 5px;
+    background-color: $color-orange;
+    // transition: bottom 0.2s 0.7s,
+    //             opacity 0.2s .375s;
+  }
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    width: 3px;
+    height: 5px;
+    background-color: $color-red;
+    // transition: bottom 0.2s 0.575s,
+    //             opacity 0.2s .375s;
+  }
+  .jiggle {
+    // transform: translateY(0);
+    // transition: transform 0.3s 4s ease-in;
+  }
+  &:hover {
+    transform: translateY(-8px);
+
+    &::before {
+      animation: takeoff 0.4s 0.4s infinite;
+    }
+    &::after {
+      animation: takeoff 0.4s 0.5s infinite;
+    }
+    .jiggle {
+      // transform: translateY(-8px);
+      animation: jiggle 0.2s infinite;
+    }
+  }
+}

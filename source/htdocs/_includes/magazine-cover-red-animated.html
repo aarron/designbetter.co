@@ -1,0 +1,22 @@
+<a href="{{ link }}" class="link-block">
+  <div class="title text-center text-{{ primary_color }}">
+    <h2 class="background-hover-{{ primary_color }} margin-none inline"><strong>{{ header }}</strong></h2><br>
+
+    {% if header_2 %}
+
+      <h2 class="background-hover-{{ primary_color }} margin-none inline header-2"><strong>{{ header_2 }}</strong></h2>
+
+    {% endif %}
+
+    <div>
+      <p class="margin-none font-header">{{ subheader }}</p>
+    </div>
+  </div>
+  <div id="{{ animation_id }}-container" style="max-width: 85%; width: 85%; overflow-x: hidden; margin: 0 auto;">
+    <canvas id="{{ animation_id }}" width="510" height="590" style="display: block; background-color:rgba(255, 255, 255, 1.00)"></canvas>
+  </div>
+  <div class="box box-{{ alignment }} box-{{ position }} background-{{ background_color }} outline-{{ primary_color }} text-{{ text_color }}">
+    <p><strong>{{ text }}</strong></p>
+    <p>{{ citation }}</p>
+  </div>
+</a>

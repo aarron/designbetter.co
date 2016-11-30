@@ -1,0 +1,33 @@
+<!-- Header -->
+{% set vars = {
+  'title': 'home',
+  'og_title': 'DesignBetter.co',
+  'og_url': 'http://designbetter.wpengine.com/',
+  'og_description': 'Product design is hard.  Like any craft, there’s much to master to do it well. We want to make it easier for you to design great products. Brought to you by InVision.',
+  'og_image': 'http://designbetter.wpengine.com/img/home/home-opengraph-share.png'
+  }
+%}
+{% include 'source/htdocs/_includes/header.html' with vars %}
+
+<!-- Navigation -->
+{% set vars = {
+  'title': 'Design Better • ',
+  'background_color': 'purple'
+  }
+%}
+{% include 'source/htdocs/_includes/navigation.html' with vars %}
+
+<section class="page-content relative padding-vertical-xlarge">
+  {% include 'source/htdocs/_includes/_product-principles.html' %}
+  <a name="design-thinking" />
+  {% include 'source/htdocs/_includes/_design-thinking.html' %}
+</section>
+
+<!-- Footer -->
+{% set vars =
+  {
+    'background_color':'white'
+  }
+%}
+{% include 'source/htdocs/_includes/footer-html.html' with vars %}
+{% include 'source/htdocs/_includes/footer.html' %}

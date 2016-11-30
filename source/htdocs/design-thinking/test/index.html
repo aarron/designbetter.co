@@ -1,0 +1,353 @@
+<!-- Header -->
+{% set vars = {
+  'title': 'test',
+  'parent_page': 'design-thinking',
+  'og_title': 'Design Better - Test',
+  'og_url': 'http://designbetter.wpengine.com/principles-of-product-design/test',
+  'og_description': 'Rapid validation is a potent weapon for researchers to have their ideas heard and acted upon.',
+  'og_image': '/img/og/hero-test.png'
+  }
+%}
+{% include 'source/htdocs/_includes/header.html' with vars %}
+
+<!-- Navigation -->
+{% set vars = {
+  'title': 'Design Better • Design Thinking • Test',
+  'background_color': 'red'
+  }
+%}
+{% include 'source/htdocs/_includes/navigation.html' with vars %}
+
+<div id="top-scroll">
+
+<!-- Hero Image -->
+{% set vars = {
+  'image_source': '/img/heros/hero-test.svg',
+  'image_source_small': '/img/heros/hero-test-small.svg',
+  'image_alt': 'Test'
+  }
+%}
+{% include 'source/htdocs/_includes/page-hero.html' with vars %}
+
+<!-- Intro w/ Paragraphs -->
+<section class="page-content page-content__article relative">
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp padding-top-xlarge margin-bottom-xxlarge">Test</h2>
+    </div>
+  </div>
+
+  <!-- Audio Sidebar -->
+  {% set vars = {
+    'color' : 'red',
+    'audio_source': '/audio/test-audio.mp3',
+    'subscribe_itunes': 'https://geo.itunes.apple.com/us/album/this-american-life-stories/id335933324?mt=1&app=music',
+    'subscribe_google': 'https://www.thisamericanlife.org/blog/2010/10/this-american-life-android-app',
+    'subscribe_spotify': 'https://open.spotify.com/user/una_s/playlist/2p89CV9wAwBYUowlXEGOgi',
+    'subscribe_soundcloud': 'https://soundcloud.com/this-american-life'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio-sidebar.html' with vars %}
+
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">If you’ve ever been to a spin class, you may think there isn’t much variability in the experience: a dark room, music with a beat, an instructor yelling to change the level to an eight and keep pushing. Soulcycle offers something different. </p>
+      <p class="wow fadeInUp">From the minute you walk in the door, Soulcycle fosters a sense of community: heading into class, you pass through the lockers where the previous class is exiting, giving a chance for serendipitous encounters. The instructors shout inspirational quotes as you pump up a hill and hover above your saddle. </p>
+      <p class="wow fadeInUp">With this emphasis on the whole user experience, it’s no wonder that SoulCycle has garnered something of a cult following, even at thirty-four bucks a class. Because of the popularity of the classes, they sell out quickly:</p>
+      <p class="wow fadeInUp"><em>"On Mondays at noon—when the upcoming week’s schedule for SoulCycle is released—if you’re not on the computer hitting the keys right then like an eBay addict on the hunt for porcelain figurines, you’re often out of luck."</em><br><a href="http://www.vanityfair.com/hollywood/2012/09/soul-cycle-celebrity-cult-following">From a Vanity Fair article on Soulcycle</a></p>
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Obviously, this part of the experience doesn’t seem to be in line with their brand. Thus SoulCycle decided that they needed to create a mobile app so riders wouldn’t have to be glued to their desktops in anticipation of booking a class. <a href="http://prolificinteractive.com/" target="_blank">Prolific Interactive</a>, the agency that SoulCycle hired to create the app, went through the entire design thinking process, from empathy-based user research to testing, using InVision along the way for testing prototypes and getting feedback from stakeholders. <cite class="number"><a href="#citation">1</a></cite></p>
+      <p class="wow fadeInUp">The Prolific team worked out at SoulCycle twice a week, manned the front desk at the studio, and "interviewed the founders, staff, and frequent riders to understand the inner workings of the company." <cite class="number"><a href="#citation">2</a></cite> Getting insights from these observations and interviews guided them as they began working on early solutions.</p>
+    </div>
+  </div>
+
+  <!-- h2 -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Beginner’s Mind</h2>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center margin-vertical-xlarge">
+    <div class="medium-10 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/test/zen_mind_beginners_mind.jpg',
+        'caption': '<a href="https://www.amazon.com/Zen-Mind-Beginners-Shunryu-Suzuki/dp/1590308492/" target="_blank" class="text-gray">Zen Mind, Beginner’s Mind</a> by Shunryu Suzuki (image via <a href="https://meditationlosangeles.wordpress.com/tag/zen-mind-beginners-mind/" target="_blank" class="text-gray">Meditation Los Angeles</a>)'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">To test their early solutions and not be blinded by their assumptions, the Prolific team needed to tackle their challenge with fresh eyes. The Zen teacher Shunryu Suzuki writes that "<em>In the beginner's mind there are many possibilities, in the expert's mind there are few</em>." Adopting a beginner’s mind is valuable at every step of the design process. </p>
+      <p class="wow fadeInUp">As you <a href="/design-thinking/empathize">Empathize</a>, it allows you to be open to the experiences of people from different backgrounds, and see things from their perspective. When you <a href="/design-thinking/define">Define</a>, it helps you reframe your point of view, to see a problem from a different angle. As you <a href="/design-thinking/ideate">Ideate</a>, a beginner’s mind prevents you from being judgmental about ideas that seem trivial or silly, but which may spur new approaches to a problem.</p>
+      <p class="wow fadeInUp">Building your <a href="/design-thinking/prototype">Prototype</a>, a beginner’s mindset helps to remind you that the purpose of a prototype is to answer critical questions quickly, not to highlight your mastery as a designer. </p>
+      <p class="wow fadeInUp">And when you test your prototype, a beginner’s mindset opens you to both the many possible directions of your design and to the ways it might address real human needs. Each step along the way affords an opportunity to rethink, relearn, and reboot as needed—the design process is rarely linear.</p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Test Early, Test Often</h2>
+      <p class="wow fadeInUp">If <a href="/design-thinking/prototype">prototyping</a> is where the fun begins for many designers, testing is where it can get a little scary: getting your product ideas in front of real users for feedback can be daunting. But the whole basis for prototyping early and often is intended to keep us from forming attachments to ideas that may or may not be worthwhile. </p>
+      <p class="wow fadeInUp">By testing our prototypes with real users in context, observing their reactions, and getting feedback, we can refine our <a href="#anchor">POV</a>, learn more about our users, and make the next iteration of the product that much better. As they say at Stanford’s d.school: "Prototype as if you know you’re right, but test as if you know you’re wrong." <cite class="number"><a href="#citation">4</a></cite></p>
+      <p class="wow fadeInUp">It’s important to test prototypes early in the design process, so that you can quickly correct course if your product hypotheses are incorrect. As we discussed in <a href="/seven-principles/fast-feedback">Fast Feedback</a>, testing these assumptions early will help you build better products faster. </p>
+      <p class="wow fadeInUp">Let’s return now to how the Prolific team approached testing as they built SoulCycle’s mobile app.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/lee.png',
+    'quote': 'While testing the app prototype, we ultimately realized that speed was critical; some of the bikes get booked in thirty seconds, so designing the flow in such a way that people wouldn’t get caught up at any step was really important. "',
+    'source_name' : '<a href="https://twitter.com/xtine1" target="_blank">Christine Lee</a>',
+    'source_title' : 'UX Designer at Prolific Interactive'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Once they started building prototypes, they tested them on location. The great thing about this situation was that they didn’t have to do any user recruiting; SoulCycle welcomed the team to run prototypes by their riders as often as they liked (while being respectful of their time, of course). This also had the serendipitous effect of mirroring the context where users were booking a class.</p>
+    </div>
+  </div>
+
+  <!-- Centered Image -->
+  <div class="row align-center margin-vertical-large">
+    <div class="medium-8 large-7 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/test/invision_lofiwireframes.png',
+        'caption': '<a href="http://blog.invisionapp.com/design-teardown-taking-soulcycle-mobile/" target="_blank" class="text-gray">Early wireframes of the Soulcycle app</a>'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">There was already some anxiety about getting into class on time, so users were forced to go through the app test in a hurry, which quickly revealed any speed bumps in the flow. They eventually moved on to more formal user testing sessions, observing users in a conference room as they went through a few scenarios while thinking aloud. </p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/lee.png',
+    'quote': 'We started out by testing our prototypes in SoulCycle studios with riders. That gave us a sense of the real constraints: distractions, unstable internet connections, and time crunches. User testing challenged our assumptions, and we got to get out of our own design-focused heads to see how our designs fared in the real world. "',
+    'source_name' : '<a href="https://twitter.com/xtine1" target="_blank">Christine Lee</a>',
+    'source_title' : 'UX Designer at Prolific Interactive'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Throughout the process, the Prolific team relied on a rapid prototyping and testing cycle, and kept the SoulCycle stakeholders updated with new insights and observations, rather than "keeping the research and design process hidden behind a curtain for weeks before revealing it in a comprehensive research report that no one would end up reading." <cite class="number"><a href="#citation">3</a></cite></p>
+      <p class="wow fadeInUp">The app is a huge hit with riders, and it’s largely thanks to the collaborative effort between Prolific, SoulCycle, and the users who helped test the prototypes.</p>
+    </div>
+  </div>
+
+  <!-- h2 -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Keeping a Beginner’s Mindset</h2>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/burka.jpg',
+    'quote': 'The older you get as a designer, the more you realize that you just don’t know anything...if you can embrace that you don’t know, but you know how to go find out, that makes you very effective. "',
+    'source_name' : 'Daniel Burka',
+    'source_title' : 'Design Partner at Google Ventures'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp"><a href="http://robotic.media.mit.edu/portfolio/tega/" target="_blank">The Tega</a> is a cuddly, expressive robot that MIT researchers developed as a personalized educational assistant for young children. Designed to act as a peer in digital learning environments, Tega’s facial expression recognition allows it to mimic a child’s demeanor, which the MIT team hoped would  help the robot and child bond during learning sessions. </p>
+      <p class="wow fadeInUp">They could have tried to test this hypothesis in the lab, but they would have had no clue whether young kids would actually find the robot charming, scary, or boring. So they brought a prototype Tega to a classroom, to test in context, with preschoolers. <cite class="number"><a href="#citation">5</a></cite></p>
+      <p class="wow fadeInUp">The results were fantastic; team member Goren Gordon said that "after a while the students started hugging it, touching it, making the expression it was making and playing independently with almost no intervention or encouragement."<cite class="number"><a href="#citation">6</a></cite>  And even more crucially, Tega was able to increase the children’s positive feelings towards it by its physical behaviors: leaning over like it was interested, making happy noises. </p>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '283992877'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">These parameters are critical: they were testing the prototype in context (at a preschool, with kids in the target demographic), and were able to observe the reactions of the users in real-time. They didn’t rely on a survey or focus group about the experience (which with children at this age wouldn’t have worked anyway). Observing these gut reactions is what makes testing with a prototype so powerful; it’s hard for people to fake enthusiasm or hide frustrations when interacting with a product, and so the signal is clear. </p>
+      <p class="wow fadeInUp">With these tests, the MIT team was able to determine that Tega was a promising platform for other educational contexts, such as helping students with learning disabilities. And they never would have discovered this if they hadn’t brought the prototype out into the real world, embracing the fact that they didn’t know what the results would be.</p>
+      <p class="wow fadeInUp">Having a beginner’s mindset, and testing assumptions early in the design process, will help you design better products faster. It can be just as important to carry this mindset to later tests, when a product is more developed, to answer questions about critical scenarios. This is exactly what the Google Ventures team did to help robotics company <a href="http://www.savioke.com/" target="_blank">Savioke</a> (see the interview with Daniel Burka below). </p>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284354295'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">It takes a lot of effort to round up participants for in-person, one-on-one tests, but the results are compelling.  Below we’ll outline some testing techniques and suggestions for a variety of timeline and budgetary considerations.</p>
+    </div>
+  </div>
+
+  <!-- h2 -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Setting Up Your Test</h2>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Set Objectives</h3>
+      <p class="wow fadeInUp margin-none">What specifically are you testing, and what do you want to know? This drives everything that comes next: the questions you ask, the people you recruit, and how you determine success.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Recruiting Users</h3>
+      <p class="wow fadeInUp margin-none">As we’ve seen in the examples above, running user tests in person is the ideal situation, but recruiting users to come to your office (or better yet, to visit in-situ where they will be using the product) isn’t always feasible. In the <a href="/seven-principles/fast-feedback"></a>Fast Feedback section of Design Principles, we run through some ideas for recruiting both in-person and remote users.</p>
+      <p class="wow fadeInUp margin-none">Erika Hall’s <a href="https://abookapart.com/products/just-enough-research" target="_blank">Just Enough Research</a> also has some fantastic tips for recruiting users. She highlights the importance of setting the parameters for a good research participant (e.g., "shares the concerns and goals of your target users" and "can articulate their thoughts clearly"). She outlines how to create a screener, so that you can "weed out the axe murderers and the fatally inarticulate." And she gives some great tips on places to post a link to the screener: friends and family can be a great resource for sharing (assuming they are likely to reach your target demographic), and Craigslist (along with social media) is your friend.</p>
+      <p class="wow fadeInUp">If you are constrained to remote testing, services like <a href="https://ethn.io/" target="_blank">ethn.io</a> and <a href="https://www.usertesting.com/" target="_blank">UserTesting</a> can provide you with users in fairly targeted demographics.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Testing the Prototype</h3>
+      <p class="wow fadeInUp margin-none">Once you’ve recruited your users, create an experience for them that puts the prototype into a context that is as close to real life use as possible, whether it’s before a workout like SoulCycle, or testing in a hotel like Savioke. You want your users to react to the <em>experience</em>, not to an explanation of the prototype. The more real-life it feels, the more natural these reactions will be. </p>
+      <p class="wow fadeInUp">It’s also important to show, not tell. Once your user is set up with the experience, prototype in hand, don’t explain everything right away. Give them a chance to figure things out, and observe how they use the product: is it intuitive, or are your users confused or frustrated? What kind of questions do they have? Look for smiles or frowns as they work with the prototype.</p>
+      <p class="wow fadeInUp">Finally, remember in the <a href="/design-thinking/ideate">Ideate</a> phase where you came up with several ideas to test? It can be helpful to bring multiple prototypes to a testing session. This will give users more fodder to react to and compare against (e.g. "the version of the Soulcycle app that introduced the trainer with a video was great, but I really just need to book my session as quickly as possible, so I’m more inclined to use the version without it because it’s faster.")</p>
+      <p class="wow fadeInUp">Capturing video and audio of your users in action with the prototype will be helpful in the next step. You don’t need anything fancy—just use the equipment you have at hand (smartphones and screen recording software will work just fine). Michael Margolis at Google Ventures outlines a <a href="https://library.gv.com/the-gv-research-sprint-interview-participants-and-summarize-findings-day-4-3d34792baa3f#.79dmmxamn" target="_blank">slightly more elaborate setup</a>, which can be handy if you’re testing mobile prototypes.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Reviewing and Synthesizing Observations</h3>
+      <p class="wow fadeInUp margin-none">After you are done with your testing sessions, it’s important to take the time to review and synthesize your findings. Again, <a href="https://abookapart.com/products/just-enough-research" target="_blank">Just Enough Research</a> is a great resource for this. In her section on analyzing the data from user research, Erika outlines how to structure the session (summarize goals, pull quotes and observations), the space and supplies that you’ll need (sticky notes and sharpies!), and the types of data to look for (like user goals and priorities).</p>
+      <p class="wow fadeInUp">Another great resource for debriefing and synthesizing is from Brendan Mulligan at Cluster. <a href="https://library.launchkit.io/how-to-run-live-user-testing-part-3-the-debrief-d057dbe3a979#.sm6e6vfb3" target="_blank">Brendan outlines some great tips and techniques</a> for holding a viewing party and capturing insights from your team, and identifying and bucketing patterns as a group.</p>
+      <p class="wow fadeInUp">Once you’ve had a chance to synthesize the data and group patterns, take a look at how they support or contradict your original POVs. This is an iterative process; testing your prototypes should give you a chance to refine your original hypotheses and make the product that much better in the next round. </p>
+    </div>
+  </div>
+
+  <!-- h2 -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Empathy and Compassion</h2>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/suzuki.png',
+    'quote': 'The beginner’s mind is the mind of compassion.  When our mind is compassionate, it is boundless. "',
+    'source_name' : 'Shunryu Suzuki',
+    'source_title' : 'Zen Mind, Beginner’s Mind'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Empathy is the heart of design, as it allows us to experience the situations our users find themselves in. Empathy lets us discover opportunities to make those experiences less frightening, like <a href="/design-thinking/empathize">Doug Dietz</a> did for children needing MRI’s, or more delightful, like the Savioke team did with Relay. </p>
+      <p class="wow fadeInUp">Compassion, in tandem with a beginner’s mind, helps us translate that empathy into action. If we instill a sense of duty towards our users in our designs, we can align our products with the humans who use them, and perhaps improve their lives along the way. We can remain open to the possibility that our first ideas weren’t our best ideas, and that by taking an iterative approach, and gaining insights from our users as we test our prototypes, we can make better products.</p>
+      <p class="wow fadeInUp">As designers, we have a real impact on how our products take shape, how users experience them, and the consequences of their use. We hope that you have a chance to use these opportunities with empathy and compassion, and design products that <a href="https://blog.prototypr.io/3-design-thinking-it-s-not-about-users-it-s-about-you-26229fbed013#.6em9b21j2" target="_blank">you are proud to bring into the world</a>.</p>
+    </div>
+  </div>
+
+  <!-- Citations -->
+  <div class="row align-center margin-vertical-xlarge" id="citation">
+    <div class="medium-8 large-7 columns border-top">
+      <small class="text-black margin-top-large">
+      1. <a class="text-black" href=" http://blog.invisionapp.com/design-teardown-taking-soulcycle-mobile/" target="_blank"> http://blog.invisionapp.com<span class="hide-tablet">/design-teardown-taking-soulcycle-mobile/</span></a><br>
+      2. <a class="text-black" href=" http://prolificinteractive.com/work/soul-cycle" target="_blank"> http://prolificinteractive.com<span class="hide-tablet">/work/soul-cycle</span></a><br>
+      3.  <em>Zen Mind, Beginner’s Mind</em> by Shunryu Suzuki<br>
+      4. <a class="text-black" href=" http://dschool.stanford.edu/use-our-methods/the-bootcamp-bootleg/" target="_blank"> http://dschool.stanford.edu<span class="hide-tablet">/use-our-methods/the-bootcamp-bootleg/</span></a><br>
+      5. <a class="text-black" href=" http://spectrum.ieee.org/automaton/robotics/home-robots/tega-mit-latest-friendly-squishable-social-robot" target="_blank"> http://spectrum.ieee.org<span class="hide-tablet">/automaton/robotics/home-robots/tega-mit-latest-friendly-squishable-social-robot</span></a><br>
+      6. <a class="text-black" href="  http://www.eurekalert.org/pub_releases/2016-03/nsf-rlc031116.php" target="_blank">  http://www.eurekalert.org<span class="hide-tablet">/pub_releases/2016-03/nsf-rlc031116.php</span></a><br>
+      </small>
+    </div>
+  </div>
+
+  <!-- Read On -->
+  <div class="background-gray-light padding-vertical-xxlarge margin-top-xxlarge section-read-on chapter">
+    <div class="row align-center">
+      <div class="medium-10 columns">
+        <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Read On</h2>
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://abookapart.com/products/just-enough-research">Just Enough Research</a></li>
+          <li><a href="https://library.gv.com/the-gv-research-sprint-interview-participants-and-summarize-findings-day-4-3d34792baa3f#.79dmmxamn">The GV Research Sprint: Interview Participants and Summarize Findings</a></li>
+        </ul>
+      </div>
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://library.launchkit.io/how-to-run-live-user-testing-part-3-the-debrief-d057dbe3a979#.sm6e6vfb3">How to Run Live User Testing Part 3: the Debrief</a></li>
+          <li><a href="http://product.voxmedia.com/2016/5/26/11787530/remote-user-testing-at-vox">Remote User Testing at Vox</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- end #top-scroll -->
+
+<section id="footer-scroll-nav" class="relative">
+  {% include 'source/htdocs/_includes/_design-thinking.html' %}
+  {% set vars =
+    {
+      'background_color':'white'
+    }
+  %}
+  {% include 'source/htdocs/_includes/footer-html.html' with vars %}
+</section>
+
+<!-- Case Studies -->
+{% include 'source/htdocs/design-thinking/ideate/_brainstorm.html' %}
+<!-- End Case Studies -->
+
+<!-- Footer -->
+{% include 'source/htdocs/_includes/footer.html' %}
+

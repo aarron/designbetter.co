@@ -1,0 +1,76 @@
+#page-case-study {
+  background-color: $color-red;
+  color: $color-white;
+  a {
+    color: $color-white;
+  }
+  a::after {
+    background-color: $color-white;
+  }
+}
+
+.case-study__wrapper {
+  visibility: hidden;
+  opacity: 0;
+  background-color: $color-red;
+  color: $color-white;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  transform: translateY(80px);
+  transition: transform 0.4s cubic-bezier(.17,.67,.32,1), opacity 0.3s ease-out, visibility 0s 0.5s;
+  .case-study__content {
+    opacity: 0;
+    transition: opacity 0.25s 0s, visibility .5s ease-out;
+  }
+  a {
+    background-color: $color-red !important;
+  }
+  &.modal-open {
+    visibility: visible;
+    opacity: 1;
+    z-index: 7;
+    overflow-x: hidden;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+    transform: translateY(0px);
+    transition: transform 0.4s cubic-bezier(.17,.67,.32,1), opacity 0.3s ease-out, visibility 0s;
+    .case-study__content {
+      opacity: 1;
+      margin-top: 100px;
+      @include breakpoint (small down) {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+.case-study {
+  p,
+  ul {
+    @include font-header-regular();
+  }
+  ul {
+    padding-left: 0;
+  }
+  hr {
+    border-color: $color-white;
+  }
+  a {
+    color: $color-white !important;
+    display: inline-block;
+    line-height: .6;
+    background-color: $color-red !important;
+    border-bottom: 2px solid $color-white;
+    text-decoration: none !important;
+    transition: .2s;
+    &:hover {
+      border-bottom: 2px solid transparent;
+    }
+  }
+}
+

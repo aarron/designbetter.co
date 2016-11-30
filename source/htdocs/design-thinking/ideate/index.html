@@ -1,0 +1,451 @@
+<!-- Header -->
+{% set vars = {
+  'title': 'ideate',
+  'parent_page': 'design-thinking',
+  'og_title': 'Design Better - Ideate',
+  'og_url': 'http://designbetter.wpengine.com/principles-of-product-design/ideate/',
+  'og_description': 'Solutions take real hard work. Brainstorming gets you the lay of the land quickly for possible solution areas to investigate.',
+  'og_image': '/img/og/hero-ideate.png'
+  }
+%}
+{% include 'source/htdocs/_includes/header.html' with vars %}
+
+<!-- Navigation -->
+{% set vars = {
+  'title': 'Design Better • Design Thinking • Ideate',
+  'background_color': 'red'
+  }
+%}
+{% include 'source/htdocs/_includes/navigation.html' with vars %}
+
+<div id="top-scroll">
+
+<!-- Hero Image -->
+{% set vars = {
+  'image_source': '/img/heros/hero-ideate.svg',
+  'image_source_small': '/img/heros/hero-ideate-small.svg',
+  'image_alt': 'Ideate'
+  }
+%}
+{% include 'source/htdocs/_includes/page-hero.html' with vars %}
+
+
+
+<!-- Intro w/ Paragraphs -->
+<section class="page-content page-content__article relative">
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-bottom-xxlarge">Ideate</h2>
+    </div>
+  </div>
+
+  <!-- Audio Sidebar -->
+  {% set vars = {
+    'color' : 'red',
+    'audio_source': '/audio/ideate-audio.mp3',
+    'subscribe_itunes': 'https://geo.itunes.apple.com/us/album/this-american-life-stories/id335933324?mt=1&app=music',
+    'subscribe_google': 'https://www.thisamericanlife.org/blog/2010/10/this-american-life-android-app',
+    'subscribe_spotify': 'https://open.spotify.com/user/una_s/playlist/2p89CV9wAwBYUowlXEGOgi',
+    'subscribe_soundcloud': 'https://soundcloud.com/this-american-life'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio-sidebar.html' with vars %}
+
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+        <p class="wow fadeInUp">The Apollo 13 Mission Control team faced a huge number of seemingly insurmountable obstacles after an oxygen tank exploded on board the 1970 mission to the moon. They needed to find a new route that would get the astronauts back to Earth quickly with limited supplies of life-supporting fuel and power. </p>
+        <p class="wow fadeInUp">The most pressing problem was a buildup of carbon dioxide in the ship; without a replacement scrubber, stored out of reach in a different module in the craft, the crew would soon asphyxiate from their own exhalations. <cite class="number"><a href="#citation">1</a></cite></p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center margin-vertical-xlarge">
+    <div class="medium-10 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/ideate/Apollo_13_Mailbox_at_Mission_Control.jpg',
+        'caption': 'The NASA Houston mission control team discusses the emergency filter prototype "mailbox".'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">In the 1995 movie version of this dramatic event, <em>Apollo 13</em>, Flight Director Gene Kranz (played by Ed Harris) assembles the top engineers and scientists in a room for a brainstorming session. He tells the group to forget the flight plan, and that they would be "improvising a new mission." Standing in front of a chalkboard, he quickly sketches the original route of the ship. Then, when one of the engineers suggests a new route, Kranz alters the original route to show a slingshot approach that would use the moon’s gravity to whip the astronauts back towards Earth. </p>
+      <p class="wow fadeInUp">In a later scene, a group of engineers tasked with devising a new filtration system dumps all the items available to the astronauts on a table. They proceed to prototype a fix that the crew can build from the objects at hand on their craft, ending up with a literal “<a href="http://abcnews.go.com/Health/challenge-design-90-percent/story?id=12425103" target="_blank">duct-tape solution</a>.”</p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center margin-vertical-xlarge">
+    <div class="medium-10 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/ideate/Apollo_13_LM_with_Mailbox_retouched.jpg',
+        'caption': 'The "mailbox" filter as created by the astronauts onboard the Apollo 13 mission.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">In each case, the route to resolving the problems seemed relatively straightforward, if fraught with urgency: get a bunch of smart people in a room together, and have them collectively come up with ideas until the best solution is found.  We can assume that the film was faithful to what happened in the real life control room in Houston, but what conditions created such a successful environment for brainstorming?</p>
+      <p class="wow fadeInUp">The term "brainstorm" was popularized by the ad agency executive Alex Osborn in his 1953 book Applied Imagination (though he had outlined his method in a 1948 book, Your Creative Power). <cite class="number"><a href="#citation">2</a></cite> Osborn claimed that by organizing a group to attack a creative problem “commando fashion, with each stormer attacking the same objective,” creative output could be doubled.<cite class="number"><a href="#citation">3</a></cite></p>
+      <p class="wow fadeInUp">Osborn created two main rules for a successful brainstorm: </p>
+      <ol class="wow fadeInUp">
+        <li>Defer judgement</li>
+        <li>Reach for quantity</li>
+      </ol>
+      <p class="wow fadeInUp">By deferring judgment, this technique intended to reduce social inhibitions in the group: no one would be stigmatized for shouting out a crazy idea. By reaching for quantity, participants would boost their overall creative output and increase the likelihood of coming up with innovative solutions.</p>
+      <p class="wow fadeInUp">As we discussed in <a href="/principles-of-product-desgin/pencils-before-pixels/">Pencils Before Pixels</a>, brainstorming in a group might not work as well for coming up with original ideas as compared to individuals working on their own.  However, brainstorming adds value to the creative process in ways that don’t just involve coming up with ideas.</p>
+    </div>
+  </div>
+
+  <!-- h2 -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Brainstorming Isn’t About New Ideas, Really</h2>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/shiener.png',
+    'quote': 'I don’t believe the value of brainstorming is the ideas generated! I believe it is the shared value/evaluation context created. The experience of brainstorming creates a group of people with a shared perspective, and an understanding of each other’s communication styles, who are then capable of providing useful and powerful critique of future work on the topic. ”',
+    'source_name' : '<a href="https://twitter.com/tsheiner" target="_blank">Tim Sheiner</a>',
+    'source_title' : 'Director, Design Systems, Salesforce'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">It turns out that the power of brainstorming doesn’t really come from spontaneously generating <em>new</em> ideas. Rather, brainstorming’s real strength stems from the ability of the process to:</p>
+      <ul class="wow fadeInUp">
+        <li>Quickly generate <em>lots</em> of ideas, to help get an overview of the conceptual landscape. These are not necessarily new ideas (or good ideas); they may have been brewing for a while as individuals considered the problem beforehand. These ideas can become the seeds for solutions, to be investigated with prototypes. </li>
+        <li>Gather a team into a physical space where they can share perspectives on the problem, and are all aware of the potential solution spaces as they are surfaced. Done well, it can energize a team (and done poorly, it can deflate one). </li>
+        <li>Get clients or stakeholders to buy into the design process, and also learn what is important to these decision makers.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/belfort.png',
+    'quote': '[Brainstorms are] excellent at helping clients buy into the creative process…they get to join in on the brainstorms, they see lots of ideas, they get to vote for their favorites and a dialog happens during the voting process that is crucial. Some kind of sorting always follows a brainstorm and it’s during this process that one can learn from the client. What have they already done or are currently doing? What can\'t they do? Won’t they do? And most importantly, what are they excited about? ”',
+    'source_name' : 'Yona Belfort',
+    'source_title' : 'Product Designer at <a href="http://www.vital-innovation.com/" target="_blank">Vital Innovation</a>'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Generating ideas, sharing perspective, and gaining stakeholder buy-in are lofty goals. To achieve them via brainstorming requires careful planning. In the next few sections, we’ll cover how to properly set the stage for success.</p>
+    </div>
+  </div>
+
+  <!-- Block Quote -->
+  {% set vars = {
+    'image_source' : '/img/avatars/sandoval.png',
+    'quote': '[Brainstorming’s] goal is to give you a mass quantity of ideas quickly...not solutions, but the seeds to possible solutions. Solutions take real hard work. Brainstorming gets you the lay of the land quickly for possible solution areas to investigate. But good solutions are like body building, there’s no way to cheat the hours of the gym you got to put in. ”',
+    'source_name' : 'Art Sandoval',
+    'source_title' : 'Vice President, Engineering, LUNAR Design'
+    }
+  %}
+  {% include 'source/htdocs/_includes/blockquote.html' with vars %}
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Set up for brainstorming success</h2>
+      <p class="wow fadeInUp">Before we dive into suggestions for making your brainstorms more successful, a caveat: just like any other creative tool, there are a lot of ways to run a brainstorm, some of which might work better for certain types of problems (see our case study on brainstorming at IBM, and our sidebar on Design Sprint sketching from Google Ventures). The only way that you’ll learn which technique works best for you is to experiment with a few .</p>
+      <p class="wow fadeInUp">You’ll remember from our introduction that Alex Osborn had set two guidelines for a successful brainstorm:</p>
+      <ol class="wow fadeInUp">
+        <li>Defer judgement</li>
+        <li>Reach for quantity</li>
+      </ol>
+      <p class="wow fadeInUp">While these are fundamentally important, there are a few additional guidelines that will make your brainstorm more successful. </p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Before the Brainstorm</h3>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284352899'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">A key part of the brainstorming process is the facilitator—someone who will lead the session, keep track of time, and set up the space for the group. This facilitator can also make sure that the group comes prepared with a mission framed by problem statements.</p>
+      <p class="wow fadeInUp"><strong>Set a mission</strong><br>Your brainstorming session should have a clear goal: what problem(s) are you surfacing ideas for? </p>
+      <p class="wow fadeInUp">But what is the best method for coming up with this goal? Recall that Stanford’s d.school design thinking framework (see below) alternates between generative (flaring) and selective (focusing) phases. As you <a href="/design-thinking/empathize">Empathize</a>, you gather data and stories from your users, generating insights and flaring out. </p>
+      <p class="wow fadeInUp">As you begin to synthesize that information, and come closer to <a href="/design-thinking/define">Defining</a> your Point of View (POV), you become selective about the solution space you will pursue, and you focus. </p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center margin-vertical-xlarge">
+    <div class="medium-10 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/ideate/123fb.png',
+        'caption': 'From the Stanford d.school’s <a href="https://dschool.stanford.edu/groups/k12/wiki/6c04c/Visual_Resources.html" target="_blank" class="text-gray">visual resource guide</a>.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">In the current Ideate phase, you flare out again as you generate a multitude of ideas and select promising solutions for <a href="/design-thinking/prototype"></a>Prototyping. Doing this helps your team step beyond obvious solutions, harness the collective strength of the team, and discover new and unexpected areas to explore.</p>
+      <p class="wow fadeInUp">How do you go about generating those ideas? The POV that you generated in the <a href="/design-thinking/define">Define phase</a> is a great platform for starting the process. Using your POV problem statement, you can come up with “How might we…?” topics which are subsets of the entire problem. If your POV is well constructed, these topics should fall naturally out of it. </p>
+      <p class="wow fadeInUp">For example, let’s go back to Doug Dietz’s POV:</p>
+      <p class="wow fadeInUp"><em>“We met scared families trying not to fall apart during the hospital visit. We were amazed to realize that they have to sedate 80% of the children between 3 and 8 years old, in order to have them be scanned. It would change the world if we could capitalize on the child’s amazing imagination to transform the radiology experience into a positive, memorable adventure.”</em></p>
+      <p class="wow fadeInUp">With that POV, you can pretty easily come up with problem statements like “How might we make the MRI scanner a more imaginative space?” or “How might we make the child’s lead-up to their appointment less anxiety inducing, by sparking their imagination?” With these topics you can then set up brainstorming sessions to surface a large quantity of ideas. </p>
+      <p class="wow fadeInUp"><strong>Set up the space</strong><br>For a good brainstorm to happen, the energy in the room needs to be right. First, pick a space where there are large whiteboards, or room on a wall to set up sticky poster-sized <a href="http://www.post-it.com/3M/en_US/post-it/products/~/Post-it-Products/Easel-Pads/?N=4327+5927574+3294529207+3294857497&rt=r3" target="_blank">Post-it Easel Pads</a>. The room should also be somewhat enclosed if there is a worry about bothering other teams (brainstorming can get boisterous); there are alternate techniques for a quiet brainstorm which we’ll get to a little later in this article.</p>
+      <p class="wow fadeInUp"><strong>Get into the right headspace</strong><br>If you’re coming into a brainstorming session from individual work, it can be a little jarring to get into a more collaborative mindset, and hard to ramp up your energy level accordingly. The facilitator should spend a few minutes getting everyone acclimated. There are some quick, improv-based techniques for this, like <a href="http://www.bbbpress.com/2015/11/drama-game-sound-ball/" target="_blank">Sound Ball</a> or <a href="http://improvencyclopedia.org/games//Knife_Baby_Angry_Cat.html" target="_blank">Knife, Baby, Angry Cat</a>. You can also use the <a href="http://#" target="_blank">30 Circles Exercise</a> that we outline later in this article.</p>
+      <p class="wow fadeInUp"><strong>Constrain the time</strong><br>A brainstorm can quickly run out of steam if the facilitator doesn’t establish time limits and keep the conversation moving. Setting a time limit for each topic is a good idea (15-20 minutes can work well, depending on how many topics you need to cover). You can also set a goal for the number of ideas per topic (e.g., 100 ideas in 20 minutes). Use a <a href="http://www.timetimer.com/" target="_blank">Time Timer</a> so everyone has a visual indicator, and to create adrenaline-powered sprints as the time begins to run short.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">During the brainstorm</h3>
+      <p class="wow fadeInUp margin-none">When the brainstorm kicks off, the moderator’s  job is to keep the momentum going, stay on topic, and make sure all ideas are captured.</p>
+      <p class="wow fadeInUp"><strong>Always say yes</strong><br>To keep the energy high and the ideas flowing, a good brainstorm shares a lot in common with the improv technique of “Yes, and...” When an idea is put forth, participants should be encouraged to build on it, putting a positive spin on the contribution. Critical energy can be diverted into productive ideation in this way. For example, “<em>Yes</em>, I like that idea, <em>and</em> we could go even further by….”</p>
+      <p class="wow fadeInUp"><strong>Stay on topic</strong><br>In the heated environment of a brainstorm, it’s easy to get sidetracked and start diving down rabbit holes that have no relation to the problem statement at hand. It’s important for the facilitator to gently guide participants back to the current topic. Sometimes this is best done by noting it and mentioning that the group can come back to it later, or at a future session. </p>
+      <p class="wow fadeInUp"><strong>Be visual, and headline</strong><br>One way to run a brainstorm is to have the facilitator serve as scribe, logging all the ideas as they come. Another is to arm the group with sticky notes and sharpies, so that they can walk up to the board, verbally share their idea, and put a summary of the idea on the board.  </p>
+      <p class="wow fadeInUp">Either way, it’s important to be visual. Encourage quick sketches of each idea, as it will help to clarify and group ideas.</p>
+      <p class="wow fadeInUp">Also, ideas should be headlined as they are produced. A participant can say, "We could create a way for the user to leave feedback for us directly via a comment form," which someone would then summarize as "Feedback comment form." </p>
+      <p class="wow fadeInUp">Whatever method you choose, ideas should be shared one at a time. This allows the scribe to write them, or the participant to be heard as they post their idea to the board.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">After the brainstorm</h3>
+      <p class="wow fadeInUp margin-none">When the brainstorm is finished and there are a hundred ideas on the board, it’s easy enough to give high fives all around and walk away without really having accomplished much. Leave a little time after the brainstorm to review and capture the ideas that were shared.</p>
+      <p class="wow fadeInUp"><strong>Narrow down, but not too fast</strong><br>If you’ve run a productive brainstorm, you’ll likely have a lot of different ideas on the board—some funny, some weird, perhaps some verging on insane. It can be tempting to cut any idea that isn’t feasible, but by doing so you may be tripping up the ideation process: sometimes good ideas can come from a place that initially seemed silly.</p>
+      <p class="wow fadeInUp">Instead, give the participants a way to select ideas across multiple criteria. One way to do this is to use color-coded sticky dots or pieces of colored post-its. Each color can signify their top choices in each category, such as the lowest hanging fruit, most delightful, or the long shot. </p>
+      <p class="wow fadeInUp"><strong>Capture and move to prototyping</strong><br>Once you’ve selected ideas in each category, you can then carry them into prototyping,ensuring that you don’t walk away from the session with just the safest choice. Use a phone to photograph the whole board, and then extract the top ideas in a doc which can be used to kick off the prototyping process (Google Docs is great for this).</p>
+      <p class="wow fadeInUp">Prototyping is a flaring part of the design thinking process. Even if a selected idea is so crazy it doesn’t seem worthy of a test, figure out what’s attractive in that solution, and use that to inspire a prototype. The goal is to come into the Prototype phase with multiple solutions to build and then test.</p>
+      <p class="wow fadeInUp">Also, remember that brainstorming is just one step in the process of coming up with a solution to a given problem. In all likelihood, you won’t come out of a brainstorming session armed with the exact idea that you’ll bring to your users. But you will hopefully compile an overview of the conceptual landscape, gain a shared perspective on the problem with your team, or get key stakeholders to buy into the design process. All of these things will help seed the minds of your team as you do both individual and collaborative work to come up with solutions.</p>
+    </div>
+  </div>
+
+  <!-- Lead -->
+  {% set vars = {
+    'background_color' : 'red',
+    'text_color': 'white',
+    'text': '<strong>Pro tips: Brainstorming at IDEO</strong> Peter Macdonald has run <strong>countless</strong> brainstorms during his <strong>23 year tenure</strong> at IDEO as a design lead. Here are some insights from Peter on <strong>how brainstorming at IDEO</strong> has evolved over the years: You <strong>can’t</strong> have a good brainstorm without setting it up right, having <strong>everyone feeling safe</strong> and heard. <strong>A key element</strong> is trust, consistent with IDEO’s <strong>culture of trust.</strong> Bullies and blowhards are <strong>not tolerated.</strong> Our favored approach today is to <strong>start with everyone</strong> working heads-down <strong>for five minutes</strong> to begin brainstorming around <strong>each key question.</strong> Then we have people share those ideas with the group and continue with <strong>classic brainstorm process.</strong>
+'
+    }
+  %}
+  {% include 'source/htdocs/_includes/lead.html' with vars %}
+
+
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">It ensures a diversity of ideas and prevents the first ideas from setting the direction of the entire brainstorm - it also helps the group build strong momentum.</p>
+      <p class="wow fadeInUp">At IDEO we aren't dogmatic about creative techniques. You should use whatever process or format works for you. Sometimes different approaches work better for different problems.</p>
+      <p class="wow fadeInUp">Our industrial designers often hold "design-storms" where everyone is sketching form or design ideas at the same time and sharing back as they finish each sketch. Instead of post-its they use 8.5 x 11 sheets or half sheets (8.5" x 5.5") and a variety of pens, pencils, and markers so they can add more details. </p>
+      <p class="wow fadeInUp">Our toy invention group does "tinker-time" where they build in 3D together. Every team is encouraged to experiment and create and evolve new techniques.
+      </p>
+    </div>
+  </div>
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <!-- Case Study Block -->
+      <a class="bar-callout-link text-white" href="">
+        <div class="bar-callout background-red margin-vertical-xlarge js-modal-toggle" data-modal-target="case-study__brainstorm" >
+          <h3 class="margin-vertical-large padding-horizontal-large"><strong>Exercise:</strong> Brainstorm warm-up: 30 Circles (3 minutes)</h3>
+          <svg class="open-arrow" width="30px" height="29px" viewBox="0 0 30 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Open" transform="translate(1.000000, 1.000000)" stroke="#FFFFFF">
+                <g id="Page-1">
+                  <path d="M26.7678,0.5 L1.7678,25.5" id="Stroke-1" stroke-width="3"></path>
+                  <polyline id="Stroke-3" stroke-width="3" points="0.7678 0.5 26.7678 0.5 26.7678 26.5"></polyline>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Alternatives to brainstorming</h2>
+      <p class="wow fadeInUp">You may have noticed that the “classic” brainstorming method we described requires a fair amount of coordination, and ultimately practice, to run well. It also relies, as Peter Macdonald from IDEO notes, on a “culture of trust.” </p>
+      <p class="wow fadeInUp">But what if you don’t have the resources to pull this off, or are working with a new team or client and don’t have the time to build this culture from repeated brainstorming sessions? There are ways to get around this.</p>
+    </div>
+  </div>
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Sketching</h3>
+      <p class="wow fadeInUp margin-none">In the <em>Sprint</em> <cite class="number">4</cite> book, Jake Knapp outlines a method for sketching and discussing ideas in a group (watch Daniel Burka talk about this technique in the sidebar). The GV team explicitly does not call this brainstorming (which they have some strong opinions about), but the point is to find a process that functions within your workflow and organization. </p>
+      <p class="wow fadeInUp">Performing ideation with <em>individual</em> sketches—which are reviewed by the group silently, voted on, and not discussed until the end of the session—is a way to address situations where a strong collaborative culture may not yet be established.</p>
+    </div>
+  </div>
+
+  <!-- Audio Block -->
+  {% set vars = {
+    'audio_source': '284353612'
+    }
+  %}
+  {% include 'source/htdocs/_includes/audio.html' with vars %}
+
+  <!-- h3  + p -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <h3 class="wow fadeInUp margin-bottom-none">Mindmapping</h3>
+      <p class="wow fadeInUp margin-none">What if you’re on your own, with no one to run a brainstorming session with? In that case, Mindmaps are your friend! The concept is simple, but Mindmaps can be a powerful way to move from conventional ideas to unpredictable, innovative ones. The following version of this technique is adapted from David &amp; Tom Kelley’s <em>Creative Confidence</em>. You can start with a problem statement like “A better birthday party for a 1 year old.”</p>
+      <p class="wow fadeInUp">Write your topic or problem statement in the middle of a piece of paper, and circle it. Make connections to that central node, and write them down. In this example, you might write down “cupcakes to devour” and “make it for the adults” as two directions to investigate.</p>
+    </div>
+  </div>
+
+  <!-- Full Width Image -->
+  <div class="row align-center margin-vertical-xlarge">
+    <div class="medium-10 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/ideate/mindmap.jpg',
+		'caption' : 'An example of mindmapping a birthday party for a 1-year old.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Each connection should spur new ideas (“make it for the adults” could inspire “baby birthday adult beverages,” for example). If an idea becomes a new cluster, circle it to indicate that it is a new node in the map. Be visual where possible; simple sketches can inspire new directions. You’re done when the page is full, but you can always continue the mindmap by reframing the topic and starting a new map.</p>
+      <p class="wow fadeInUp">Mindmapping will help you get the early, obvious ideas out of your head. It can help you look for patterns, reveal the structure of a subject, and—once you have an opportunity to move beyond a solo mission—communicate the ideas and process to others. <cite class="number">5</cite></p>
+    </div>
+  </div>
+
+  <!-- h2 + p -->
+  <div class="row align-center chapter">
+    <div class="medium-8 large-7 columns">
+      <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Sowing the seeds of innovation</h2>
+      <p class="wow fadeInUp">In 1869, the Russian chemist Dmitry Mendeleev fell asleep at his desk. He was in the midst of a 3-day working sprint, during which he was trying to arrange the elements in a logical manner. He was stuck. </p>
+      <p class="wow fadeInUp">Asleep, Mendeleev dreamt of a solution: “I saw...a table where all the elements fell into place as required. Awakening, I immediately wrote it down on a piece of paper.”<cite class="number">6</cite></p>
+    </div>
+  </div>
+
+  <!-- Centered Image -->
+  <div class="row align-center margin-vertical-large">
+    <div class="medium-8 large-7 columns">
+
+      <!-- Image, Small Caption -->
+      {% set vars = {
+        'image_source' : '/img/design-thinking/ideate/mendeleev_table.jpg',
+        'caption': 'Mendeleev’s 1869 handwritten sketch of the periodic table.'
+        }
+      %}
+      {% include 'source/htdocs/_includes/image-small-caption.html' with vars %}
+
+    </div>
+  </div>
+
+  <!-- Paragraph -->
+  <div class="row align-center">
+    <div class="medium-8 large-7 columns">
+      <p class="wow fadeInUp">Dreaming helps our brains organize and consolidate the information that we are exposed to throughout our working day. Much like taking a shower, or a long walk, it is a time during which solutions to the problem at hand come to mind.</p>
+      <p class="wow fadeInUp">But these solutions only appear after the hard work of exposing the mind to a lot of diverse ideas. Ideating, whether through brainstorming, sketching, or mind mapping, can help you and your team seed this field of ideas, which you can carry into the <a href="/design-thinking/prototype">prototyping</a> process.</p>
+    </div>
+  </div>
+
+  <!-- Citations -->
+  <div class="row align-center margin-vertical-xlarge" id="citation">
+    <div class="medium-8 large-7 columns border-top">
+      <small class="text-black margin-top-large">
+      1. <a class="text-black" href="https://en.wikipedia.org/wiki/Apollo_13" target="_blank">https://en.wikipedia.org<span class="hide-tablet">/wiki/Apollo_13</span></a><br>
+      2. <a class="text-black" href="https://en.wikipedia.org/wiki/Brainstorming" target="_blank">https://en.wikipedia.org<span class="hide-tablet">/wiki/Brainstorming</span></a><br>
+      3. <a class="text-black" href="http://www.newyorker.com/magazine/2012/01/30/groupthink" target="_blank">http://www.newyorker.com<span class="hide-tablet">/magazine/2012/01/30/groupthink</span></a><br>
+      4. <a class="text-black" href="http://www.gv.com/sprint/" target="_blank">Sprint <span class="hide-tablet">by Jake Knapp et. al.</span></a><br>
+      5. <a class="text-black" href="http://www.creativeconfidence.com/" target="_blank">Creative Confidence<span class="hide-tablet"> by Tom and David Kelley</span></a><br>
+      6. <a class="text-black" href="https://www.brainpickings.org/2016/02/08/mendeleev-periodic-table-dream/" target="_blank">https://www.brainpickings.org<span class="hide-tablet">/2016/02/08/mendeleev-periodic-table-dream/</span></a><br>
+      </small>
+    </div>
+  </div>
+
+  <!-- Read On -->
+  <div class="background-gray-light padding-vertical-xxlarge margin-top-xxlarge section-read-on chapter">
+    <div class="row align-center">
+      <div class="medium-10 columns">
+        <h2 class="text-center wow fadeInUp margin-top-xxlarge margin-bottom-xlarge">Read On</h2>
+      </div>
+    </div>
+    <div class="row align-center">
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://www.linkedin.com/pulse/when-brainstorming-fails-throw-imaginary-cat-gabriel-aldaz" target="_blank">When Brainstorming Fails, Throw an Imaginary Cat</a></li>
+          <li><a href="http://www.nytimes.com/2014/12/07/jobs/how-ibm-brings-ideas-forward-from-its-teams.html" target="_blank">How IBM Brings Forward Ideas From Its Teams</a></li>
+        </ul>
+      </div>
+      <div class="medium-4 small-12 columns">
+        <ul class="wow fadeInUp list-no-style">
+          <li><a href="https://www.papress.com/html/book.details.page.tpl?isbn=9781568989792" target="_blank">Graphic Design Thinking: Beyond Brainstorming</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- end #top-scroll -->
+
+<section id="footer-scroll-nav" class="relative">
+  {% include 'source/htdocs/_includes/_design-thinking.html' %}
+  {% set vars =
+    {
+      'background_color':'white'
+    }
+  %}
+  {% include 'source/htdocs/_includes/footer-html.html' with vars %}
+</section>
+
+<!-- Case Studies -->
+{% include 'source/htdocs/design-thinking/ideate/_brainstorm.html' %}
+<!-- End Case Studies -->
+
+<!-- Footer -->
+{% include 'source/htdocs/_includes/footer.html' %}
+

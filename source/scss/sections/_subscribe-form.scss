@@ -1,0 +1,37 @@
+.subscribe-form-section {
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  top: 0;
+  left: 0;
+  transform: translateY(80px);
+  opacity: 0;
+  z-index: -1;
+  overflow-y: auto;
+  transition: transform 0.4s cubic-bezier(.17,.67,.32,1), opacity 0.4s ease-out, visibility 0.4s ease-out;
+
+  .top-nav {
+    position: static;
+  }
+
+  .subscribe-form-section__content {
+    opacity: 0;
+  }
+
+  &.modal-open {
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+    overflow-x: hidden;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+    transform: translateY(0px);
+    transition: opacity 0.4s cubic-bezier(.17,.67,.32,1), transform 0.4s cubic-bezier(.17,.67,.32,1), visibility 0s;
+
+    .subscribe-form-section__content {
+      opacity: 1;
+    }
+  }
+}
